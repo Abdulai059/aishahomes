@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --primary: #0C287B;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #1C6EA4;
+  --secondary-foreground: #FFFFFF;
+
+  --accent: #00BFAE;
+  --accent-foreground: #FFFFFF;
+
+  --background: #F5F7FA;
+  --foreground: #1F2937;
+  --muted: #E5E7EB;
+  --muted-foreground: #6B7280;
+  --border: #D1D5DB;
+  --input: #E5E7EB;
+  --ring: #0C287B;
+
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
+
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+
+  --chart-1: #0C287B;
+  --chart-2: #1C6EA4;
+  --chart-3: #00BFAE;
+  --chart-4: #FFD700;
+  --chart-5: #FF6B6B;
+
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-serif: "Poppins", system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  a {
+    @apply text-primary hover:text-secondary transition-colors;
+  }
+  button {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
+  }
+}
