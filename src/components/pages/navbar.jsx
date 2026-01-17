@@ -12,7 +12,7 @@ export default function NavbarHeader() {
       <div className="flex items-center justify-between">
         <div className="w-12"></div>
 
-        <div className="hidden sm:flex gap-6 uppercase font-semibold text-sm">
+        <div className="hidden sm:flex gap-6  font-semibold text-sm">
           <a href="#" className="text-gray-900 hover:text-black">
             Home
           </a>
