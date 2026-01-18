@@ -1,6 +1,9 @@
+import GallerySection from "./components/pages/GallerySection";
 import Hero from "./components/pages/hero";
 import HotelExplore from "./components/pages/HotelExplore";
 import MeetingSection from "./components/pages/MeetingSection";
+import ReceptionSection from "./components/pages/ReceptionSection";
+import RestaurantSection from "./components/pages/RestaurantSection.";
 import Rooms from "./components/pages/Rooms";
 
 function App() {
@@ -12,6 +15,9 @@ function App() {
       <HotelExplore />
       <Rooms />
       <MeetingSection />
+      <GallerySection />
+      <RestaurantSection />
+      <ReceptionSection />
     </main>
   );
 }
