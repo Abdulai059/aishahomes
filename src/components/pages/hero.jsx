@@ -1,23 +1,53 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import TopBar from './TopBar';
 import Nav from '../ui/Nav';
 
+
+
 export default function Hero() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [checkIn, setCheckIn] = useState('2026-01-17');
   const [checkOut, setCheckOut] = useState('2026-01-18');
   const [guests, setGuests] = useState('1 Adult, 0 Child');
+  const [currentImage, setCurrentImage] = useState(0)
+
+
+  const backgroundImages = [
+    {
+      src: "./bg-hero.webp",
+      label: "Conference room",
+    },
+    {
+      src: "./Interior5.webp",
+      label: "Hotel lobby",
+    },
+
+  ];
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="relative min-h-screen">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("./bg-hero.webp")',
-        }}
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        {backgroundImages.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0'
+              }`}
+            style={{
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${img.src}")`,
+            }}
+          />
+        ))}
+      </div>
+
 
       {/* Content */}
       <div className="relative z-10">
@@ -29,15 +59,20 @@ export default function Hero() {
 
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center min-h-[70vh] px-4 text-center">
-          <h1 className="text-white text-4xl md:text-6xl font-serif mb-6 max-w-4xl leading-tight">
+          <h1 className="text-white text-3xl md:text-5xl mb-6 max-w-4xl leading-tight"
+            style={{ fontFamily: "Columbia-Serial" }}
+          >
             WELCOME TO AISHA HOMES,<br />
-            WHERE ELEGANCE MEETS EXCELLENCE
+            <span>
+              WHERE ELEGANCE MEETS EXCELLENCE
+            </span>
+
           </h1>
           <p className="text-yellow-600 text-xl md:text-2xl mb-8 tracking-wide">
             CLICK TO EXPERIENCE UNPARALLELED LUXURY
           </p>
-          <button className="bg-yellow-700 hover:bg-yellow-600 text-white px-8 py-3 text-lg transition">
-            Take A Tour
+          <button className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-lg transition">
+            Book Your Stay With Us
           </button>
         </div>
 
