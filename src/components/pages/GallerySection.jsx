@@ -54,7 +54,8 @@ export default function GallerySection() {
                         Take A Look Inside Aisha Homes
                     </h2>
                     <p className="text-gray-700 text-base md:text-base max-w-5xl mx-auto leading-relaxed">
-                        From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gallery and discover the luxurious <br />experience that awaits you.
+                        From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gal git commit -m "added bg video"
+                        lery and discover the luxurious <br />experience that awaits you.
                     </p>
 
                 </div>

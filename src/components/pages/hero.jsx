@@ -31,8 +31,7 @@ export default function Hero() {
       <div className="relative z-10">
 
 
-        <TopBar />
-        <Nav />
+        
 
 
 
