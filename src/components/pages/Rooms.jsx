@@ -76,6 +76,9 @@ export default function Rooms() {
         <section className="bg-white py-20">
             <div className="max-w-[1500px] mx-auto px-4">
                 <div className="text-center mb-8">
+                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                        Where Comfort Meets Luxury
+                    </p>
                     <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-6 leading-tight"
                         style={{ fontFamily: "Columbia-Serial" }}>
                         You Deserve Rooms & Suites For Your<br />Great Taste

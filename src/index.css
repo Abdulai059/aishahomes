@@ -100,6 +100,7 @@
 }
 
 
+/* Font */
 @font-face {
   font-family: "Columbia-Serial";
   src: url("./fonts/Columbia-Serial Regular.ttf") format("opentype");
@@ -107,14 +108,29 @@
   font-style: normal;
 }
 
-
-
+/* Root fonts */
 :root {
   --font-sans: 'Poppins', sans-serif;
   --font-serif: 'Lora', serif;
 }
 
-
 body {
   font-family: var(--font-sans);
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation */
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
 }

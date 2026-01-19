@@ -1,3 +1,4 @@
+import CtaSection from "./components/pages/CtaSection";
 import GallerySection from "./components/pages/GallerySection";
 import Hero from "./components/pages/hero";
 import HotelExplore from "./components/pages/HotelExplore";
@@ -8,7 +9,7 @@ import Rooms from "./components/pages/Rooms";
 
 function App() {
   return (
-    <main className="min-h-screen bg-background font-sans antialiased selection:bg-primary selection:text-primary-foreground">
+    <main className="min-h-screen bg-background font-sans antialiased selection:bg-primary pt-28 selection:text-primary-foreground">
 
 
       <Hero />
@@ -16,6 +17,7 @@ function App() {
       <Rooms />
       <MeetingSection />
       <GallerySection />
+      <CtaSection />
       <RestaurantSection />
       <ReceptionSection />
     </main>

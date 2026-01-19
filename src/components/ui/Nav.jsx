@@ -5,7 +5,8 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav className="bg-gray-300 bg-opacity-30 backdrop-blur-sm">
+        <nav className="fixed md:top-8 top-0 left-0 w-full z-40 bg-gray-300 bg-opacity-30 backdrop-blur-sm">
+
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center py-2">
 
@@ -18,15 +19,15 @@ export default function Nav() {
 
 
                     <div className="hidden lg:flex items-center gap-8 text-white">
-                        <a href="#home" className="hover:text-yellow-500 transition">HOME</a>
+                        <a href="#home" className="hover:text-yellow-500 transition">Homes</a>
                         <a href="#rooms" className="hover:text-yellow-500 transition flex items-center gap-1">
-                            ROOMS <ChevronDown size={16} />
+                            Rooms <ChevronDown size={16} />
                         </a>
                         <a href="#conferences" className="hover:text-yellow-500 transition flex items-center gap-1">
-                            CONFERENCES <ChevronDown size={16} />
+                            Conferences <ChevronDown size={16} />
                         </a>
                         <a href="#leisure" className="hover:text-yellow-500 transition flex items-center gap-1">
-                            LEISURE <ChevronDown size={16} />
+                            Leisure <ChevronDown size={16} />
                         </a>
                     </div>
 
@@ -43,12 +44,12 @@ export default function Nav() {
 
                     <div className="hidden lg:flex items-center gap-8 text-white">
                         <a href="#tavern" className="hover:text-yellow-500 transition flex items-center gap-1">
-                            TAVERN <ChevronDown size={16} />
+                            Tarven <ChevronDown size={16} />
                         </a>
                         <a href="#media" className="hover:text-yellow-500 transition flex items-center gap-1">
-                            BLOG
+                            Blog
                         </a>
-                        <a href="#contact" className="hover:text-yellow-500 transition">CONTACT</a>
+                        <a href="#contact" className="hover:text-yellow-500 transition">Contact</a>
                         <button className="border border-yellow-600 text-white px-6 py-2 hover:bg-yellow-600 hover:text-white transition">
                             Book Now
                         </button>

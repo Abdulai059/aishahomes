@@ -3,10 +3,18 @@ export default function RestaurantSection() {
         <section className="bg-white py-16">
             <div className="max-w-8xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight"
+                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                        Fine Dining & Culinary Delights
+                    </p>
+
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif mb-4 leading-tight"
                         style={{ fontFamily: "Columbia-Serial" }}>
                         Aisha Restaurant/Railway
                     </h2>
+
+                    <p className="text-gray-600 text-sm md:text-base px-2 max-w-4xl mx-auto leading-relaxed">
+                        Savor exquisite flavors and enjoy an unforgettable dining experience in a <br />  refined and welcoming atmosphere.
+                    </p>
                 </div>
 
                 <div className="relative">

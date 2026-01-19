@@ -46,14 +46,19 @@ export default function GallerySection() {
         <section className="bg-white py-16">
             <div className="max-w-[1800px] mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-6xl mb-6 leading-tight"
-                        style={{ fontFamily: "Columbia-Serial" }}>
-                        Take A Look Inside The Aiash Homes
-                    </h2>
-                    <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
-                        From breathtaking rooftop sunsets to aisha-inspired suites, every corner of The Aisha Homes is designed to delight the senses. Explore our gallery for a glimpse into the 5-star experience that awaits you.
+                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                        Discover The Experience
                     </p>
+                    <h2 className="text-3xl md:text-6xl mb-6 leading-tight font-serif"
+                        style={{ fontFamily: "Columbia-Serial" }}>
+                        Take A Look Inside Aisha Homes
+                    </h2>
+                    <p className="text-gray-700 text-base md:text-base max-w-5xl mx-auto leading-relaxed">
+                        From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gallery and discover the luxurious <br />experience that awaits you.
+                    </p>
+
                 </div>
+
 
                 <div className="relative mb-8">
                     <div className="overflow-hidden">

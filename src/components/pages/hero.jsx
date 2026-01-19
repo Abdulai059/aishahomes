@@ -29,8 +29,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60 z-[1]"></div>
 
       <div className="relative z-10">
+
+
         <TopBar />
         <Nav />
+
+
 
         <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
           <h1 className="text-white text-3xl md:text-5xl mb-6 max-w-4xl leading-tight"
