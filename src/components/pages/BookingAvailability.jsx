@@ -10,7 +10,7 @@ export default function BookingAvailability({ guestOptions, onSubmit }) {
     return (
         <div className="max-w-6xl mx-auto px-4 pb-12">
 
-            <div className="bg-white/20 backdrop-blur-md rounded-lg md:bg-white p-2 md:p-4 flex items-center justify-between"
+            <div className="bg-white/20 backdrop-blur-md rounded-t-lg md:bg-white p-2 md:p-4 flex items-center justify-between"
 
             >
                 <h2 className="text-white text-sm md:text-base md:text-black uppercase font-semibold tracking-wide">
