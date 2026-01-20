@@ -103,8 +103,8 @@
 /* Font */
 @font-face {
   font-family: "Columbia-Serial";
-  src: url("./fonts/Columbia-Serial Regular.ttf") format("opentype");
-  font-weight: 700;
+  src: url("./fonts/Columbia-Serial Regular.ttf") format("truetype");
+  font-display: swap;
   font-style: normal;
 }
 
@@ -112,7 +112,9 @@
 :root {
   --font-sans: 'Poppins', sans-serif;
   --font-serif: 'Lora', serif;
+  --font-custom: "Columbia-Serial";
 }
+
 
 body {
   font-family: var(--font-sans);
@@ -124,6 +126,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
