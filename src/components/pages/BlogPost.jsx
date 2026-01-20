@@ -17,7 +17,8 @@ export default function BlogPostCards() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-12">
-            <h2 className="text-3xl font-medium mb-8">All Blog Posts</h2>
+            <h2 className="text-2xl md:text-3xl font-medium mb-8"
+                style={{ fontFamily: "Columbia-Serial" }}>All Blog Posts</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map((post) => (
@@ -25,7 +26,7 @@ export default function BlogPostCards() {
                         key={post.id}
                         className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition"
                     >
-                        {/* IMAGE */}
+                       
                         {post.heroImage && (
                             <img
                                 src={post.heroImage}
@@ -37,7 +38,7 @@ export default function BlogPostCards() {
                             />
                         )}
 
-                        {/* CONTENT */}
+                      
                         <div className="p-6 flex flex-col justify-between h-full">
                             <div>
                                 <h3 className="text-xl font-semibold mb-2">{post.title}</h3>

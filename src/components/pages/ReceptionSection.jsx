@@ -6,7 +6,7 @@ export default function ReceptionSection() {
                     <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                         Introducing Our Services & Facilities
                     </p>
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight"
+                    <h2 className="text-3xl md:text-5xl font-serif mb-6 leading-tight"
                         style={{ fontFamily: "Columbia-Serial" }}>
                         State-of-the-art Amenities.
                     </h2>

@@ -13,7 +13,7 @@ export default function RestaurantSection() {
                     </h2>
 
                     <p className="text-gray-600 text-sm md:text-base px-2 max-w-4xl mx-auto leading-relaxed">
-                        Savor exquisite flavors and enjoy an unforgettable dining experience in a <br />  refined and welcoming atmosphere.
+                        Savor exquisite flavors and enjoy an unforgettable dining experience in a refined and welcoming atmosphere.
                     </p>
                 </div>
 
@@ -21,7 +21,7 @@ export default function RestaurantSection() {
                     <div className="absolute left-0 top-0 bottom-0 w-full md:w-1/3 bg-gray-100 -ml-4 md:ml-0"></div>
 
                     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-                        <div className="bg-gray-100 p-8 md:py-30 flex flex-col items-center justify-center text-center min-h-[400px]">
+                        <div className="bg-gray-100 p-4 md:py-30 flex flex-col items-center justify-center text-center min-h-[400px]">
                             <span className="flex flex-col items-center justify-center text-center">
                                 <div className="mb-6">
                                     <img src="./mist-icon.png" alt="restaurant" />
@@ -32,7 +32,7 @@ export default function RestaurantSection() {
                                 </h3>
 
                                 <p className="text-gray-700 leading-relaxed">
-                                    Experience refined dining at Aisha Homes. From sunset cocktails at our rooftop lounge to carefully prepared signature dishes, every detail is crafted for elegance, comfort, and exceptional taste. Enjoy in-room dining anytime — luxury, uninterrupted.
+                                    Experience refined dining at Aisha Homes. From sunset cocktails at our rooftop lounge to carefully prepared signature dishes, every detail is crafted for elegance, comfort, and exceptional taste. Enjoy in-room dining anytime luxury, uninterrupted.
                                 </p>
                             </span>
 

@@ -54,8 +54,7 @@ export default function GallerySection() {
                         Take A Look Inside Aisha Homes
                     </h2>
                     <p className="text-gray-700 text-base md:text-base max-w-5xl mx-auto leading-relaxed">
-                        From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gal git commit -m "added bg video"
-                        lery and discover the luxurious <br />experience that awaits you.
+                        From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gallery and discover the luxurious <br /> experience that awaits you.
                     </p>
 
                 </div>
@@ -106,7 +105,7 @@ export default function GallerySection() {
                 </div>
 
                 <div className="flex justify-center">
-                    <button className="bg-black text-white px-10 py-4 rounded-full hover:bg-gray-800 transition-colors duration-300 font-semibold text-sm md:text-sm uppercase tracking-wide">
+                    <button className="bg-black text-white px-10 py-4 rounded hover:bg-gray-800 transition-colors duration-300 font-semibold text-xs md:text-sm uppercase tracking-wide">
                         Book Your Stay With Us
                     </button>
                 </div>

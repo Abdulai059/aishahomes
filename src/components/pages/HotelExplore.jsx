@@ -5,8 +5,8 @@ export default function HotelExplore() {
     <section className="bg-gray-100 py-20">
       <div className="max-w-[1500px] mx-auto px-4">
 
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-4">
             <span className="relative inline-block"
               style={{ fontFamily: "Columbia-Serial" }}>
               WELCOME TO AISHA HOME
@@ -46,7 +46,7 @@ export default function HotelExplore() {
             <p className="text-yellow-700 text-xs tracking-widest mb-4">
               DISCOVER WHERE TO STAY IN ACCRA &TAMALE
             </p>
-            <h3 className="text-3xl md:text-5xl font-serif text-gray-900 mb-6"
+            <h3 className="text-2xl md:text-5xl font-serif text-gray-900 mb-6"
               style={{ fontFamily: "Columbia-Serial" }}>
               Luxury hotel in Tamale
             </h3>
@@ -55,7 +55,7 @@ export default function HotelExplore() {
               comprehensive range of amenities. Located in Accra & Tamale, Ghana, it delivers
               a redefined level of service.
             </p>
-            <button className="border-2 border-gray-900 text-gray-900 px-8 py-3 text-white  hover:bg-gray-900 hover:text-white transition-all duration-300">
+            <button className="border-2 rounded border-gray-900 text-gray-900 px-8 py-3 text-white text-xs md:text-base hover:bg-gray-900 hover:text-white transition-all duration-300">
               Take A Tour
             </button>
           </div>

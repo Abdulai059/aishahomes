@@ -1,48 +1,12 @@
 import { useParams, Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
-import supabase from "../services/Supabase";
+import { usePost, usePosts } from "../services/usePosts";
 
-// Fetch single post by ID
-export async function getPost(id) {
-    const { data, error } = await supabase
-        .from("posts")
-        .select("*")
-        .eq("id", id)
-        .single(); // ensures single object
-    if (error) throw error;
-    return data;
-}
-
-// Fetch all posts
-export async function getPosts() {
-    const { data, error } = await supabase
-        .from("posts")
-        .select("*")
-        .order("created_at", { ascending: false }); // newest first
-    if (error) throw error;
-    return data;
-}
-
-// Custom hook for all posts
-export function usePosts() {
-    return useQuery({
-        queryKey: ["posts"],
-        queryFn: getPosts,
-    });
-}
 
 export default function BlogPostPage() {
     const { id } = useParams();
     const postId = Number(id);
 
-    // Fetch single post
-    const { data: post, isLoading: postLoading, error: postError } = useQuery({
-        queryKey: ["post", postId],
-        queryFn: () => getPost(postId),
-        enabled: !!postId,
-    });
-
-    // Fetch all posts for prev/more
+    const { data: post, isLoading: postLoading, error: postError } = usePost(postId);
     const { data: posts, isLoading: postsLoading, error: postsError } = usePosts();
 
     if (postLoading || postsLoading) return <p className="text-center py-20">Loading...</p>;
@@ -50,7 +14,6 @@ export default function BlogPostPage() {
     if (postsError) return <p className="text-center py-20">Error loading posts: {postsError.message}</p>;
     if (!post) return <p className="text-center py-20">Post not found</p>;
 
-    // Tags from metadata
     const rawTags = post.metadata?.tags;
     const tags = Array.isArray(rawTags)
         ? rawTags
@@ -58,12 +21,10 @@ export default function BlogPostPage() {
             ? rawTags.split(",").map(tag => tag.trim()).filter(Boolean)
             : [];
 
-    // Previous post (most recent before current)
     const previousPost = posts
         ?.filter(p => p.id !== post.id)
         .sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
 
-    // More posts (exclude current)
     const morePosts = posts?.filter(p => p.id !== post.id).slice(0, 4) || [];
 
     return (
@@ -98,7 +59,6 @@ export default function BlogPostPage() {
                     ))}
                 </div>
 
-                {/* QUICK FACTS */}
                 {post.metadata && Object.keys(post.metadata).length > 0 && (
                     <div className="mt-12 pt-8 border-t border-gray-200">
                         <h3 className="text-xl font-semibold mb-4">Quick Facts</h3>
@@ -108,14 +68,15 @@ export default function BlogPostPage() {
                                     <dt className="font-semibold text-gray-900">
                                         {key.replace(/([A-Z])/g, " $1")}:
                                     </dt>
-                                    <dd className="text-gray-700">{Array.isArray(value) ? value.join(", ") : value}</dd>
+                                    <dd className="text-gray-700">
+                                        {Array.isArray(value) ? value.join(", ") : value}
+                                    </dd>
                                 </div>
                             ))}
                         </dl>
                     </div>
                 )}
 
-                {/* TAGS */}
                 {tags.length > 0 && (
                     <div className="mt-12 pt-8 border-t border-gray-200">
                         <h3 className="text-xl font-semibold mb-6">Related Topics</h3>
@@ -132,7 +93,6 @@ export default function BlogPostPage() {
                     </div>
                 )}
 
-                {/* SHARE BUTTONS */}
                 <div className="mt-12 pt-8 border-t border-gray-200">
                     <h3 className="text-xl font-semibold mb-6">Share this article</h3>
                     <div className="flex gap-4">
@@ -148,7 +108,6 @@ export default function BlogPostPage() {
                     </div>
                 </div>
 
-                {/* PREVIOUS + MORE POSTS */}
                 <div className="mt-16 pt-8 border-t border-gray-200">
                     {previousPost && (
                         <div className="flex items-center justify-between mb-8">
@@ -189,8 +148,6 @@ export default function BlogPostPage() {
                     </div>
                 </div>
             </article>
-
-
         </>
     );
 }

@@ -1,20 +1,8 @@
-import { useState } from 'react';
-import TopBar from './TopBar';
-import Nav from '../ui/Nav';
+
 import BgVideo from '../../../public/media/Aisha-Homes.mp4';
+import BookingAvailability from './BookingAvailability';
 
 export default function Hero() {
-  const [checkIn, setCheckIn] = useState('2026-01-17');
-  const [checkOut, setCheckOut] = useState('2026-01-18');
-  const [guests, setGuests] = useState('1 Adult, 0 Child');
-
-  const guestOptions = [
-    '1 Adult, 0 Child',
-    '2 Adults, 0 Child',
-    '2 Adults, 1 Child',
-    '2 Adults, 2 Children'
-  ];
-
   return (
     <div className="relative min-h-screen">
       <video
@@ -30,69 +18,31 @@ export default function Hero() {
 
       <div className="relative z-10">
 
-
-        
-
-
-
-        <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
+        <div className="flex flex-col items-center justify-center min-h-[75vh] text-center px-4">
           <h1 className="text-white text-3xl md:text-5xl mb-6 max-w-4xl leading-tight"
             style={{ fontFamily: "Columbia-Serial" }}>
             WELCOME TO AISHA HOMES,<br />
             <span>WHERE ELEGANCE MEETS EXCELLENCE</span>
           </h1>
-          <p className="text-yellow-600 text-xl md:text-2xl mb-8 tracking-wide">
+          <p className="text-yellow-600 text-base md:text-2xl mb-8 tracking-wide">
             CLICK TO EXPERIENCE UNPARALLELED LUXURY
           </p>
-          <button className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-lg transition">
+          <button className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base md:text-xl transition">
             Book Your Stay With Us
           </button>
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="bg-gray-50 bg-opacity-30 backdrop-blur-sm border border-white border-opacity-30 p-6">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
-              <div>
-                <label className="text-gray-900 text-sm mb-2 block">Check In</label>
-                <input
-                  type="date"
-                  value={checkIn}
-                  onChange={(e) => setCheckIn(e.target.value)}
-                  className="w-full bg-transparent border border-black border-opacity-30 text-black px-4 py-2"
-                />
-              </div>
 
-              <div>
-                <label className="text-gray-900 text-sm mb-2 block">Check Out</label>
-                <input
-                  type="date"
-                  value={checkOut}
-                  onChange={(e) => setCheckOut(e.target.value)}
-                  className="w-full bg-transparent border border-black border-opacity-30 text-black px-4 py-2"
-                />
-              </div>
 
-              <div>
-                <label className="text-gray-900 text-sm mb-2 block">Guests</label>
-                <select
-                  value={guests}
-                  onChange={(e) => setGuests(e.target.value)}
-                  className="w-full bg-transparent border border-gray-900 border-opacity-30 text-black px-4 py-2"
-                >
-                  {guestOptions.map((option) => (
-                    <option key={option} value={option} className="bg-gray-800">
-                      {option}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <button className="border border-yellow-600 text-white px-6 py-2 hover:bg-blue-800 hover:text-white transition">
-                Check Availability
-              </button>
-            </div>
-          </div>
-        </div>
+        <BookingAvailability
+          guestOptions={[
+            "1 Adult, 0 Child",
+            "2 Adults, 0 Child",
+            "2 Adults, 1 Child",
+            "2 Adults, 2 Children",
+          ]}
+          onSubmit={(data) => console.log(data)}
+        />
       </div>
 
       <a
