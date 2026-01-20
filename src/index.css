@@ -103,7 +103,9 @@
 /* Font */
 @font-face {
   font-family: "Columbia-Serial";
-  src: url("./fonts/Columbia-Serial Regular.ttf") format("truetype");
+  src:
+    url("/fonts/Columbia-Serial-Regular.woff2") format("woff2"),
+    url("/fonts/Columbia-Serial Regular.ttf") format("truetype");
   font-display: swap;
   font-style: normal;
 }
