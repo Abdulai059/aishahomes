@@ -9,6 +9,7 @@ export async function addBooking(booking) {
         hasBreakfast = false,
         isPaid = false,
         observations = "",
+        numNights,
         cabinId,
         guestId,
     } = booking;
@@ -27,6 +28,7 @@ export async function addBooking(booking) {
                 totalPrice,
                 status,
                 hasBreakfast,
+                numNights,
                 isPaid,
                 observations,
                 cabinId,

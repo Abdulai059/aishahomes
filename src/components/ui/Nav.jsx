@@ -58,16 +58,14 @@ export default function Nav() {
 
                 {menuOpen && (
                     <div className="lg:hidden pb-4 text-white space-y-3">
-                        <a href="#home" className="block hover:text-yellow-500">HOME</a>
+                        <a href="/" className="block hover:text-yellow-500">HOME</a>
                         <a href="#rooms" className="block hover:text-yellow-500">ROOMS</a>
                         <a href="#conferences" className="block hover:text-yellow-500">CONFERENCES</a>
                         <a href="#leisure" className="block hover:text-yellow-500">LEISURE</a>
                         <a href="#tavern" className="block hover:text-yellow-500">TAVERN</a>
-                        <a href="#media" className="block hover:text-yellow-500">MEDIA</a>
+                        <a href="blog" className="block hover:text-yellow-500">BLOG</a>
                         <a href="#contact" className="block hover:text-yellow-500">CONTACT</a>
-                        <button className="border border-yellow-600 text-yellow-600 px-6 py-2 w-full hover:bg-yellow-600 hover:text-white transition">
-                            Book Now
-                        </button>
+                        <BookNowButton />
                     </div>
                 )}
             </div>

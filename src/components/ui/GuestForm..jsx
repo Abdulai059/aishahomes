@@ -40,19 +40,19 @@ export default function GuestForm({ onSuccess }) {
             <div className="max-w-2xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-8">
-                    <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl mb-4 shadow-lg">
+                    {/* <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl mb-4 shadow-lg">
                         <Sparkles className="w-8 h-8 text-white" />
-                    </div>
-                    <h1 className="text-4xl font-bold text-gray-900 mb-2">
+                    </div> */}
+                    <h1 className="text-3xl font-semibold text-gray-900 mb-2">
                         Welcome Guest
                     </h1>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600 text-base">
                         Let's start with your details
                     </p>
                 </div>
 
                 {/* Form Card */}
-                <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10 border border-gray-100">
+                <div className="bg-white rounded-3xl shadow-sm p-4  md:p-10 border border-gray-100">
                     <div className="mb-8">
                         <div className="flex items-center gap-2 mb-2">
                             <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center">
@@ -62,7 +62,7 @@ export default function GuestForm({ onSuccess }) {
                                 Guest Information
                             </h2>
                         </div>
-                        <p className="text-gray-500 ml-10">
+                        <p className="text-gray-500 ml-10 text-base">
                             Please provide your contact details
                         </p>
                     </div>
@@ -79,7 +79,7 @@ export default function GuestForm({ onSuccess }) {
                                 </div>
                                 <input
                                     name="fullName"
-                                    placeholder="John Doe"
+                                    placeholder="Uosuman Zesung"
                                     required
                                     onChange={handleChange}
                                     className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
@@ -118,7 +118,7 @@ export default function GuestForm({ onSuccess }) {
                                 </div>
                                 <input
                                     name="phone"
-                                    placeholder="+1 (555) 000-0000"
+                                    placeholder=" 0240239000"
                                     onChange={handleChange}
                                     className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
                                 />
@@ -136,7 +136,7 @@ export default function GuestForm({ onSuccess }) {
                                 </div>
                                 <input
                                     name="country"
-                                    placeholder="United States"
+                                    placeholder="Ghana"
                                     onChange={handleChange}
                                     className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
                                 />
