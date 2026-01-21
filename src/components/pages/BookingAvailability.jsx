@@ -36,7 +36,7 @@ export default function BookingAvailability({ guestOptions, onSubmit }) {
                 className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     } md:max-h-full md:opacity-100`}
             >
-                <div className="bg-white border border-gray-200 rounded-b-lg shadow-lg p-6">
+                <div className="bg-white border border-gray-200 rounded-b-lg shadow-lg p-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                         <div>
                             <label className="text-gray-700 text-sm font-semibold mb-2 block">

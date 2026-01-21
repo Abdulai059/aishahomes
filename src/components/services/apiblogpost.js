@@ -5,7 +5,7 @@ export async function getPosts() {
         .from("posts")
         .select("*")
         .order("created_at", { ascending: false })
-        .limit(3);
+        // .limit(3);
 
     console.log("Supabase posts data:", data);
     console.log("Supabase posts error:", error);

@@ -155,7 +155,7 @@ export default function Rooms() {
                 </div>
 
                 <div className="flex justify-center mt-8">
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded hover:bg-gray-800 text-xs md:text-lg transition-colors duration-300">
+                    <button className="bg-gray-900 text-white px-8 py-3 rounded hover:bg-gray-800 text-xs md:text-base transition-colors duration-300">
                         View Rooms
                     </button>
                 </div>

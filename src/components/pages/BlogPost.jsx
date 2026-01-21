@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { usePosts } from "../services/usePost";
 
-export default function BlogPostCards() {
+export default function BlogPost() {
     const { data: posts, isLoading, error } = usePosts();
 
     if (isLoading)
@@ -17,8 +17,22 @@ export default function BlogPostCards() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-12">
-            <h2 className="text-2xl md:text-3xl font-medium mb-8"
-                style={{ fontFamily: "Columbia-Serial" }}>All Blog Posts</h2>
+            <div className="relative z-10 pt-20 pb-12 text-center">
+                <div className="max-w-4xl mx-auto px-4">
+                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                        Our Stories & Insights
+                    </p>
+                    <h1
+                        className="text-4xl md:text-5xl font-serif text-gray-900 mb-4 leading-tight animate-fade-in-up"
+                        style={{ fontFamily: "Columbia-Serial, Georgia, serif" }}
+                    >
+                        Latest Blog Posts
+                    </h1>
+                    <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed animate-fade-in-up">
+                        Discover stories, insights, and inspiration from our community
+                    </p>
+                </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map((post) => (
@@ -26,7 +40,7 @@ export default function BlogPostCards() {
                         key={post.id}
                         className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition"
                     >
-                       
+                        {/* IMAGE */}
                         {post.heroImage && (
                             <img
                                 src={post.heroImage}
@@ -38,7 +52,7 @@ export default function BlogPostCards() {
                             />
                         )}
 
-                      
+                        {/* CONTENT */}
                         <div className="p-6 flex flex-col justify-between h-full">
                             <div>
                                 <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
