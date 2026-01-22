@@ -30,9 +30,7 @@ export default function Nav() {
                             <a href="#conferences" className="hover:text-yellow-400 transition-colors flex items-center gap-1">
                                 Conferences <ChevronDown size={16} />
                             </a>
-                            <a href="#leisure" className="hover:text-yellow-400 transition-colors flex items-center gap-1">
-                                Leisure <ChevronDown size={16} />
-                            </a>
+                            
                         </div>
 
                         {/* Logo */}
@@ -51,7 +49,7 @@ export default function Nav() {
                         {/* Desktop Right Menu */}
                         <div className="hidden lg:flex items-center gap-8 text-white">
                             <a href="#tavern" className="hover:text-yellow-400 transition-colors flex items-center gap-1">
-                                Tavern <ChevronDown size={16} />
+                                Event & Meetings <ChevronDown size={16} />
                             </a>
                             <a href="blog" className="hover:text-yellow-400 transition-colors">
                                 Blog
