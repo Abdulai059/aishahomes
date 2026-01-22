@@ -29,9 +29,9 @@ export default function FindUs() {
                                 <Phone className="text-gray-900 mt-1 flex-shrink-0" size={20} />
                                 <div>
                                     <p className="font-semibold text-gray-900">Phone:</p>
-                                    <a href="tel:+2349166105381" className="text-gray-600 hover:text-blue-800 transition-colors text-sm">
+                                    <p href="tel:+2349166105381" className="text-gray-600 hover:text-blue-800 transition-colors text-sm">
                                         Call us at 059 8948931 - 0203690506
-                                    </a>
+                                    </p>
                                 </div>
                             </div>
 
@@ -40,9 +40,9 @@ export default function FindUs() {
                                 <Mail className="text-gray-900 mt-1 flex-shrink-0" size={20} />
                                 <div>
                                     <p className="font-semibold text-gray-900">Email:</p>
-                                    <a href="mailto:info@arthotelng.com" className="text-blue-600 hover:text-blue-800 transition-colors text-sm">
+                                    <p href="mailto:info@arthotelng.com" className="text-blue-600 hover:text-blue-800 transition-colors text-sm">
                                         reservations@aishahomesgh.com
-                                    </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

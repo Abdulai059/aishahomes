@@ -3,12 +3,12 @@ export default function MeetingSection() {
         <section className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                    <div className="flex flex-col mb-4 md:mb-0 text-center md: text-start justify-center">
+                    <div className="flex flex-col mb-4 md:mb-0 md: text-start justify-center">
                         <h2 className="text-3xl px-2 md:text-4xl font-serif mb-6 leading-tight"
                             style={{ fontFamily: "Columbia-Serial" }}>
                             A Good Room Makes For A Better Meeting
                         </h2>
-                        <p className="text-gray-700 text-base md:text-base mb-8 leading-relaxed">
+                        <p className="text-gray-700 text-sm md:text-base mb-8 leading-relaxed">
                             From quick board meetings to full-scale events, our four fully-equipped meeting rooms are designed to keep things effortless.
                         </p>
                         <div>

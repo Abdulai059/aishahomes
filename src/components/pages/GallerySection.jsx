@@ -53,7 +53,7 @@ export default function GallerySection() {
                         style={{ fontFamily: "Columbia-Serial" }}>
                         Take A Look Inside Aisha Homes
                     </h2>
-                    <p className="text-gray-700 text-base md:text-base max-w-5xl mx-auto leading-relaxed">
+                    <p className="text-gray-700 text-sm md:text-base max-w-5xl mx-auto leading-relaxed">
                         From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gallery and discover the luxurious <br /> experience that awaits you.
                     </p>
 

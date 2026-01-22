@@ -27,11 +27,11 @@ export default function RestaurantSection() {
                                     <img src="./mist-icon.png" alt="restaurant" />
                                 </div>
 
-                                <h3 className="text-md md:px-20 px-0 md:text-xl font-semibold mb-6">
+                                <h3 className="text-sm md:px-20 px-0 md:text-xl font-semibold mb-6">
                                     Savoury Plates. Great Pours. Even Better Company
                                 </h3>
 
-                                <p className="text-gray-700 leading-relaxed">
+                                <p className="text-gray-700 md:text-base text-sm leading-relaxed">
                                     Experience refined dining at Aisha Homes. From sunset cocktails at our rooftop lounge to carefully prepared signature dishes, every detail is crafted for elegance, comfort, and exceptional taste. Enjoy in-room dining anytime luxury, uninterrupted.
                                 </p>
                             </span>

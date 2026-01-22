@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
@@ -8,13 +7,20 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Logo and Description */}
                     <div className="space-y-6">
-                        <div className="bg-white w-32 h-32 flex items-center justify-center">
-                            <img src="./Aishahomeslogobg.png" alt="Aisha Homes Logo" className="w-full h-full object-contain" />
+                        <div className="bg-white md:w-32 md:h-32  w-22 h-22 flex items-center justify-center">
+                            <img
+                                src="./Aishahomeslogobg.png"
+                                alt="Aisha Homes Logo"
+                                className="w-20 h-20 md:w-full md:h-full  object-contain"
+                            />
                         </div>
+
                         <p className="text-white italic text-sm leading-relaxed">
                             “Your ultimate vacation retreat in the beauty of Northern Ghana.”
                         </p>
                     </div>
+
+
 
                     {/* Quick Links */}
                     <div>

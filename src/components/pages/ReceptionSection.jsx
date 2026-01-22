@@ -2,7 +2,7 @@ export default function ReceptionSection() {
     return (
         <section className="bg-white py-16">
             <div className="max-w-[1400px] mx-auto px-4">
-                <div className="text-center mb-12  mx-auto text-center ">
+                <div className="text-center mb-12  mx-auto">
                     <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                         Introducing Our Services & Facilities
                     </p>
@@ -10,7 +10,7 @@ export default function ReceptionSection() {
                         style={{ fontFamily: "Columbia-Serial" }}>
                         State-of-the-art Amenities.
                     </h2>
-                    <p className="text-gray-700 max-w-2xl  mx-auto leading-relaxed">State-of-the-art amenities include a dramatic double-story loft lounge, spectacular rooftop lounge, Technogym fitness center, media corner, and a gracious 24/7 resident services team.</p>
+                    <p className="text-gray-700 max-w-2xl px-2 md:text-base text-sm mx-auto leading-relaxed">State-of-the-art amenities include a dramatic double-story loft lounge, spectacular rooftop lounge, Technogym fitness center, media corner, and a gracious 24/7 resident services team.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2">
@@ -30,7 +30,7 @@ export default function ReceptionSection() {
                             style={{ fontFamily: "Columbia-Serial" }}>
                             Reception
                         </h3>
-                        <p className="text-gray-700 leading-relaxed">
+                        <p className="text-gray-700 md:text-base text-sm leading-relaxed">
                             From the moment you step into our reception, you will know that "you have arrived" This is why we are "Aisha Homes." From beautifully crafted glass feather-light installation to your first experience of our impeccably curated art from local artists, you will know that you have made the right choice to stay in Tamale.
                         </p>
 
@@ -49,7 +49,7 @@ export default function ReceptionSection() {
                             style={{ fontFamily: "Columbia-Serial" }}>
                             Lounges
                         </h3>
-                        <p className="text-gray-700 leading-relaxed">
+                        <p className="text-gray-700 md:text-base text-sm leading-relaxed">
                             Either fine dining or buffet, the Lounge Bar offers the finest foods and dining experiences. The Restaurant boasts an impressive menu that caters for all tastes. Opened for breakfast, lunch and dinner.
                         </p>
 
