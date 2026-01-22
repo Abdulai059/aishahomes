@@ -43,7 +43,7 @@ export default function Nav() {
                                         <img src="./Aishahomeslogobg.png" alt="Aisha Homes Logo" className="w-full h-full object-contain" />
                                     </div>
                                 </div>
-                                <div className="text-blue-900 font-serif text-xl tracking-widest">AISHA</div>
+                                <div className="text-blue-900 font-semibold font-serif text-xl tracking-widest">AISHA</div>
                                 <div className="text-yellow-600 text-xs tracking-widest">HOMES</div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ export default function Nav() {
 
                         {/* Spacer so content doesn't overlap */}
                         <div className="pt-12">
-                            <div className="text-yellow-400 font-serif text-2xl tracking-widest">
+                            <div className="text-yellow-400 font-semibold font-serif text-2xl tracking-widest">
                                 AISHA
                             </div>
                             <div className="text-yellow-500 text-sm tracking-widest">
