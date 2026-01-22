@@ -196,24 +196,24 @@ Thank you for your booking!
                 {/* Header */}
                 <div className="text-center mb-8">
 
-                    <h1 className="text-3xl font-semibold text-gray-900 mb-2">
+                    <h1 className="text-3xl md:text-lg font-semibold text-gray-900 mb-2">
                         Review Your Booking
                     </h1>
-                    <p className="text-gray-600 text-base">
+                    <p className="text-gray-600 text-sm md:text-base">
                         Please verify all details before confirming
                     </p>
                 </div>
 
                 {/* Review Card */}
-                <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100">
+                <div className="bg-white rounded-sm shadow-sm  p-4 md:p-10 border border-gray-100">
                     {/* Guest Information Section */}
                     <div className="mb-8">
                         <div className="flex items-center justify-between mb-6">
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
+                                <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
                                     <User className="w-5 h-5 text-indigo-600" />
                                 </div>
-                                <h2 className="text-2xl font-bold text-gray-800">
+                                <h2 className="md:text-2xl text-xl font-bold text-gray-800">
                                     Guest Information
                                 </h2>
                             </div>
@@ -226,7 +226,7 @@ Thank you for your booking!
                             </button>
                         </div>
 
-                        <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 space-y-4">
+                        <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-sm p-6 space-y-4">
                             <div className="flex items-start gap-3">
                                 <User className="w-5 h-5 text-gray-500 mt-0.5" />
                                 <div>
@@ -269,10 +269,10 @@ Thank you for your booking!
                     <div className="mb-8">
                         <div className="flex items-center justify-between mb-6">
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <Calendar className="w-5 h-5 text-green-600" />
                                 </div>
-                                <h2 className="text-2xl font-bold text-gray-800">
+                                <h2 className="md:text-2xl text-xl font-bold text-gray-800">
                                     Booking Details
                                 </h2>
                             </div>
@@ -345,7 +345,7 @@ Thank you for your booking!
                     <div className="flex gap-4">
                         <button
                             onClick={onBack}
-                            className="flex-1 py-4 bg-gray-100 text-gray-700 rounded-xl font-semibold hover:bg-gray-200 transition-all"
+                            className="flex-1 py-2 md:py-4 bg-gray-100 text-gray-700 rounded-sm font-semibold hover:bg-gray-200 transition-all"
                         >
                             Go Back
                         </button>
@@ -353,7 +353,7 @@ Thank you for your booking!
                         <button
                             onClick={handleConfirm}
                             disabled={loading}
-                            className="flex-2 py-4 px-8 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-xl font-semibold text-lg hover:from-violet-700 hover:to-purple-700 focus:ring-4 focus:ring-violet-200 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                            className="flex-2 py-4 md:px-8 md:py-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-sm font-semibold text-base md:text-lg hover:from-violet-700 hover:to-purple-700 focus:ring-4 focus:ring-violet-200 transition-all shadow-lg hover:shadow-xl disabled:opacibasety-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                         >
                             {loading ? (
                                 <>
@@ -372,7 +372,7 @@ Thank you for your booking!
                     {/* Download Draft */}
                     <button
                         onClick={handleDownloadPDF}
-                        className="w-full mt-4 py-3 bg-blue-50 text-blue-600 rounded-xl font-medium hover:bg-blue-100 transition-all flex items-center justify-center gap-2"
+                        className="w-full mt-4 py-3 bg-blue-50 text-blue-600 rounded-sm text-xs font-medium hover:bg-blue-100 transition-all flex items-center justify-center gap-2"
                     >
                         <Download className="w-4 h-4" />
                         Download Draft Confirmation

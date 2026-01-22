@@ -7,6 +7,7 @@ import MeetingSection from "./MeetingSection";
 import ReceptionSection from "./ReceptionSection";
 import RestaurantSection from "./RestaurantSection.";
 import Rooms from "./Rooms";
+import FindUs from "./FindUs";
 
 export default function HomePage() {
     return (
@@ -19,7 +20,7 @@ export default function HomePage() {
             <CtaSection />
             <RestaurantSection />
             <ReceptionSection />
-            
+            <FindUs />
         </main>
     );
 }
