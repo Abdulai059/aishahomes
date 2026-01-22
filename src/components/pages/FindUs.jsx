@@ -70,7 +70,7 @@ function Maps() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden md:h-125 h-100">
                 {/* Google Map Embed */}
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3889.285020981739!2d-0.8692072833253607!3d9.40880152443673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfd43d477fd9d1cf%3A0xd4568bb46fa5af06!2sAisha%20Homes%2C%20C45J%2BX5H%2C%20Old%20Airport%20Road%2C%20Tamale!3m2!1d9.4099595!2d-0.8694446!5e0!3m2!1sen!2sgh!4v1769085744841!5m2!1sen!2sgh"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.1302929282324!2d-0.8720195242412514!3d9.409964782907794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd43d477fd9d1cf%3A0xd4568bb46fa5af06!2sAisha%20Homes!5e0!3m2!1sen!2sgh!4v1769104989719!5m2!1sen!2sgh"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

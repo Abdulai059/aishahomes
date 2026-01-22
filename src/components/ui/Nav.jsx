@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, ChevronDown, ChevronRight, ChevronLeft } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronLeft } from 'lucide-react';
 import BookNowButton from "./BookNowButton";
 
 
@@ -54,7 +54,7 @@ export default function Nav() {
                             <a href="blog" className="hover:text-yellow-400 transition-colors">
                                 Blog
                             </a>
-                            <a href="#contact" className="hover:text-yellow-400 transition-colors">Contact</a>
+                            <a href="/contact" className="hover:text-yellow-400 transition-colors">Contact</a>
                             <BookNowButton />
                         </div>
                     </div>
@@ -120,7 +120,7 @@ export default function Nav() {
                             // { href: '#leisure', label: 'LEISURE' },
                             { href: '#tavern', label: 'EVENTS' },
                             { href: 'blog', label: 'BLOG' },
-                            { href: '#contact', label: 'CONTACT' }
+                            { href: 'contact', label: 'CONTACT' }
                         ].map((item, index) => (
                             <a
                                 key={item.href}
