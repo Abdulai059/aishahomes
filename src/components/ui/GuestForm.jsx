@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { User, Mail, Phone, Globe, ArrowRight, Sparkles } from "lucide-react";
+import { User, Mail, Phone, Globe, ArrowRight } from "lucide-react";
 import supabase from "../services/SupabaseBooking";
+// NOTE: Supabase is intentionally not used here.
+// This step only collects guest data; persistence happens later in the flow.
 
 export default function GuestForm({ onSuccess }) {
     const [loading, setLoading] = useState(false);
+
     const [form, setForm] = useState({
         fullName: "",
         email: "",
@@ -11,38 +14,29 @@ export default function GuestForm({ onSuccess }) {
         country: "",
     });
 
+    // Centralized state update to keep inputs controlled and predictable
     function handleChange(e) {
-        setForm({ ...form, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setForm(prev => ({ ...prev, [name]: value }));
     }
 
     async function handleSubmit(e) {
         e.preventDefault();
         setLoading(true);
 
-        const { data, error } = await supabase
-            .from("guests")
-            .insert([form])
-            .select()
-            .single();
+        // At this stage we only validate & forward data.
+        // DB write is deferred until booking completion.
+        onSuccess(form);
 
         setLoading(false);
-
-        if (error) {
-            alert(error.message);
-            return;
-        }
-
-        onSuccess(data.id);
     }
 
     return (
-        <div className="min-h-screen py-12 px-4">
+        <div className="min-h-screen md:pt-20 py-12 p-2 md:px-4">
             <div className="max-w-2xl mx-auto">
-                {/* Header Section */}
+
+                {/* Header */}
                 <div className="text-center mb-8">
-                    {/* <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl mb-4 shadow-lg">
-                        <Sparkles className="w-8 h-8 text-white" />
-                    </div> */}
                     <h1 className="text-3xl font-semibold text-gray-900 mb-2">
                         Welcome Guest
                     </h1>
@@ -51,23 +45,24 @@ export default function GuestForm({ onSuccess }) {
                     </p>
                 </div>
 
-                {/* Form Card */}
-                <div className="bg-white rounded-3xl shadow-sm p-4  md:p-10 border border-gray-100">
+                {/* Card */}
+                <div className="bg-white rounded-sm shadow-sm p-8 md:p-10 border border-gray-100">
                     <div className="mb-8">
                         <div className="flex items-center gap-2 mb-2">
                             <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center">
                                 <span className="text-indigo-600 font-bold text-sm">1</span>
                             </div>
-                            <h2 className="text-2xl font-bold text-gray-800">
+                            <h2 className="md:text-2xl text-xl font-bold text-gray-800">
                                 Guest Information
                             </h2>
                         </div>
-                        <p className="text-gray-500 ml-10 text-base">
+                        <p className="text-gray-500 md:text-base text-sm ml-10">
                             Please provide your contact details
                         </p>
                     </div>
 
-                    <div onSubmit={handleSubmit} className="space-y-6">
+                    {/* Form */}
+                    <form onSubmit={handleSubmit} className="space-y-6">
                         {/* Full Name */}
                         <div className="group">
                             <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -79,10 +74,11 @@ export default function GuestForm({ onSuccess }) {
                                 </div>
                                 <input
                                     name="fullName"
-                                    placeholder="Uosuman Zesung"
-                                    required
+                                    value={form.fullName}
                                     onChange={handleChange}
-                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
+                                    required
+                                    placeholder="Uosumanu Zesung"
+                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none"
                                 />
                             </div>
                         </div>
@@ -97,12 +93,13 @@ export default function GuestForm({ onSuccess }) {
                                     <Mail className="h-5 w-5 text-gray-400 group-focus-within:text-indigo-500 transition-colors" />
                                 </div>
                                 <input
-                                    name="email"
                                     type="email"
-                                    placeholder="john@example.com"
-                                    required
+                                    name="email"
+                                    value={form.email}
                                     onChange={handleChange}
-                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
+                                    required
+                                    placeholder="john@example.com"
+                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none"
                                 />
                             </div>
                         </div>
@@ -118,9 +115,10 @@ export default function GuestForm({ onSuccess }) {
                                 </div>
                                 <input
                                     name="phone"
-                                    placeholder=" 0240239000"
+                                    value={form.phone}
                                     onChange={handleChange}
-                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
+                                    placeholder="0245000400"
+                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none"
                                 />
                             </div>
                         </div>
@@ -136,18 +134,19 @@ export default function GuestForm({ onSuccess }) {
                                 </div>
                                 <input
                                     name="country"
-                                    placeholder="Ghana"
+                                    value={form.country}
                                     onChange={handleChange}
-                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all outline-none text-gray-900 placeholder-gray-400"
+                                    placeholder="Ghana"
+                                    className="w-full pl-12 pr-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none"
                                 />
                             </div>
                         </div>
 
-                        {/* Submit Button */}
+                        {/* Submit */}
                         <button
-                            onClick={handleSubmit}
+                            type="submit"
                             disabled={loading}
-                            className="w-full mt-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 focus:ring-4 focus:ring-indigo-200 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
+                            className="w-full mt-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold text-sm md:text-base hover:from-indigo-700 hover:to-purple-700 focus:ring-4 focus:ring-indigo-200 transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-50"
                         >
                             {loading ? (
                                 <>
@@ -161,11 +160,11 @@ export default function GuestForm({ onSuccess }) {
                                 </>
                             )}
                         </button>
-                    </div>
+                    </form>
                 </div>
 
-                {/* Footer Note */}
-                <p className="text-center text-gray-500 text-sm mt-6">
+                {/* Footer */}
+                <p className="text-center text-gray-500 md:text-sm px-6 text-xs mt-6">
                     Your information is secure and will only be used for booking purposes
                 </p>
             </div>
