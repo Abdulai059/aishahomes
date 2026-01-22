@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown, ChevronLeft } from 'lucide-react';
 import BookNowButton from "./BookNowButton";
+import { Link } from "react-router";
 
 
 
@@ -30,7 +31,7 @@ export default function Nav() {
                             <a href="#conferences" className="hover:text-yellow-400 transition-colors flex items-center gap-1">
                                 Conferences <ChevronDown size={16} />
                             </a>
-                            
+
                         </div>
 
                         {/* Logo */}
@@ -114,27 +115,28 @@ export default function Nav() {
                     {/* Mobile Menu Items */}
                     <div className="space-y-0">
                         {[
-                            { href: '/', label: 'HOME' },
-                            { href: '#rooms', label: 'ROOMS' },
-                            { href: '#conferences', label: 'CONFERENCES' },
-                            // { href: '#leisure', label: 'LEISURE' },
-                            { href: '#tavern', label: 'EVENTS' },
-                            { href: '/blog', label: 'BLOG' },
-                            { href: '/contact', label: 'CONTACT' }
+                            { to: '/', label: 'HOME' },
+                            { to: '/#rooms', label: 'ROOMS' },
+                            { to: '/#conferences', label: 'CONFERENCES' },
+                            { to: '/#tavern', label: 'EVENTS' },
+                            { to: '/blog', label: 'BLOG' },
+                            { to: '/contact', label: 'CONTACT' }
                         ].map((item, index) => (
-                            <a
-                                key={item.href}
-                                href={item.href}
+                            <Link
+                                key={item.label}
+                                to={item.to}
                                 className={`block text-white hover:text-yellow-400 hover:bg-white hover:bg-opacity-10 transition-all py-3 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                     }`}
                                 style={{
                                     transitionDelay: menuOpen ? `${index * 50}ms` : '0ms',
                                     transitionDuration: '300ms'
                                 }}
-                                onClick={() => setMenuOpen(false)}
+                                onClick={() => {
+                                    setMenuOpen(false);
+                                }}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
