@@ -54,10 +54,6 @@ export default function RestaurantSection() {
                                 className="w-full h-80 md:h-84 object-cover"
                             />
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>
