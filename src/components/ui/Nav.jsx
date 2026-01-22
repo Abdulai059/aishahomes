@@ -119,8 +119,8 @@ export default function Nav() {
                             { href: '#conferences', label: 'CONFERENCES' },
                             // { href: '#leisure', label: 'LEISURE' },
                             { href: '#tavern', label: 'EVENTS' },
-                            { href: 'blog', label: 'BLOG' },
-                            { href: 'contact', label: 'CONTACT' }
+                            { href: '/blog', label: 'BLOG' },
+                            { href: '/contact', label: 'CONTACT' }
                         ].map((item, index) => (
                             <a
                                 key={item.href}
