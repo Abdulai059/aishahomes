@@ -119,10 +119,10 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="border-t border-gray-800">
-                <div className="max-w-7xl mx-auto px-4 py-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-                        <p>© 2026 The Art Hotel Limited. All Rights Reserved.</p>
-                        <a className='text-gray-400' href="https://zesungdev.vercel.app/">Design & Developed by: Zesungdev</a>
+                <div className="max-w-7xl mx-auto px-4 py-2">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-400">
+                        <p>© 2026 The Aisha Homes. All Rights Reserved.</p>
+                        <a className='text-gray-400  text-xs' href="https://zesungdev.vercel.app/">Design & Developed by: Zesungdev</a>
                     </div>
                 </div>
             </div>

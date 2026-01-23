@@ -49,7 +49,7 @@ export default function ContactUs() {
                 <section className="mb-12 md:mb-16">
                     <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
                         <div className="md:col-span-2 mb-4">
-                            <h2 className="text-2xl md:text-4xl text-blue-900 font-semibold">Contact Details</h2>
+                            <h2 className="text-2xl md:text-4xl text-blue-900 font-semibold" style={{ fontFamily: "Columbia-Serial" }}>Contact Details</h2>
                         </div>
 
                         <div className="order-2 md:order-1">
@@ -105,7 +105,7 @@ export default function ContactUs() {
 
                 <section className="mb-12 md:mb-16">
                     <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 md:p-10 rounded-lg shadow-sm">
-                        <h1 className="text-2xl md:text-4xl text-blue-900 font-bold mb-8">Get In Touch</h1>
+                        <h1 className="text-2xl md:text-4xl text-blue-900 font-bold mb-8" style={{ fontFamily: "Columbia-Serial" }}>Get In Touch</h1>
 
                         <div className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -219,7 +219,8 @@ export default function ContactUs() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-xl md:text-3xl font-medium text-gray-800 mb-6">Location</h2>
+                    <h2 className="text-2xl md:text-4xl tracking-wide text-blue-900 font-bold mb-8" style={{ fontFamily: "Columbia-Serial" }}> Our Location</h2>
+
                     <div className="w-full rounded-lg overflow-hidden shadow-md">
                         <div className="w-full h-80 md:h-96 lg:h-[600px]">
                             <iframe
@@ -233,8 +234,8 @@ export default function ContactUs() {
                             />
                         </div>
 
-                        
-                        <p className="text-xs md:text-sm text-gray-600 mt-4 px-2 pb-2">
+
+                        <p className="text-xs text-gray-600 mt-4 px-2 pb-2">
                             Find your nearest Aisha Homes office address and contact details or fill out the enquiry form above.
                         </p>
                     </div>

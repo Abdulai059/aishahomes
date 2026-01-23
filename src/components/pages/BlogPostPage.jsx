@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { usePost, usePosts } from "../services/usePosts";
+import { BlogPostPageSkeleton } from "../ui/BlogPostPageSkeleton";
 
 
 export default function BlogPostPage() {
@@ -9,7 +10,7 @@ export default function BlogPostPage() {
     const { data: post, isLoading: postLoading, error: postError } = usePost(postId);
     const { data: posts, isLoading: postsLoading, error: postsError } = usePosts();
 
-    if (postLoading || postsLoading) return <p className="text-center py-20">Loading...</p>;
+    if (postLoading || postsLoading) return <BlogPostPageSkeleton />;
     if (postError) return <p className="text-center py-20">Error loading post: {postError.message}</p>;
     if (postsError) return <p className="text-center py-20">Error loading posts: {postsError.message}</p>;
     if (!post) return <p className="text-center py-20">Post not found</p>;
