@@ -15,8 +15,8 @@ export default function Newsletter() {
 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
                     <div className="flex items-center justify-center gap-2 mb-6">
-                        <span className="text-sm text-gray-400">HOME</span>
-                        <span className="text-gray-600">›</span>
+                        <span className="text-sm text-gray-100">HOME</span>
+                        <span className="text-gray-100"><ChevronRight size={16} /></span>
                         <span className="text-sm text-yellow-500 font-medium">NEWSLETTER</span>
                     </div>
 

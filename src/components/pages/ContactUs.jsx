@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -44,12 +45,40 @@ export default function ContactUs() {
 
     return (
         <main className="min-h-screen w-full bg-white">
+            <section
+                className="relative text-white py-16 md:py-24 bg-cover bg-center"
+                style={{ backgroundImage: "url('/Walkthrough-video.jpg')" }}
+            >
+                <div className="absolute inset-0 bg-black/60"></div>
+
+                <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                    <div className="flex items-center justify-center gap-2 mb-6">
+                        <span className="text-sm text-gray-100">HOME</span>
+                        <span className="text-gray-100"><ChevronRight size={16} /></span>
+                        <span className="text-sm text-yellow-500 font-medium tracking-wider">CONTACT</span>
+                    </div>
+
+                    <h1
+                        className="text-3xl md:text-5xl font-semibold mb-6"
+                        style={{ fontFamily: "Columbia-Serial" }}
+                    >
+                        Contact Us
+                    </h1>
+
+                    <p className="text-gray-300 md:text-base text-sm max-w-2xl mx-auto">
+                        Get in touch with Aisha Homes for bookings, inquiries, or any assistance.
+                        We’re always happy to hear from you.
+                    </p>
+                </div>
+            </section>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
+
+
 
                 <section className="mb-12 md:mb-16">
                     <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
                         <div className="md:col-span-2 mb-4">
-                            <h2 className="text-2xl md:text-4xl text-blue-900 font-semibold" style={{ fontFamily: "Columbia-Serial" }}>Contact Details</h2>
+                            <h2 className="text-2xl md:text-4xl text-blue-900 font-semibold tracking-wide" style={{ fontFamily: "Columbia-Serial" }}>Office Details</h2>
                         </div>
 
                         <div className="order-2 md:order-1">
@@ -104,7 +133,7 @@ export default function ContactUs() {
                 </section>
 
                 <section className="mb-12 md:mb-16">
-                    <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 md:p-10 rounded-lg shadow-sm">
+                    <div className="bg-gray-50 p-6 md:p-10 rounded-lg shadow-sm">
                         <h1 className="text-2xl md:text-4xl text-blue-900 font-bold mb-8" style={{ fontFamily: "Columbia-Serial" }}>Get In Touch</h1>
 
                         <div className="space-y-6">
