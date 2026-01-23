@@ -1,5 +1,5 @@
 
-import { Download, ArrowRight } from 'lucide-react';
+import { Download, ArrowRight, ChevronRight } from 'lucide-react';
 
 export default function Newsletter() {
     return (
