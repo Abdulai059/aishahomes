@@ -74,7 +74,7 @@ export default function Rooms() {
 
     return (
         <section className="bg-white py-20">
-            <div className="max-w-[1500px] mx-auto px-4">
+            <div className="max-w-[1500px] mx-auto px-4" data-aos="fade-up">
                 <div className="text-center mb-8">
                     <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                         Where Comfort Meets Luxury
@@ -94,6 +94,7 @@ export default function Rooms() {
                     onMouseLeave={() => setIsHovered(false)}
                     role="region"
                     aria-label="Room gallery carousel"
+                    data-aos="fade-right"
                 >
                     <div
                         className="flex transition-transform duration-700 ease-in-out"

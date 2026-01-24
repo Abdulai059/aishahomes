@@ -3,46 +3,39 @@ import React from 'react';
 export default function Room() {
     const rooms = [
         {
-            type: 'Duke Room (King)',
-            size: '36 sqm',
+            type: 'Standard Room',
+            size: '30 sqm',
+            bed: 'Double',
+            lounge: '–',
+            bestFor: 'Ideal for business trips, solo travelers, and short stays'
+        },
+        {
+            type: 'Deluxe Master Room',
+            size: '55 sqm',
             bed: 'King',
             lounge: '–',
-            bestFor: 'Business trips, solo stays, quick getaways'
+            bestFor: 'Perfect for business travelers or couples needing extra comfort'
         },
         {
-            type: 'Duke Deluxe',
-            size: '42 sqm',
-            bed: 'King',
-            lounge: '–',
-            bestFor: 'Couples or longer city breaks'
-        },
-        {
-            type: 'Duke Superior',
-            size: '46 sqm',
-            bed: 'King',
-            lounge: '–',
-            bestFor: 'Business travel with space to work + relax'
-        },
-        {
-            type: 'Prince Suite',
-            size: '54 sqm',
-            bed: 'King',
-            lounge: 'Yes + Connect',
-            bestFor: 'Comfort + style for extended stays'
-        },
-        {
-            type: 'Prince Deluxe',
-            size: '64 sqm',
-            bed: 'King',
-            lounge: 'Yes + Connect',
-            bestFor: 'Couples, staycations, luxury weekends'
-        },
-        {
-            type: 'Emperor Suite',
-            size: '84 sqm',
+            type: 'Down Floor Apartment',
+            size: '70 sqm',
             bed: 'King',
             lounge: 'Yes',
-            bestFor: 'Unmatched Lagos luxury, family stays, or executive travel'
+            bestFor: 'Great for small families or guests who prefer easy access'
+        },
+        {
+            type: 'Upper Floor Apartment',
+            size: '120 sqm',
+            bed: 'King',
+            lounge: 'Yes',
+            bestFor: 'Well suited for families who want space, privacy, and great views'
+        },
+        {
+            type: 'Full Home',
+            size: '120 sqm',
+            bed: 'King',
+            lounge: 'Yes',
+            bestFor: 'Best choice for large families or group stays seeking full privacy'
         }
     ];
 

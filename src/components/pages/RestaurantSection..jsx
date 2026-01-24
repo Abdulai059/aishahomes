@@ -2,7 +2,8 @@ export default function RestaurantSection() {
     return (
         <section className="bg-white py-16">
             <div className="max-w-8xl mx-auto px-4">
-                <div className="text-center mb-12">
+                <div className="text-center mb-12"
+                    data-aos="fade-up">
                     <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                         Fine Dining & Culinary Delights
                     </p>
@@ -21,7 +22,8 @@ export default function RestaurantSection() {
                     <div className="absolute left-0 top-0 bottom-0 w-full md:w-1/3 bg-gray-100 -ml-4 md:ml-0"></div>
 
                     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-                        <div className="bg-gray-100 p-4 md:py-30 flex flex-col items-center justify-center text-center min-h-[400px]">
+                        <div className="bg-gray-100 p-4 md:py-30 flex flex-col items-center justify-center text-center min-h-[400px]"
+                            data-aos="fade-right">
                             <span className="flex flex-col items-center justify-center text-center">
                                 <div className="mb-6">
                                     <img src="./mist-icon.png" alt="restaurant" />
@@ -39,7 +41,8 @@ export default function RestaurantSection() {
                         </div>
 
 
-                        <div className="overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
+                        <div className="overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105"
+                            data-aos="fade-left">
                             <img
                                 src="./Mist-Restaurant-5.jpg"
                                 alt="Mist Restaurant interior"

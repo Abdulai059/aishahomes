@@ -8,7 +8,7 @@ export default function FindUs() {
             <div className="max-w-350 mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
 
-                    <div className="space-y-8">
+                    <div className="space-y-8" data-aos="fade-left">
                         <h2 className="text-5xl md:text-6xl font-light" style={{ fontFamily: "Columbia-Serial" }}>Find Us</h2>
 
                         <p className="text-gray-700 leading-relaxed md:text-sm text-sm">
@@ -68,7 +68,7 @@ export default function FindUs() {
 function Maps() {
     return (
         <div className="relative">
-            <div className="bg-white rounded-sm  shadow-sm overflow-hidden md:h-125 h-100 md:pb-0 pb-8">
+            <div className="bg-white rounded-sm  shadow-sm overflow-hidden md:h-125 h-100 md:pb-0 pb-8" data-aos="fade-right">
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.1302929282324!2d-0.8720195242412514!3d9.409964782907794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd43d477fd9d1cf%3A0xd4568bb46fa5af06!2sAisha%20Homes!5e0!3m2!1sen!2sgh!4v1769104989719!5m2!1sen!2sgh"

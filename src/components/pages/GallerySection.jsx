@@ -45,7 +45,7 @@ export default function GallerySection() {
     return (
         <section className="bg-white py-16">
             <div className="max-w-[1800px] mx-auto px-4">
-                <div className="text-center mb-12">
+                <div className="text-center mb-12" data-aos="fade-up">
                     <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                         Discover The Experience
                     </p>
@@ -60,7 +60,7 @@ export default function GallerySection() {
                 </div>
 
 
-                <div className="relative mb-8">
+                <div className="relative mb-8" data-aos="fade-right">
                     <div className="overflow-hidden">
                         <div
                             className="flex transition-transform duration-700 ease-in-out"
@@ -68,6 +68,7 @@ export default function GallerySection() {
                                 gap: `${gap}px`,
                                 transform: `translateX(calc(-${currentIndex * (100 / visibleCount)}% - ${currentIndex * gap}px))`
                             }}
+
                         >
                             {images.map((image, index) => (
                                 <div

@@ -2,7 +2,7 @@ export default function ReceptionSection() {
     return (
         <section className="bg-white py-16">
             <div className="max-w-[1400px] mx-auto px-4">
-                <div className="text-center mb-12  mx-auto">
+                <div className="text-center mb-12  mx-auto" data-aos="fade-up">
                     <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                         Introducing Our Services & Facilities
                     </p>
@@ -14,7 +14,7 @@ export default function ReceptionSection() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="overflow-hidden transition-transform duration-500 ease-in-out ">
+                    <div className="overflow-hidden transition-transform duration-500 ease-in-out " data-aos="fade-left">
                         <img
                             src="./Reception-2.jpg"
                             alt="Reception area"
@@ -22,7 +22,7 @@ export default function ReceptionSection() {
                         />
                     </div>
 
-                    <div className="bg-gray-100  p-8 md:p-22 flex flex-col justify-center">
+                    <div className="bg-gray-100  p-8 md:p-22 flex flex-col justify-center" data-aos="fade-right">
                         <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                             wellcome Reception
                         </p>
@@ -41,7 +41,7 @@ export default function ReceptionSection() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 ">
-                    <div className="bg-gray-100  p-8 md:p-22 flex flex-col justify-center order-2 md:order-1">
+                    <div className="bg-gray-100  p-8 md:p-22 flex flex-col justify-center order-2 md:order-1" data-aos="fade-right">
                         <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                             entertainment
                         </p>
@@ -58,7 +58,7 @@ export default function ReceptionSection() {
                         </button>
                     </div>
 
-                    <div className="overflow-hidden transition-transform duration-500 ease-in-out order-1 md:order-2">
+                    <div className="overflow-hidden transition-transform duration-500 ease-in-out order-1 md:order-2" data-aos="fade-left">
                         <img
                             src="./Lobby-1.jpg"
                             alt="Lobby area"

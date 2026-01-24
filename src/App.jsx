@@ -8,8 +8,12 @@ import CreateReservation from "./components/pages/CreateReservation";
 import ContactUs from "./components/pages/ContactUs";
 import Newsletter from "./components/pages/Newsletter";
 import Room from "./components/pages/Room";
+import useAOS from "./hook/useAOS";
 
 function App() {
+
+  useAOS();
+  
   return (
     <Router>
       <Routes>

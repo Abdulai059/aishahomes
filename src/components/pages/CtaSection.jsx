@@ -8,7 +8,9 @@ export default function CtaSection() {
         >
             <div className="absolute inset-0 bg-black/60"></div>
 
-            <div className="relative container mx-auto px-6 flex flex-col justify-center items-center text-center text-white h-full space-y-6 animate-fadeInUp">
+            <div className="relative container mx-auto px-6 flex flex-col justify-center items-center text-center text-white h-full space-y-6"
+                data-aos="fade-up"
+                data-aos-duration="800">
                 <p
                     className="md:text-5xl text-lg text-gray-200 max-w-5xl"
                     style={{ fontFamily: "Columbia-Serial" }}
