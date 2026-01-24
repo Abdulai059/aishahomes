@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
 
-export default function GallerySection() {
+function GallerySection() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const navigate = useNavigate()
+
+    const handleBooking = () => {
+        navigate("/bookings");
+    };
+
 
     const images = [
         { src: "./Interior2.webp", alt: "Luxury bathroom" },
@@ -45,22 +52,41 @@ export default function GallerySection() {
     return (
         <section className="bg-white py-16">
             <div className="max-w-[1800px] mx-auto px-4">
-                <div className="text-center mb-12" data-aos="fade-up">
-                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                <div className="text-center mb-12">
+                    <p
+                        className="text-yellow-700 text-xs uppercase tracking-widest mb-4"
+                        data-aos="fade-down"
+                        data-aos-duration="800"
+                    >
                         Discover The Experience
                     </p>
-                    <h2 className="text-3xl md:text-6xl mb-6 leading-tight font-serif"
-                        style={{ fontFamily: "Columbia-Serial" }}>
+
+                    <h2
+                        className="text-3xl md:text-6xl mb-6 leading-tight font-serif"
+                        style={{ fontFamily: "Columbia-Serial" }}
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                    >
                         Take A Look Inside Aisha Homes
                     </h2>
-                    <p className="text-gray-700 text-sm md:text-base max-w-5xl mx-auto leading-relaxed">
+
+                    <p
+                        className="text-gray-700 text-sm md:text-base max-w-5xl mx-auto leading-relaxed"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                    >
                         From stunning rooftop sunsets to elegantly designed Aisha-inspired suites, every detail at Aisha Homes <br /> is crafted to awaken the senses. Browse our gallery and discover the luxurious <br /> experience that awaits you.
                     </p>
-
                 </div>
 
-
-                <div className="relative mb-8" data-aos="fade-right">
+                <div
+                    className="relative mb-8"
+                    data-aos="zoom-in"
+                    data-aos-duration="1200"
+                    data-aos-delay="300"
+                >
                     <div className="overflow-hidden">
                         <div
                             className="flex transition-transform duration-700 ease-in-out"
@@ -68,7 +94,6 @@ export default function GallerySection() {
                                 gap: `${gap}px`,
                                 transform: `translateX(calc(-${currentIndex * (100 / visibleCount)}% - ${currentIndex * gap}px))`
                             }}
-
                         >
                             {images.map((image, index) => (
                                 <div
@@ -105,8 +130,15 @@ export default function GallerySection() {
                     </button>
                 </div>
 
-                <div className="flex justify-center">
-                    <button className="bg-black text-white px-10 py-4 rounded hover:bg-gray-800 transition-colors duration-300 font-semibold text-xs md:text-sm uppercase tracking-wide">
+                <div
+                    className="flex justify-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="400"
+                >
+                    <button
+                        onClick={handleBooking}
+                        className="bg-black text-white px-10 py-4 rounded hover:bg-gray-800 transition-colors duration-300 font-semibold text-xs md:text-sm uppercase tracking-wide">
                         Book Your Stay With Us
                     </button>
                 </div>
@@ -114,3 +146,6 @@ export default function GallerySection() {
         </section>
     );
 }
+
+
+export default GallerySection;

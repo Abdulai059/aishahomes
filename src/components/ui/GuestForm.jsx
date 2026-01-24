@@ -37,7 +37,8 @@ export default function GuestForm({ onSuccess }) {
 
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-semibold text-gray-900 mb-2">
+                    <h1 className="md:text-3xl text-2xl md:px-0 tracking-wider  font-semibold text-gray-900 mb-2"
+                        style={{ fontFamily: "Columbia-Serial" }}>
                         Welcome Guest
                     </h1>
                     <p className="text-gray-600 text-base">

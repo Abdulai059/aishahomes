@@ -196,7 +196,8 @@ Thank you for your booking!
                 {/* Header */}
                 <div className="text-center mb-8">
 
-                    <h1 className="text-3xl md:text-lg font-semibold text-gray-900 mb-2">
+                    <h1 className="md:text-3xl text-2xl md:px-0 px-12 font-semibold text-gray-900 mb-2 tracking-wider"
+                        style={{ fontFamily: "Columbia-Serial" }}>
                         Review Your Booking
                     </h1>
                     <p className="text-gray-600 text-sm md:text-base">
@@ -353,7 +354,7 @@ Thank you for your booking!
                         <button
                             onClick={handleConfirm}
                             disabled={loading}
-                            className="flex-2 py-4 md:px-8 md:py-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-sm font-semibold text-base md:text-lg hover:from-violet-700 hover:to-purple-700 focus:ring-4 focus:ring-violet-200 transition-all shadow-lg hover:shadow-xl disabled:opacibasety-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                            className="flex-2 py-3 md:px-8 md:py-4 bg-linear-to-r from-violet-600 to-purple-600 text-white rounded-sm font-semibold text-base md:text-lg hover:from-violet-700 hover:to-purple-700 focus:ring-4 focus:ring-violet-200 transition-all shadow-lg hover:shadow-xl disabled:opacibasety-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                         >
                             {loading ? (
                                 <>
@@ -369,10 +370,10 @@ Thank you for your booking!
                         </button>
                     </div>
 
-                    {/* Download Draft */}
+
                     <button
                         onClick={handleDownloadPDF}
-                        className="w-full mt-4 py-3 bg-blue-50 text-blue-600 rounded-sm text-xs font-medium hover:bg-blue-100 transition-all flex items-center justify-center gap-2"
+                        className="w-full mt-6 md:mt-4 py-3 bg-blue-50 text-blue-600 rounded-sm text-xs font-medium hover:bg-blue-100 transition-all flex items-center justify-center gap-2"
                     >
                         <Download className="w-4 h-4" />
                         Download Draft Confirmation

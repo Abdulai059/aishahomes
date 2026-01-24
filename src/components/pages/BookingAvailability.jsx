@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-export default function BookingAvailability({ guestOptions, onSubmit }) {
+export default function BookingAvailability({ guestOptions, onSubmit, handleBooking }) {
     const [checkIn, setCheckIn] = useState("2026-01-17");
     const [checkOut, setCheckOut] = useState("2026-01-18");
     const [guests, setGuests] = useState(guestOptions[0]);
@@ -85,7 +85,7 @@ export default function BookingAvailability({ guestOptions, onSubmit }) {
 
                         <div className="flex items-end">
                             <button
-                                onClick={() => onSubmit({ checkIn, checkOut, guests })}
+                                onClick={handleBooking}
                                 className="w-full text-white px-6 py-3 transition rounded-lg font-semibold shadow-md hover:shadow-lg"
                             >
                                 Check Availability

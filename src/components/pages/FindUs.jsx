@@ -4,12 +4,12 @@ import { Link } from 'react-router';
 
 export default function FindUs() {
     return (
-        <section className="md:py-16 px-4 bg-gray-50">
+        <section className="md:py-16 py-8 px-4 bg-gray-50">
             <div className="max-w-350 mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
 
                     <div className="space-y-8" data-aos="fade-left">
-                        <h2 className="text-5xl md:text-6xl font-light" style={{ fontFamily: "Columbia-Serial" }}>Find Us</h2>
+                        <h2 className="text-4xl md:text-6xl font-light" style={{ fontFamily: "Columbia-Serial" }}>Find Us</h2>
 
                         <p className="text-gray-700 leading-relaxed md:text-sm text-sm">
                             Aisha Homes is perfectly situated in Northern Ghana and the Greater Accra area. We're just about 5 minutes from Aliu Mahama Stadium Airport Roundabout and only 2 minutes from Aisha Hospital.

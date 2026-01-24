@@ -81,7 +81,7 @@ export default function Newsletter() {
                     </div>
                 </div>
 
-                <section className="mb-16">
+                <section className="mb-8">
                     <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-4 tracking-wide" style={{ fontFamily: "Columbia-Serial" }}>Previous Editions</h2>
                     <p className="text-center md:text-base text-sm md:px-0 px-4 text-gray-600 mb-12">
                         Browse through our collection of past newsletters

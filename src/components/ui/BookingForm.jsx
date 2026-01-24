@@ -45,7 +45,8 @@ export default function BookingForm({ guestData, initialData, onReview }) {
                 {/* Header Section */}
                 <div className="text-center mb-8">
 
-                    <h1 className="text-3xl font-semibold text-gray-900 mb-2">
+                    <h1 className="md:text-3xl text-2xl md:px-0 px-10 font-semibold text-gray-900 mb-2 tracking-wider"
+                        style={{ fontFamily: "Columbia-Serial" }}>
                         Complete Your Booking
                     </h1>
                     <p className="text-gray-600 text-base">

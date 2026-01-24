@@ -1,20 +1,45 @@
-export default function ReceptionSection() {
+function ReceptionSection() {
+
+
+
     return (
         <section className="bg-white py-16">
             <div className="max-w-[1400px] mx-auto px-4">
-                <div className="text-center mb-12  mx-auto" data-aos="fade-up">
-                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                <div className="text-center mb-12 mx-auto">
+                    <p
+                        className="text-yellow-700 text-xs uppercase tracking-widest mb-4"
+                        data-aos="fade-down"
+                        data-aos-duration="800"
+                    >
                         Introducing Our Services & Facilities
                     </p>
-                    <h2 className="text-3xl md:text-5xl font-serif mb-6 leading-tight"
-                        style={{ fontFamily: "Columbia-Serial" }}>
+
+                    <h2
+                        className="text-3xl md:text-5xl font-serif mb-6 leading-tight"
+                        style={{ fontFamily: "Columbia-Serial" }}
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                    >
                         State-of-the-art Amenities.
                     </h2>
-                    <p className="text-gray-700 max-w-2xl px-2 md:text-base text-sm mx-auto leading-relaxed">State-of-the-art amenities include a dramatic double-story loft lounge, spectacular rooftop lounge, Technogym fitness center, media corner, and a gracious 24/7 resident services team.</p>
+
+                    <p
+                        className="text-gray-700 max-w-2xl px-2 md:text-base text-sm mx-auto leading-relaxed"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                    >
+                        State-of-the-art amenities include a dramatic double-story loft lounge, spectacular rooftop lounge, Technogym fitness center, media corner, and a gracious 24/7 resident services team.
+                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="overflow-hidden transition-transform duration-500 ease-in-out " data-aos="fade-left">
+                    <div
+                        className="overflow-hidden transition-transform duration-500 ease-in-out"
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                    >
                         <img
                             src="./Reception-2.jpg"
                             alt="Reception area"
@@ -22,7 +47,12 @@ export default function ReceptionSection() {
                         />
                     </div>
 
-                    <div className="bg-gray-100  p-8 md:p-22 flex flex-col justify-center" data-aos="fade-right">
+                    <div
+                        className="bg-gray-100 p-8 md:p-22 flex flex-col justify-center"
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                        data-aos-delay="100"
+                    >
                         <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                             wellcome Reception
                         </p>
@@ -34,14 +64,19 @@ export default function ReceptionSection() {
                             From the moment you step into our reception, you will know that "you have arrived" This is why we are "Aisha Homes." From beautifully crafted glass feather-light installation to your first experience of our impeccably curated art from local artists, you will know that you have made the right choice to stay in Tamale.
                         </p>
 
-                        <button className="mt-4 w-28 px-3 py-3 border rounded-full border-blue-900 boader-blue-900 bg-transparent text-sm  hover:bg-blue-900  hover:text-white text-black  rounded">
+                        <button className="mt-4 w-28 px-3 py-3 border rounded-full border-blue-900 boader-blue-900 bg-transparent text-sm hover:bg-blue-900 hover:text-white text-black rounded">
                             Details
                         </button>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 ">
-                    <div className="bg-gray-100  p-8 md:p-22 flex flex-col justify-center order-2 md:order-1" data-aos="fade-right">
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div
+                        className="bg-gray-100 p-8 md:p-22 flex flex-col justify-center order-2 md:order-1"
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        data-aos-delay="100"
+                    >
                         <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
                             entertainment
                         </p>
@@ -53,12 +88,16 @@ export default function ReceptionSection() {
                             Either fine dining or buffet, the Lounge Bar offers the finest foods and dining experiences. The Restaurant boasts an impressive menu that caters for all tastes. Opened for breakfast, lunch and dinner.
                         </p>
 
-                        <button className="mt-4 w-28 px-3 py-3 border rounded-full border-blue-900 boader-blue-900 bg-transparent text-sm  hover:bg-blue-900  hover:text-white text-black  rounded">
+                        <button className="mt-4 w-28 px-3 py-3 border rounded-full border-blue-900 boader-blue-900 bg-transparent text-sm hover:bg-blue-900 hover:text-white text-black rounded">
                             Details
                         </button>
                     </div>
 
-                    <div className="overflow-hidden transition-transform duration-500 ease-in-out order-1 md:order-2" data-aos="fade-left">
+                    <div
+                        className="overflow-hidden transition-transform duration-500 ease-in-out order-1 md:order-2"
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                    >
                         <img
                             src="./Lobby-1.jpg"
                             alt="Lobby area"
@@ -70,3 +109,5 @@ export default function ReceptionSection() {
         </section>
     );
 }
+
+export default ReceptionSection;

@@ -1,8 +1,15 @@
+import { useNavigate } from 'react-router';
 import { useState, useEffect, useCallback } from "react";
+
 
 export default function Rooms() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate()
+
+    const handleBooking = () => {
+        navigate("/rooms-suites");
+    };
 
     const cardData = [
         { src: "./bg-hero.webp", label: "Conference room" },
@@ -73,17 +80,33 @@ export default function Rooms() {
     const gap = 16;
 
     return (
-        <section className="bg-white py-20">
-            <div className="max-w-[1500px] mx-auto px-4" data-aos="fade-up">
+        <section className="bg-white py-10">
+            <div className="max-w-[1500px] mx-auto px-4">
                 <div className="text-center mb-8">
-                    <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
+                    <p
+                        className="text-yellow-700 text-xs uppercase tracking-widest mb-4"
+                        data-aos="fade-down"
+                        data-aos-duration="800"
+                    >
                         Where Comfort Meets Luxury
                     </p>
-                    <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-6 leading-tight"
-                        style={{ fontFamily: "Columbia-Serial" }}>
+
+                    <h2
+                        className="text-3xl md:text-5xl font-serif text-gray-900 mb-6 leading-tight"
+                        style={{ fontFamily: "Columbia-Serial" }}
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                    >
                         You Deserve Rooms & Suites For Your<br />Great Taste
                     </h2>
-                    <p className="text-gray-600 text-sm md:text-lg px-2 max-w-4xl mx-auto leading-relaxed">
+
+                    <p
+                        className="text-gray-600 text-sm md:text-lg px-2 max-w-4xl mx-auto leading-relaxed"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                    >
                         Every detail has been thoughtfully considered so you can simply arrive and unwind.
                     </p>
                 </div>
@@ -94,7 +117,9 @@ export default function Rooms() {
                     onMouseLeave={() => setIsHovered(false)}
                     role="region"
                     aria-label="Room gallery carousel"
-                    data-aos="fade-right"
+                    data-aos="zoom-in"
+                    data-aos-duration="1200"
+                    data-aos-delay="300"
                 >
                     <div
                         className="flex transition-transform duration-700 ease-in-out"
@@ -141,7 +166,12 @@ export default function Rooms() {
                     </button>
                 </div>
 
-                <div className="flex justify-center gap-2 mt-6" role="tablist" aria-label="Carousel pagination">
+                <div
+                    className="flex justify-center gap-2 mt-6"
+                    role="tablist"
+                    aria-label="Carousel pagination"
+
+                >
                     {Array.from({ length: totalDots }).map((_, index) => (
                         <button
                             key={index}
@@ -155,8 +185,14 @@ export default function Rooms() {
                     ))}
                 </div>
 
-                <div className="flex justify-center mt-8">
-                    <button className="bg-gray-900 text-white px-8 py-3 rounded hover:bg-gray-800 text-xs md:text-base transition-colors duration-300">
+                <div
+                    onClick={handleBooking}
+                    className="flex justify-center mt-8"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="500"
+                >
+                    <button className="bg-gray-900 text-white px-8 py-3 rounded hover:bg-gray-800 text-sm md:text-base transition-colors duration-300">
                         View Rooms
                     </button>
                 </div>

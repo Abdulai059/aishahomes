@@ -118,14 +118,15 @@ export default function Nav() {
                             { to: '/', label: 'HOME' },
                             { to: '/rooms-suites', label: 'ROOMS' },
                             { to: '/#conferences', label: 'CONFERENCES' },
-                            { to: '/newsletter', label: 'EVENTS' },
+                            { to: '/', label: 'EVENTS CENTER' },
+                            { to: '/newsletter', label: 'NEWS & MEETINGS' },
                             { to: '/blog', label: 'BLOG' },
                             { to: '/contact', label: 'CONTACT' }
                         ].map((item, index) => (
                             <Link
                                 key={item.label}
                                 to={item.to}
-                                className={`block text-white hover:text-yellow-400 hover:bg-white hover:bg-opacity-10 transition-all py-3 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+                                className={`block text-white hover:text-yellow-400 hover:bg-white text-base hover:bg-opacity-10 transition-all py-3 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                     }`}
                                 style={{
                                     transitionDelay: menuOpen ? `${index * 50}ms` : '0ms',

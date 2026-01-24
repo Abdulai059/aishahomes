@@ -1,8 +1,16 @@
 
+import { useNavigate } from 'react-router';
 import BgVideo from '../../../public/media/Aisha-Homes.mp4';
 import BookingAvailability from './BookingAvailability';
 
 export default function Hero() {
+
+  const navigate = useNavigate()
+
+  const handleBooking = () => {
+    navigate("/bookings");
+  };
+
   return (
     <div className="relative min-h-screen">
       <video
@@ -27,7 +35,9 @@ export default function Hero() {
           <p className="text-yellow-600 text-base md:text-2xl mb-8 tracking-wide">
             CLICK TO EXPERIENCE UNPARALLELED LUXURY
           </p>
-          <button className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base md:text-xl transition">
+          <button
+            onClick={handleBooking}
+            className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base md:text-xl transition">
             Book Your Stay With Us
           </button>
         </div>
@@ -41,7 +51,8 @@ export default function Hero() {
             "2 Adults, 1 Child",
             "2 Adults, 2 Children",
           ]}
-          onSubmit={(data) => console.log(data)}
+          
+          handleBooking={handleBooking}
         />
       </div>
     </div>
