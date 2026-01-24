@@ -26,7 +26,7 @@ export default function Layout() {
         <>
             <TopBar />
             <Nav />
-            <main className="pt-28">
+            <main className="pt-28 w-full overflow-x-hidden">
                 <Outlet />
             </main>
             <Footer />

@@ -71,13 +71,13 @@ export default function Nav() {
 
 
             <div
-                className={`lg:hidden fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-gradient-to-b from-blue-900 to-blue-950 shadow-2xl z-50 transform transition-transform duration-500 ease-out ${menuOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`lg:hidden fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-gradient-to-b from-blue-900 to-blue-950 shadow-2xl z-50 transform transition-transform duration-500 ease-out ${menuOpen ? 'translate-x-0' : '-translate-x-full pointer-events-none'
                     }`}
             >
 
                 <button
                     onClick={() => setMenuOpen(false)}
-                    className="absolute top-8 right-1 z-60 text-white hover:text-yellow-400 px-2 bg-white hover:bg-white rounded-full transition-all"
+                    className="absolute top-8 right-1 z-[60] text-white hover:text-yellow-400 px-2 bg-white hover:bg-white rounded-full transition-all"
                     aria-label="Close menu"
                 >
                     <ChevronLeft className="text-black" size={16} />

@@ -13,7 +13,7 @@ import useAOS from "./hook/useAOS";
 function App() {
 
   useAOS();
-  
+
   return (
     <Router>
       <Routes>

@@ -11,7 +11,7 @@ import FindUs from "./FindUs";
 
 export default function HomePage() {
     return (
-        <main className="min-h-screen bg-background font-sans antialiased selection:bg-primary selection:text-primary-foreground">
+        <div className="min-h-screen w-full bg-background font-sans antialiased selection:bg-primary selection:text-primary-foreground">
             <Hero />
             <HotelExplore />
             <Rooms />
@@ -21,6 +21,6 @@ export default function HomePage() {
             <RestaurantSection />
             <ReceptionSection />
             <FindUs />
-        </main>
+        </div>
     );
 }

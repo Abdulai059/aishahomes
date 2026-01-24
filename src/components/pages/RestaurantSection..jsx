@@ -18,8 +18,8 @@ export default function RestaurantSection() {
                     </p>
                 </div>
 
-                <div className="relative">
-                    <div className="absolute left-0 top-0 bottom-0 w-full md:w-1/3 bg-gray-100 -ml-4 md:ml-0"></div>
+                <div className="relative overflow-hidden">
+                    <div className="absolute left-0 top-0 bottom-0 w-full md:w-1/3 bg-gray-100 md:ml-0"></div>
 
                     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
                         <div className="bg-gray-100 p-4 md:py-30 flex flex-col items-center justify-center text-center min-h-[400px]"
