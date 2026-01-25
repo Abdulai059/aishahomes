@@ -1,5 +1,4 @@
 import Hero from "./hero";
-import BlogPost from "./BlogPost";
 import CtaSection from "./CtaSection";
 import GallerySection from "./GallerySection";
 import HotelExplore from "./HotelExplore";

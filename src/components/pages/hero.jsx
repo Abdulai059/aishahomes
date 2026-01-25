@@ -22,7 +22,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
-      <div className="absolute inset-0 bg-black/60 z-[1]"></div>
+      <div className="absolute inset-0 bg-black/60 z-1"></div>
 
       <div className="relative z-10">
 
