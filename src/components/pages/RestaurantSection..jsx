@@ -19,7 +19,7 @@ function RestaurantSection() {
                         data-aos-duration="1000"
                         data-aos-delay="100"
                     >
-                        Aisha Restaurant/Railway
+                        Aisha Homes Restaurant
                     </h2>
 
                     <p

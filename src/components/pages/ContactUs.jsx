@@ -76,9 +76,11 @@ export default function ContactUs() {
 
 
                 <section className="mb-12 md:mb-16">
-                    <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
-                        <div className="md:col-span-2 mb-4">
-                            <h2 className="text-2xl md:text-4xl text-blue-900 font-semibold tracking-wide" style={{ fontFamily: "Columbia-Serial" }}>Office Details</h2>
+                    <div className="grid md:grid-cols-2 gap-8 lg:gap-14">
+                        <div className="md:col-span-2">
+                            <div className="text-center flex items-center">
+                                <h2 className="text-2xl md:text-4xl text-blue-900 font-semibold tracking-wider" style={{ fontFamily: "Columbia-Serial" }}>Office Details</h2>
+                                <div className="ml-5 h-0.75 w-15 bg-linear-to-l from-transparent to-blue-800"></div> </div>
                         </div>
 
                         <div className="order-2 md:order-1">

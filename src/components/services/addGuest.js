@@ -1,20 +1,16 @@
 import supabase from "./SupabaseBooking";
 
-
 export async function addGuest(guest) {
     const {
         fullName,
         email,
-        nationality,
-        countryFlag,
-        nationalID,
+        nationality = "Ghana",         
+        countryFlag = "https://flagcdn.com/gh.svg", 
+        nationalID = "233000000000",           
     } = guest;
 
-    // Required field check
     if (!fullName) {
-        return {
-            error: { message: "Full name is required" },
-        };
+        return { error: { message: "Full name is required" } };
     }
 
     const { data, error } = await supabase
@@ -26,11 +22,10 @@ export async function addGuest(guest) {
                 nationality,
                 countryFlag,
                 nationalID,
-                // created_at will be set automatically by Supabase
             },
         ])
         .select()
-        .single(); // return one inserted row
+        .single();
 
     if (error) {
         console.error("Insert failed for Guest:", error);

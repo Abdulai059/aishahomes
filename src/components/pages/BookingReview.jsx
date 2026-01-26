@@ -195,7 +195,6 @@ Thank you for your booking!
             <div className="max-w-3xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-8">
-
                     <h1 className="md:text-3xl text-2xl md:px-0 px-12 font-semibold text-gray-900 mb-2 tracking-wider"
                         style={{ fontFamily: "Columbia-Serial" }}>
                         Review Your Booking

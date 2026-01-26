@@ -1,22 +1,26 @@
+
 import supabase from "./SupabaseBooking";
 
 export async function addBooking(booking) {
     const {
-        cabinPrice,
-        extrasPrice,
-        totalPrice,
+        cabinPrice = 0,
+        extrasPrice = 0,
+        totalPrice = 0,
         status = "pending",
         hasBreakfast = false,
         isPaid = false,
         observations = "",
-        numNights,
+        numNights = 1,
         cabinId,
         guestId,
     } = booking;
 
-    // Validation
     if (!guestId) {
         return { error: { message: "Guest ID is required for booking." } };
+    }
+
+    if (!cabinId) {
+        return { error: { message: "Cabin ID is required for booking." } };
     }
 
     const { data, error } = await supabase
@@ -35,13 +39,13 @@ export async function addBooking(booking) {
                 guestId,
             },
         ])
-        .select(); // returns the inserted row(s)
+        .select()
+        .single();
 
     if (error) {
         console.error("Insert failed for Booking:", error);
         return { error };
     }
 
-    console.log("Inserted booking:", data);
     return { data };
 }
