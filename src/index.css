@@ -1,42 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
-
-
-
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --primary: #0C287B;
-  --primary-foreground: #FFFFFF;
+  --primary: #0c287b;
+  --primary-foreground: #ffffff;
 
-  --secondary: #1C6EA4;
-  --secondary-foreground: #FFFFFF;
+  --secondary: #1c6ea4;
+  --secondary-foreground: #ffffff;
 
-  --accent: #00BFAE;
-  --accent-foreground: #FFFFFF;
+  --accent: #00bfae;
+  --accent-foreground: #ffffff;
 
-  --background: #F5F7FA;
-  --foreground: #1F2937;
-  --muted: #E5E7EB;
-  --muted-foreground: #6B7280;
-  --border: #D1D5DB;
-  --input: #E5E7EB;
-  --ring: #0C287B;
+  --background: #f5f7fa;
+  --foreground: #1f2937;
+  --muted: #e5e7eb;
+  --muted-foreground: #6b7280;
+  --border: #d1d5db;
+  --input: #e5e7eb;
+  --ring: #0c287b;
 
-  --card: #FFFFFF;
-  --card-foreground: #1F2937;
-  --popover: #FFFFFF;
-  --popover-foreground: #1F2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
 
-  --destructive: #DC2626;
-  --destructive-foreground: #FFFFFF;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
 
-  --chart-1: #0C287B;
-  --chart-2: #1C6EA4;
-  --chart-3: #00BFAE;
-  --chart-4: #FFD700;
-  --chart-5: #FF6B6B;
+  --chart-1: #0c287b;
+  --chart-2: #1c6ea4;
+  --chart-3: #00bfae;
+  --chart-4: #ffd700;
+  --chart-5: #ff6b6b;
 
   --radius: 0.5rem;
 }
@@ -99,7 +96,6 @@
   }
 }
 
-
 /* Font */
 @font-face {
   font-family: "Columbia-Serial";
@@ -112,13 +108,13 @@
 
 /* Root fonts */
 :root {
-  --font-sans: 'Poppins', sans-serif;
-  --font-serif: 'Lora', serif;
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Lora", serif;
   --font-custom: "Columbia-Serial";
 }
 
-
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -127,7 +123,6 @@ body {
   font-family: var(--font-sans);
   background-color: #f5f5f5;
 }
-
 
 /* Fade In Up Animation */
 @keyframes fadeInUp {
@@ -146,7 +141,3 @@ body {
 .animate-fadeInUp {
   animation: fadeInUp 1s ease-out forwards;
 }
-
-
-
-
