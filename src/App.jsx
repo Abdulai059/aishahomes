@@ -9,9 +9,9 @@ import ContactUs from "./components/pages/ContactUs";
 import Newsletter from "./components/pages/Newsletter";
 import Room from "./components/pages/Room";
 import useAOS from "./hook/useAOS";
+import GalleryPage from "./components/pages/GalleryPage";
 
 function App() {
-
   useAOS();
 
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/newsletter" element={<Newsletter />} />
           <Route path="/rooms-suites" element={<Room />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Route>
       </Routes>
     </Router>

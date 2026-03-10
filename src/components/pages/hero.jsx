@@ -25,17 +25,17 @@ export default function Hero() {
       <div className="relative z-10">
         <div className="flex flex-col items-center justify-center min-h-[75vh] text-center px-4">
           <h1
-            className="text-white text-3xl md:text-5xl mb-6 max-w-4xl leading-tight"
-            style={{ fontFamily: "Columbia-Serial" }}
+            className="font-cormorant font-medium italic text-white leading-none mb-8"
+            style={{ fontSize: "clamp(2rem, 8vw, 4rem)" }}
           >
-            WELCOME TO AISHA HOMES,
+            Welcome To Aisha Homes,
             <br />
-            <span>WHERE ELEGANCE MEETS EXCELLENCE</span>
+            <span>Where Elegance Meets Excellence</span>
           </h1>
 
           <button
             onClick={handleBooking}
-            className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base md:text-xl transition"
+            className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base md:text-base transition"
           >
             Book Your Stay With Us
           </button>

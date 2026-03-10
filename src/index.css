@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;500&display=swap");
+
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
@@ -140,4 +142,76 @@ body {
 /* Apply animation */
 .animate-fadeInUp {
   animation: fadeInUp 1s ease-out forwards;
+}
+
+.font-cinzel {
+  font-family: "Cinzel", serif;
+}
+.font-cormorant {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+@keyframes lb-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes lb-scale {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.lb-fade {
+  animation: lb-fade 0.3s ease forwards;
+}
+.lb-scale {
+  animation: lb-scale 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* masonry columns */
+.masonry {
+  columns: 3;
+  column-gap: 1rem;
+}
+@media (max-width: 900px) {
+  .masonry {
+    columns: 2;
+  }
+}
+@media (max-width: 550px) {
+  .masonry {
+    columns: 1;
+  }
+}
+.masonry-item {
+  break-inside: avoid;
+}
+
+/* gold divider */
+.gold-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ca8a04, transparent);
+  margin: 1.25rem auto;
+}
+
+/* image zoom on hover */
+.img-zoom {
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card-wrap:hover .img-zoom {
+  transform: scale(1.06);
+}
+
+/* overlay gradient */
+.overlay-grad {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.87) 0%, transparent 55%);
 }

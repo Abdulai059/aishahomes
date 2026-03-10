@@ -21,7 +21,7 @@ export default function Nav() {
 
             <div className="hidden lg:flex items-center gap-8 text-white">
               <a href="/" className="hover:text-yellow-400 transition-colors">
-                Homes
+                Home
               </a>
               <a
                 href="/rooms-suites"
@@ -30,10 +30,10 @@ export default function Nav() {
                 Rooms <ChevronDown size={16} />
               </a>
               <a
-                href="#conferences"
-                className="hover:text-yellow-400 transition-colors flex items-center gap-1"
+                href="/gallery"
+                className="hover:text-yellow-400 transition-colors"
               >
-                Conferences <ChevronDown size={16} />
+                Gallery
               </a>
             </div>
 

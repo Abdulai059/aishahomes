@@ -276,13 +276,13 @@ export default function Room() {
           </div>
 
           <h1
-            className="text-3xl md:text-5xl font-semibold mb-6"
-            style={{ fontFamily: "Columbia-Serial" }}
+            className="font-cormorant font-light italic text-white leading-none"
+            style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}
           >
             Luxurious Rooms
           </h1>
 
-          <p className="text-gray-300 md:text-base text-sm max-w-3xl mx-auto">
+          <p className="text-gray-300 py-2 text-sm max-w-3xl mx-auto">
             Explore our luxurious rooms, each designed with comfort and elegance
             in mind. Enjoy modern amenities, cozy interiors, and breathtaking
             views for a perfect stay.
