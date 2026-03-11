@@ -93,7 +93,7 @@ export default function HotelExplore() {
               data-aos-duration="800"
               data-aos-delay="400"
             >
-              <button className="border-2 rounded border-gray-900 px-8 py-3 text-white text-sm md:text-base hover:bg-gray-900 hover:text-white transition-all duration-300">
+              <button className="border-2 rounded-full border-gray-900 px-8 py-2.5 text-white text-sm md:text-sm hover:bg-gray-900 hover:text-white transition-all duration-300">
                 Take A Tour
               </button>
             </div>

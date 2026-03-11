@@ -16,7 +16,7 @@ export default function Nav() {
               className="text-white lg:hidden z-50 p-2 hover:bg-white hover:bg-opacity-20 rounded-md transition-all"
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
             <div className="hidden lg:flex items-center gap-8 text-white">
@@ -37,16 +37,14 @@ export default function Nav() {
               </a>
             </div>
 
-            <div className="flex-1 lg:flex-none flex justify-center">
+            <div className="flex justify-center md:Pr-0 pr-30">
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-1 flex items-center justify-center">
-                  <div className="text-yellow-600 text-3xl">
-                    <img
-                      src="./Aishahomeslogobg.png"
-                      alt="Aisha Homes Logo"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
+                  <img
+                    src="./Aishahomeslogobg.png"
+                    alt="Aisha Homes Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="text-blue-900 font-semibold font-serif text-xl tracking-widest">
                   AISHA
@@ -116,25 +114,26 @@ export default function Nav() {
               <div className="text-blue-900 font-semibold font-serif text-2xl tracking-widest">
                 AISHA
               </div>
-              <div className="text-blue-900 text-sm tracking-widest">HOMES</div>
+              <div className="text-yellow-600 text-sm tracking-widest">
+                HOMES
+              </div>
             </div>
           </div>
 
           {/* Mobile Menu Items */}
           <div className="space-y-0">
             {[
-              { to: "/", label: "HOME" },
-              { to: "/rooms-suites", label: "ROOMS" },
-              { to: "/#conferences", label: "CONFERENCES" },
-              { to: "/", label: "EVENTS CENTER" },
-              { to: "/newsletter", label: "NEWS & MEETINGS" },
-              { to: "/blog", label: "BLOG" },
-              { to: "/contact", label: "CONTACT" },
+              { to: "/", label: "Home" },
+              { to: "/rooms-suites", label: "Rooms" },
+              { to: "/gallery", label: "Gallery" },
+              { to: "/newsletter", label: "News & Meetings" },
+              { to: "/blog", label: "Blog" },
+              { to: "/contact", label: "Contact" },
             ].map((item, index) => (
               <Link
                 key={item.label}
                 to={item.to}
-                className={`block text-gray-800 hover:text-yellow-500 hover:bg-gray-100 text-sm transition-all py-3 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"}`}
+                className={`block text-gray-800 hover:text-yellow-500 hover:bg-gray-100 capitalize text-sm transition-all py-2.5 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"}`}
                 style={{
                   transitionDelay: menuOpen ? `${index * 50}ms` : "0ms",
                   transitionDuration: "300ms",

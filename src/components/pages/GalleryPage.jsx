@@ -128,10 +128,7 @@ export default function GalleryPage() {
   };
 
   return (
-    <div
-      className="min-h-screen text-stone-100"
-      style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
-    >
+    <div className="min-h-screen text-stone-100">
       <div className="relative flex items-center justify-center overflow-hidden md:h-[50vh] h-[40vh]">
         <img
           src="/images/ah12.jpeg"
@@ -142,7 +139,7 @@ export default function GalleryPage() {
         <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative z-10 text-center px-4">
-          <p className="font-cinzel text-xs tracking-widest text-yellow-500 uppercase mb-5">
+          <p className="text-xs tracking-widest text-yellow-500 uppercase mb-5">
             Aisha Homes · Our Story in Images
           </p>
 
@@ -172,7 +169,7 @@ export default function GalleryPage() {
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
                   className={[
-                    "font-cinzel uppercase tracking-widest whitespace-nowrap transition-all duration-300 border rounded-md",
+                    "uppercase tracking-widest whitespace-nowrap transition-all duration-300 border rounded-md",
                     "text-[10px] md:text-xs px-4 md:px-5 py-2",
                     isActive
                       ? "bg-blue-900 text-white border-blue-900"
@@ -187,7 +184,7 @@ export default function GalleryPage() {
         </div>
       </div>
 
-      <p className="font-cinzel text-center text-xs tracking-widest text-blue-900/70 pb-6">
+      <p className="text-center text-xs tracking-widest text-blue-900/70 pb-6">
         {filtered.length} images
       </p>
 
@@ -216,10 +213,10 @@ export default function GalleryPage() {
 
             <div className="overlay-grad absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
               <div className="flex-1">
-                <h3 className="font-cormorant text-stone-100 text-xl font-normal mb-0.5">
+                <h3 className="text-stone-100 text-xl font-normal mb-0.5">
                   {item.title}
                 </h3>
-                <p className="font-cinzel text-yellow-500 text-xs tracking-widest">
+                <p className="text-yellow-500 text-xs tracking-widest">
                   {item.category}
                 </p>
               </div>
@@ -272,12 +269,12 @@ export default function GalleryPage() {
 
             <div className="flex justify-between items-center px-6 py-4 bg-neutral-950/95 border-t border-yellow-700/30">
               <div>
-                <h2 className="font-cormorant italic font-light text-2xl text-stone-100">
+                <h2 className="font-light text-2xl text-stone-100">
                   {lightbox.title}
                 </h2>
                 <p className="text-stone-500 text-sm mt-0.5">{lightbox.desc}</p>
               </div>
-              <span className="font-cinzel text-yellow-500 text-xs tracking-widest">
+              <span className="text-yellow-500 text-xs tracking-widest">
                 {lightbox.category}
               </span>
             </div>

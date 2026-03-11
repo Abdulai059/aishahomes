@@ -64,7 +64,7 @@ function RoomCard({ name, description, image, size, capacity, price }) {
           {name}
         </h3>
 
-        <p className="mb-6 line-clamp-2 text-sm leading-relaxed text-stone-500">
+        <p className="mb-6 line-clamp-2 text-sm leading-relaxed text-gray-600">
           {description}
         </p>
 
@@ -82,7 +82,7 @@ function RoomCard({ name, description, image, size, capacity, price }) {
 
       <div className="flex items-center justify-between border-t border-stone-100 px-6 py-4">
         <div className="flex flex-col">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-yellow-700">
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-yellow-700">
             Starts from
           </span>
           <span className="text-xl font-bold text-stone-900">${price}</span>

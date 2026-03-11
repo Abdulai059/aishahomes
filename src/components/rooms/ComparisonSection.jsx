@@ -33,7 +33,7 @@ export function ComparisonSection({ rooms }) {
       </div>
 
       <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
-        <button className="bg-black text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg hover:bg-gray-800 transition-all hover:shadow-xl uppercase tracking-wide">
+        <button className="bg-blue-900 text-white px-8 md:px-10 py-2.5 md:py-4 rounded-full font-semibold text-sm  hover:bg-blue-800 transition-all hover:shadow-xl uppercase tracking-wide">
           Check Availability
         </button>
       </div>

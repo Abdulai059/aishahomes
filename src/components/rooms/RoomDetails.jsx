@@ -14,13 +14,13 @@ export function RoomDetails({ room }) {
       data-aos-delay="200"
     >
       <h1
-        className="text-4xl font-light mb-6 tracking-tight"
+        className="text-2xl md:text-3xl font-light mb-6 tracking-tight"
         style={{ fontFamily: "Columbia-Serial" }}
       >
         {room.type}
       </h1>
 
-      <p className="text-gray-800 mb-8 leading-relaxed text-sm md:text-base">
+      <p className="text-gray-600 mb-8 leading-relaxed text-sm ">
         {room.description}
       </p>
 
@@ -49,7 +49,7 @@ export function RoomDetails({ room }) {
 
       <button
         onClick={handleBooking}
-        className="bg-black text-white py-4 px-8 rounded-md hover:bg-gray-900 transition font-medium text-base w-64"
+        className="bg-blue-900 text-white py-2.5 px-8 rounded-full w-36 hover:bg-blue-800 transition font-medium text-sm"
       >
         Book Now
       </button>
