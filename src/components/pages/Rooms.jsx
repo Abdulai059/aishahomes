@@ -1,204 +1,171 @@
-import { useNavigate } from "react-router";
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
+import { Square, Users, ArrowRight } from "lucide-react";
 
-export default function Rooms() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
-  const navigate = useNavigate();
+const ROOMS = [
+  {
+    name: "Standard Room",
+    description:
+      "A comfortable and stylish space designed for relaxation. Perfect for travelers looking for a cozy stay with modern amenities.",
+    image:
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+    size: 25,
+    capacity: 2,
+    price: 120,
+  },
+  {
+    name: "Deluxe Room",
+    description:
+      "Enjoy extra space and refined comfort. Our Deluxe Rooms feature elegant interiors and thoughtful amenities for a relaxing stay.",
+    image:
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+    size: 35,
+    capacity: 2,
+    price: 180,
+  },
+  {
+    name: "Executive Room",
+    description:
+      "Designed for professionals and long-stay guests, this room blends comfort with functionality.",
+    image:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
+    size: 40,
+    capacity: 2,
+    price: 220,
+  },
+  {
+    name: "Executive Suite",
+    description:
+      "A spacious suite offering premium comfort and a stylish living area, ideal for families or extended stays.",
+    image:
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    size: 60,
+    capacity: 3,
+    price: 320,
+  },
+];
 
-  const handleBooking = () => {
-    navigate("/rooms-suites");
-  };
-
-  const cardData = [
-    { src: "./bg-hero.webp", label: "Conference room" },
-    { src: "./Interior5.webp", label: "Hotel lobby" },
-    { src: "./Interior2.webp", label: "Luxury room" },
-    { src: "./bg-hero.webp", label: "Conference room" },
-    { src: "./Interior5.webp", label: "Hotel lobby" },
-    { src: "./Interior2.webp", label: "Luxury room" },
-    { src: "./bg-hero.webp", label: "Conference room" },
-    { src: "./Interior5.webp", label: "Hotel lobby" },
-    { src: "./Interior2.webp", label: "Luxury room" },
-    { src: "./bg-hero.webp", label: "Conference room" },
-  ];
-
-  const getVisibleCount = () => {
-    if (typeof window === "undefined") return 3;
-    if (window.innerWidth < 768) return 1;
-    if (window.innerWidth < 1024) return 2;
-    return 3;
-  };
-
-  const [visibleCount, setVisibleCount] = useState(getVisibleCount());
-  const maxIndex = cardData.length - visibleCount;
-
-  useEffect(() => {
-    const handleResize = () => {
-      const newCount = getVisibleCount();
-      setVisibleCount(newCount);
-      setCurrentIndex(0);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const nextSlide = useCallback(() => {
-    setCurrentIndex((prev) => {
-      if (prev >= maxIndex) return 0;
-      return prev + 1;
-    });
-  }, [maxIndex]);
-
-  const prevSlide = useCallback(() => {
-    setCurrentIndex((prev) => {
-      if (prev <= 0) return maxIndex;
-      return prev - 1;
-    });
-  }, [maxIndex]);
-
-  useEffect(() => {
-    if (isHovered) return;
-
-    const interval = setInterval(nextSlide, 4000);
-    return () => clearInterval(interval);
-  }, [nextSlide, isHovered]);
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "ArrowLeft") prevSlide();
-      if (e.key === "ArrowRight") nextSlide();
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [nextSlide, prevSlide]);
-
-  const totalDots = maxIndex + 1;
-  const gap = 16;
-
+function RoomCard({ name, description, image, size, capacity, price }) {
   return (
-    <section className="bg-white py-10">
-      <div className="max-w-[1500px] mx-auto px-4">
-        <div className="text-center mb-8">
-          <p
-            className="text-yellow-700 text-xs uppercase tracking-widest mb-4"
-            data-aos="fade-down"
-            data-aos-duration="800"
-          >
-            Where Comfort Meets Luxury
-          </p>
+    <div className="group flex flex-col overflow-hidden rounded-lg  shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
+        <img
+          src={image}
+          alt={name}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      </div>
 
-          <h2
-            className="text-3xl md:text-5xl font-serif text-gray-900 mb-6 leading-tight"
-            style={{ fontFamily: "Columbia-Serial" }}
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            You Deserve Rooms & Suites For Your
-            <br />
-            Great Taste
-          </h2>
-
-          <p
-            className="text-gray-600 text-sm md:text-lg px-2 max-w-4xl mx-auto leading-relaxed"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            Every detail has been thoughtfully considered so you can simply
-            arrive and unwind.
-          </p>
-        </div>
-
-        <div
-          className="relative max-w-[1400px] mx-auto overflow-hidden"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          role="region"
-          aria-label="Room gallery carousel"
-          data-aos="zoom-in"
-          data-aos-duration="1200"
-          data-aos-delay="300"
+      <div className="flex flex-1 flex-col p-6">
+        <h3
+          className="mb-2 text-2xl font-bold text-stone-900"
+          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
         >
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{
-              gap: `${gap}px`,
-              transform: `translateX(calc(-${currentIndex * (100 / visibleCount)}% - ${currentIndex * gap}px))`,
-            }}
-          >
-            {cardData.map((card, index) => (
-              <div
-                key={`${card.label}-${index}`}
-                className="flex-shrink-0 h-64 md:h-80 relative group"
-                style={{
-                  width: `calc(${100 / visibleCount}% - ${(gap * (visibleCount - 1)) / visibleCount}px)`,
-                }}
-              >
-                <img
-                  src={card.src}
-                  alt={card.label}
-                  className="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
-                  loading={index < visibleCount ? "eager" : "lazy"}
-                />
-                <div className="absolute bottom-0 left-0 right-0 rounded-b-lg h-16 bg-black/40 flex items-center justify-center">
-                  <p className="text-white font-semibold">{card.label}</p>
-                </div>
-              </div>
-            ))}
+          {name}
+        </h3>
+
+        <p className="mb-6 line-clamp-2 text-sm leading-relaxed text-stone-500">
+          {description}
+        </p>
+
+        <div className="flex items-center gap-6 text-sm text-stone-700">
+          <div className="flex items-center gap-2">
+            <Square className="h-4 w-4 text-yellow-700" strokeWidth={1.5} />
+            <span>{size} m²</span>
           </div>
-
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition z-10"
-            aria-label="Previous slide"
-          >
-            &#10094;
-          </button>
-
-          <button
-            onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition z-10"
-            aria-label="Next slide"
-          >
-            &#10095;
-          </button>
-        </div>
-
-        <div
-          className="flex justify-center gap-2 mt-6"
-          role="tablist"
-          aria-label="Carousel pagination"
-        >
-          {Array.from({ length: totalDots }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "w-6 bg-gray-900" : "w-2 bg-gray-300"
-              }`}
-              role="tab"
-              aria-label={`Go to slide ${index + 1}`}
-              aria-selected={index === currentIndex}
-            />
-          ))}
-        </div>
-
-        <div
-          onClick={handleBooking}
-          className="flex justify-center mt-8"
-          data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="500"
-        >
-          <button className="bg-gray-900 text-white px-8 py-3 rounded hover:bg-gray-800 text-sm md:text-base transition-colors duration-300">
-            View Rooms
-          </button>
+          <div className="flex items-center gap-2">
+            <Users className="h-4 w-4 text-yellow-700" strokeWidth={1.5} />
+            <span>Up to {capacity} Guests</span>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div className="flex items-center justify-between border-t border-stone-100 px-6 py-4">
+        <div className="flex flex-col">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-yellow-700">
+            Starts from
+          </span>
+          <span className="text-xl font-bold text-stone-900">${price}</span>
+        </div>
+
+        <button className="group/btn flex items-center gap-2 rounded-full bg-blue-900 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-white transition-colors duration-200 hover:bg-blue-800">
+          Book Now
+          <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default function RoomsPage() {
+  return (
+    <>
+      <div className="min-h-screen bg-white px-6 py-16">
+        <div className="mx-auto max-w-375">
+          <div className="text-center mb-12">
+            <p
+              className="text-yellow-700 text-xs uppercase tracking-widest mb-4"
+              data-aos="fade-down"
+              data-aos-duration="800"
+            >
+              Where Comfort Meets Luxury
+            </p>
+
+            <h2
+              className="text-3xl md:text-4xl font-serif text-gray-900 mb-6 leading-tight"
+              style={{ fontFamily: "Columbia-Serial" }}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              Elevate Your <span className="">Hospitality</span> Experience
+            </h2>
+
+            <p
+              className="text-gray-600 text-sm md:text-lg px-2 max-w-4xl mx-auto leading-relaxed"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              Every detail has been thoughtfully considered so you can simply
+              arrive and unwind.
+            </p>
+          </div>
+
+          <div className="mb-24">
+            <div className="flex items-end justify-between mb-12 border-gray-200 border-b pb-6">
+              <div>
+                <span
+                  className="text-yellow-700 text-xs uppercase tracking-widest block mb-2"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                >
+                  Our Collection
+                </span>
+                <h3
+                  className="font-headline text-xl md:text-3xl"
+                  style={{ fontFamily: "Columbia-Serial" }}
+                >
+                  Exceptional Spaces
+                </h3>
+              </div>
+              <div className="hidden sm:block text-right">
+                <p className="text-muted-foreground text-sm max-w-xs">
+                  Hand-curated environments designed for comfort, productivity,
+                  and inspiration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {ROOMS.map((room) => (
+              <RoomCard key={room.name} {...room} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

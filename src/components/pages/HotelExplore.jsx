@@ -1,13 +1,22 @@
 export default function HotelExplore() {
   return (
-    <section className="bg-gray-100 py-20">
-      <div className="max-w-[1500px] mx-auto px-4">
+    <section className="bg-gray-50 py-20">
+      <div className="max-w-375 mx-auto px-4">
         <div
           className="text-center mb-12"
           data-aos="fade-down"
           data-aos-duration="800"
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-4">
+          <span
+            className="text-yellow-700 text-xs uppercase tracking-widest block mb-4"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            Your Perfect Stay Awaits
+          </span>
+
+          <h2 className="text-2xl md:text-4xl font-serif text-gray-900 mb-4">
             <span
               className="relative inline-block"
               style={{ fontFamily: "Columbia-Serial" }}
@@ -59,7 +68,7 @@ export default function HotelExplore() {
             </p>
 
             <h3
-              className="text-2xl md:text-5xl font-serif text-gray-900 mb-6"
+              className="text-xl md:text-3xl font-serif text-gray-900 mb-6"
               style={{ fontFamily: "Columbia-Serial" }}
               data-aos="fade-left"
               data-aos-duration="1000"

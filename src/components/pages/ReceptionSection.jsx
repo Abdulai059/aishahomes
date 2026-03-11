@@ -12,7 +12,7 @@ function ReceptionSection() {
           </p>
 
           <h2
-            className="text-3xl md:text-5xl font-serif mb-6 leading-tight"
+            className="text-2xl md:text-4xl font-serif mb-6 leading-tight"
             style={{ fontFamily: "Columbia-Serial" }}
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -22,7 +22,7 @@ function ReceptionSection() {
           </h2>
 
           <p
-            className="text-gray-700 max-w-2xl px-2 md:text-base text-sm mx-auto leading-relaxed"
+            className="text-gray-600 max-w-2xl px-2 md:text-base text-sm mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -56,12 +56,12 @@ function ReceptionSection() {
               wellcome Reception
             </p>
             <h3
-              className="text-3xl md:text-4xl font-serif mb-4"
+              className="text-2xl md:text-3xl font-serif mb-4"
               style={{ fontFamily: "Columbia-Serial" }}
             >
               Reception
             </h3>
-            <p className="text-gray-700 md:text-base text-sm leading-relaxed">
+            <p className="text-gray-600 md:text-base text-sm leading-relaxed">
               From the moment you step into our reception, you will know that
               "you have arrived" This is why we are "Aisha Homes." From
               beautifully crafted glass feather-light installation to your first
@@ -69,7 +69,7 @@ function ReceptionSection() {
               will know that you have made the right choice to stay in Tamale.
             </p>
 
-            <button className="mt-4 w-28 px-3 py-3 border rounded-full border-blue-900 boader-blue-900 bg-transparent text-sm hover:bg-blue-900 hover:text-white text-black rounded">
+            <button className="mt-4 w-28 px-3 py-1.5 border rounded-full border-blue-900 boader-blue-900 hover:bg-transparent text-sm bg-blue-900 hover:text-black text-white">
               Details
             </button>
           </div>
@@ -86,19 +86,19 @@ function ReceptionSection() {
               entertainment
             </p>
             <h3
-              className="text-3xl md:text-4xl font-serif mb-4"
+              className="text-2xl md:text-3xl font-serif mb-4"
               style={{ fontFamily: "Columbia-Serial" }}
             >
               Lounges
             </h3>
-            <p className="text-gray-700 md:text-base text-sm leading-relaxed">
+            <p className="text-gray-600 md:text-base text-sm leading-relaxed">
               Either fine dining or buffet, the Lounge Bar offers the finest
               foods and dining experiences. The Restaurant boasts an impressive
               menu that caters for all tastes. Opened for breakfast, lunch and
               dinner.
             </p>
 
-            <button className="mt-4 w-28 px-3 py-3 border rounded-full border-blue-900 boader-blue-900 bg-transparent text-sm hover:bg-blue-900 hover:text-white text-black rounded">
+            <button className="mt-4 w-28 px-3 py-1.5 border rounded-full border-blue-900 boader-blue-900 hover:bg-transparent text-sm bg-blue-900 hover:text-black text-white">
               Details
             </button>
           </div>

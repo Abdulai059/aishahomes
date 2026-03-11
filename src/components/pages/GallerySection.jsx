@@ -60,7 +60,7 @@ function GallerySection() {
           </p>
 
           <h2
-            className="text-3xl md:text-5xl mb-6 leading-tight font-serif"
+            className="text-2xl md:text-4xl mb-6 leading-tight font-serif"
             style={{ fontFamily: "Columbia-Serial" }}
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -70,12 +70,12 @@ function GallerySection() {
           </h2>
 
           <p
-            className="text-gray-700 text-sm md:text-base max-w-5xl mx-auto leading-relaxed"
+            className="text-gray-600 text-sm md:text-base max-w-5xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            From stunning rooftop sunsets to elegantly designed Aisha-inspired
+            From stunning rooftop sunsets to elegantly designed Aisha inspired
             suites, every detail at Aisha Homes <br /> is crafted to awaken the
             senses. Browse our gallery and discover the luxurious <br />{" "}
             experience that awaits you.
@@ -128,20 +128,6 @@ function GallerySection() {
             aria-label="Next slide"
           >
             &#10095;
-          </button>
-        </div>
-
-        <div
-          className="flex justify-center"
-          data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="400"
-        >
-          <button
-            onClick={handleBooking}
-            className="bg-black text-white px-10 py-4 rounded hover:bg-gray-800 transition-colors duration-300 font-semibold text-xs md:text-sm uppercase tracking-wide"
-          >
-            Book Your Stay With Us
           </button>
         </div>
       </div>

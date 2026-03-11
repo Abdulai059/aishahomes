@@ -12,7 +12,7 @@ function RestaurantSection() {
           </p>
 
           <h2
-            className="text-3xl md:text-5xl font-serif mb-4 leading-tight"
+            className="text-2xl md:text-4xl font-serif mb-4 leading-tight"
             style={{ fontFamily: "Columbia-Serial" }}
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -28,7 +28,8 @@ function RestaurantSection() {
             data-aos-delay="200"
           >
             Savor exquisite flavors and enjoy an unforgettable dining experience
-            in a refined and welcoming atmosphere.
+            in a refined and <br />
+            welcoming atmosphere.
           </p>
         </div>
 

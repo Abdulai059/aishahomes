@@ -1,11 +1,11 @@
 export default function MeetingSection() {
   return (
-    <section className="bg-white py-8">
+    <section className="bg-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="flex flex-col mb-4 md:mb-0 md: text-start justify-center">
             <h2
-              className="text-3xl px-2 md:text-4xl font-serif mb-6 leading-tight"
+              className="text-2xl px-2 md:text-4xl font-serif mb-6 leading-tight"
               style={{ fontFamily: "Columbia-Serial" }}
               data-aos="fade-right"
               data-aos-duration="1000"
@@ -14,14 +14,13 @@ export default function MeetingSection() {
             </h2>
 
             <p
-              className="text-gray-700 text-sm md:text-base mb-8 leading-relaxed"
+              className="text-gray-600 text-sm md:text-base mb-8 leading-relaxed"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="100"
             >
-              From quick board meetings to full-scale events, our four
-              fully-equipped meeting rooms are designed to keep things
-              effortless.
+              From quick board meetings to full-scale events, our four fully
+              equipped meeting rooms are designed to keep things effortless.
             </p>
 
             <div
@@ -29,7 +28,7 @@ export default function MeetingSection() {
               data-aos-duration="800"
               data-aos-delay="200"
             >
-              <button className="bg-black text-white px-8 py-4 rounded hover:bg-gray-800 transition-colors duration-300 font-semibold text-xs md:text-sm uppercase tracking-wide">
+              <button className="bg-blue-900 text-white px-8 py-2.5 rounded-full hover:bg-blue-800 transition-colors duration-300 font-semibold text-xs md:text-sm uppercase tracking-wide">
                 EXPLORE OUR MEETING SPACES
               </button>
             </div>
