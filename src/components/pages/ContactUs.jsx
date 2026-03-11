@@ -288,7 +288,7 @@ export default function ContactUs() {
 
               <button
                 onClick={handleSubmit(onSubmit)}
-                className="bg-blue-900 text-white px-8 md:px-12 py-3 md:py-4 rounded-sm text-sm font-semibold text-base md:text-lg hover:bg-blue-800 transition-all hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
+                className="bg-blue-900 text-white px-8 md:px-12 py-2.5 md:py-4 rounded-full text-sm font-semibold hover:bg-blue-800 transition-all hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
               >
                 Send Message
               </button>
