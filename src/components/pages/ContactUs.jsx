@@ -61,7 +61,7 @@ export default function ContactUs() {
           </div>
 
           <h1
-            className="text-3xl md:text-5xl font-medium mb-6"
+            className="text-2xl md:text-4xl font-medium mb-6"
             style={{ fontFamily: "Columbia-Serial" }}
           >
             Contact Us
@@ -112,7 +112,7 @@ export default function ContactUs() {
             </div>
 
             <div className="order-1 md:order-2 bg-gray-50 p-6 md:p-10 border-l-2 border-blue-900 rounded-r-lg">
-              <div className="text-xl md:text-3xl font-medium mb-2 text-gray-800">
+              <div className="text-xl md:text-2xl font-medium mb-2 text-gray-800">
                 {currentOffice.name}
               </div>
               <div className="text-base md:text-base font-medium mb-6 text-gray-600">
@@ -163,7 +163,7 @@ export default function ContactUs() {
         <section className="mb-12 md:mb-16">
           <div className="bg-gray-50 p-6 md:p-10 rounded-lg shadow-sm">
             <h1
-              className="text-2xl md:text-4xl text-blue-900 font-medium mb-8"
+              className="text-2xl md:text-3xl text-blue-900 font-medium mb-8"
               style={{ fontFamily: "Columbia-Serial" }}
             >
               Get In Touch
@@ -184,7 +184,7 @@ export default function ContactUs() {
                         message: "Name must be at least 2 characters",
                       },
                     })}
-                    className="w-full p-3 md:p-4 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-sm md:text-base"
+                    className="w-full p-2 md:p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-xs md:text-base"
                     placeholder="Enter your full name"
                   />
                   {errors.fullName && (
@@ -207,7 +207,7 @@ export default function ContactUs() {
                         message: "Invalid email address",
                       },
                     })}
-                    className="w-full p-3 md:p-4 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-sm md:text-base"
+                    className="w-full p-2 md:p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-xs md:text-base"
                     placeholder="example@email.com"
                   />
                   {errors.email && (
@@ -230,7 +230,7 @@ export default function ContactUs() {
                         message: "Invalid mobile number",
                       },
                     })}
-                    className="w-full p-3 md:p-4 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-sm md:text-base"
+                    className="w-full p-2 md:p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-xs md:text-base"
                     placeholder="0549337820"
                   />
                   {errors.mobile && (
@@ -252,7 +252,7 @@ export default function ContactUs() {
                         message: "Invalid WhatsApp number",
                       },
                     })}
-                    className="w-full p-3 md:p-4 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-sm md:text-base"
+                    className="w-full p-2 md:p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 bg-white text-gray-800 transition-all text-xs md:text-base"
                     placeholder="0549337820 (Optional)"
                   />
                   {errors.whatsapp && (
@@ -276,7 +276,7 @@ export default function ContactUs() {
                     },
                   })}
                   rows="5"
-                  className="w-full p-3 md:p-4 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 resize-none bg-white text-gray-800 transition-all text-sm md:text-base"
+                  className="w-full p-2 md:p-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 resize-none bg-white text-gray-800 transition-all text-xs md:text-base"
                   placeholder="How can we help you?"
                 />
                 {errors.message && (
@@ -298,7 +298,7 @@ export default function ContactUs() {
 
         <section className="mb-8">
           <h2
-            className="text-2xl md:text-4xl tracking-wide text-blue-900 font-medium mb-8"
+            className="text-2xl md:text-3xl tracking-wide text-blue-900 font-medium mb-8"
             style={{ fontFamily: "Columbia-Serial" }}
           >
             {" "}

@@ -9,17 +9,17 @@ import Rooms from "./Rooms";
 import FindUs from "./FindUs";
 
 export default function HomePage() {
-    return (
-        <div className="min-h-screen w-full bg-background font-sans antialiased selection:bg-primary selection:text-primary-foreground">
-            <Hero />
-            <HotelExplore />
-            <Rooms />
-            <MeetingSection />
-            <GallerySection />
-            <CtaSection />
-            <RestaurantSection />
-            <ReceptionSection />
-            <FindUs />
-        </div>
-    );
+  return (
+    <div className="min-h-screen w-full bg-background font-sans antialiased selection:bg-primary selection:text-primary-foreground">
+      <Hero />
+      <HotelExplore />
+      <Rooms />
+      <GallerySection />
+      <MeetingSection />
+      <CtaSection />
+      <RestaurantSection />
+      <ReceptionSection />
+      <FindUs />
+    </div>
+  );
 }
