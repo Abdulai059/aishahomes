@@ -65,7 +65,7 @@ export default function FindUs() {
 
             <Link
               to="/contact"
-              className="bg-black text-white px-8 py-4 rounded-sm hover:bg-gray-800 transition-colors font-medium text-xs tracking-wider"
+              className="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition-colors font-medium text-xs tracking-wider"
             >
               SEND US A MESSAGE TODAY
             </Link>

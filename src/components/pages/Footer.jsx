@@ -25,7 +25,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-lg  pb-2">
               Quick Links
             </h3>
-            <div className="mb-2 h-[3px] w-32 mb-8 bg-gradient-to-l from-transparent to-gray-100"></div>
+            <div className="mb-2 h-[3px] w-32 mb-8 bg-gradient-to-l from-transparent to-yellow-500"></div>
 
             <ul className="space-y-3">
               <li>
@@ -66,7 +66,7 @@ export default function Footer() {
           {/* Resources */}
           <div>
             <h3 className="text-white font-semibold text-lg -2">Resources</h3>
-            <div className="mb-2 h-[3px] w-32 mb-8 bg-gradient-to-l from-transparent to-gray-100"></div>
+            <div className="mb-2 h-[3px] w-32 mb-8 bg-gradient-to-l from-transparent to-yellow-500"></div>
 
             <ul className="space-y-3">
               <li>
@@ -107,7 +107,7 @@ export default function Footer() {
           {/* Contact Us */}
           <div>
             <h3 className="text-white font-semibold text-lg">Contact Us</h3>
-            <div className="mb-2 h-[3px] w-32 mb-8 bg-gradient-to-l from-transparent to-gray-100"></div>
+            <div className="mb-2 h-[3px] w-32 mb-8 bg-gradient-to-l from-transparent to-yellow-500"></div>
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
