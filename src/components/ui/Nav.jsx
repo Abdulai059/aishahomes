@@ -37,7 +37,7 @@ export default function Nav() {
               </a>
             </div>
 
-            <div className="flex justify-center md:Pr-0 pr-30">
+            <div className="flex justify-center md:pr-0 pr-30">
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-1 flex items-center justify-center">
                   <img

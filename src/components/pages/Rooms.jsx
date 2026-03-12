@@ -122,7 +122,7 @@ export default function RoomsPage() {
             </h2>
 
             <p
-              className="text-gray-600 text-sm md:text-lg px-2 max-w-4xl mx-auto leading-relaxed"
+              className="text-gray-600 text-sm md:text-base px-2 max-w-4xl mx-auto leading-relaxed"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
