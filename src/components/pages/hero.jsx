@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import BgImage1 from "../../../public/images/ah0.jpeg";
 import BgImage2 from "../../../public/images/ah11.jpeg";
+import BgImage1 from "../../../public/images/ah0.jpeg";
 import BgImage3 from "../../../public/images/ah5.jpeg";
 import BookingAvailability from "./BookingAvailability";
 
@@ -59,7 +59,7 @@ export default function Hero() {
             onClick={handleBooking}
             // className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base transition"
 
-            className="inline-block px-8 py-3 border-2 border-amber-500 text-white text-xs font-bold tracking-widest uppercase hover:bg-amber-500 transition-colors duration-300"
+            className="inline-block px-8 py-3 border rounded-sm border-amber-500 text-white text-xs font-bold tracking-widest uppercase hover:bg-amber-500 transition-colors duration-300"
           >
             Rooms &amp; Suites
           </button>
