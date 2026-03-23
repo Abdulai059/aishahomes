@@ -103,8 +103,8 @@ export default function Nav() {
           <ChevronLeft className="text-white" size={16} />
         </button>
 
-        <div className="pt-15 px-6 pb-8 h-full relative overflow-y-auto">
-          <div className="relative text-center mb-8 pb-8 border-b border-gray-300">
+        <div className="pt-15 px-6 pb-0 h-full relative overflow-y-auto">
+          <div className="relative text-center mb-8 pb-0 border-b border-gray-300">
             <div className=" absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full flex items-center justify-center  z-20">
               <img
                 src="./Aishahomeslogobg.png"

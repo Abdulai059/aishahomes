@@ -2,20 +2,18 @@ import { Outlet } from "react-router-dom";
 import Nav from "../ui/Nav";
 import TopBar from "../ui/TopBar";
 import Footer from "./Footer";
-import { UseScrollToTop } from "../../hook/useScrollToTop"
+import { UseScrollToTop } from "../../hook/useScrollToTop";
 
 export default function Layout() {
-
-
-    return (
-        <>
-            <UseScrollToTop />
-            <TopBar />
-            <Nav />
-            <main className="pt-28 w-full overflow-x-hidden">
-                <Outlet />
-            </main>
-            <Footer />
-        </>
-    );
+  return (
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
+      <UseScrollToTop />
+      <TopBar />
+      <Nav />
+      <main className="flex-1 w-full pt-16 md:pt-28">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
