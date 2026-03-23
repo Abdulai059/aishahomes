@@ -13,7 +13,7 @@ export default function BookingAvailability({
 
   return (
     <div className="max-w-7xl mx-auto px-4 pb-12">
-      <div className="bg-white/20 backdrop-blur-md rounded-t-lg md:bg-white p-2 md:p-3 flex items-center justify-between">
+      <div className="bg-white/20 backdrop-blur-md rounded-t-lg md:bg-white p-2 md:p-3 md:flex hidden items-center justify-between">
         <h2 className="text-white text-sm md:text-sm md:text-blue-900 uppercase font-medium tracking-wide">
           Find Your Booking
         </h2>

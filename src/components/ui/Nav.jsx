@@ -46,11 +46,14 @@ export default function Nav() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="text-blue-900 font-semibold font-serif text-xl tracking-widest">
-                  AISHA
-                </div>
-                <div className="text-yellow-600 text-xs tracking-widest">
-                  HOMES
+
+                <div className="md:flex flex-col hidden">
+                  <div className="text-blue-900 font-semibold font-serif text-xl tracking-widest">
+                    AISHA
+                  </div>
+                  <div className="text-yellow-600 text-xs tracking-widest">
+                    HOMES
+                  </div>
                 </div>
               </div>
             </div>
