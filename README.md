@@ -126,6 +126,6 @@ This project is open-source and free to use for personal or commercial projects.
 
 <div align="center">
 
-Built with ❤️ for **Aisha Homes Hotel**.
+Built with ❤️ for **Aisha Homes Hotel**
 
 </div>
