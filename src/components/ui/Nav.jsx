@@ -24,6 +24,12 @@ export default function Nav() {
                 Home
               </a>
               <a
+                href="/about-us"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                About Us
+              </a>
+              <a
                 href="/rooms-suites"
                 className="hover:text-yellow-400 transition-colors flex items-center gap-1"
               >

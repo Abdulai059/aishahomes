@@ -6,8 +6,7 @@ const ROOMS = [
     name: "Standard Room",
     description:
       "A comfortable and stylish space designed for relaxation. Perfect for travelers looking for a cozy stay with modern amenities.",
-    image:
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+    image: "/room/room7.jpg",
     size: 25,
     capacity: 2,
     price: 120,
@@ -16,8 +15,7 @@ const ROOMS = [
     name: "Deluxe Room",
     description:
       "Enjoy extra space and refined comfort. Our Deluxe Rooms feature elegant interiors and thoughtful amenities for a relaxing stay.",
-    image:
-      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+    image: "/room/room8.jpg",
     size: 35,
     capacity: 2,
     price: 180,
@@ -26,8 +24,7 @@ const ROOMS = [
     name: "Executive Room",
     description:
       "Designed for professionals and long-stay guests, this room blends comfort with functionality.",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
+    image: "/room/room5.jpg",
     size: 40,
     capacity: 2,
     price: 220,
@@ -36,8 +33,7 @@ const ROOMS = [
     name: "Executive Suite",
     description:
       "A spacious suite offering premium comfort and a stylish living area, ideal for families or extended stays.",
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+    image: "/room/room4.webp",
     size: 60,
     capacity: 3,
     price: 320,
