@@ -24,7 +24,6 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen">
-      {/* Slideshow Images */}
       {images.map((img, i) => (
         <img
           key={i}
@@ -36,30 +35,38 @@ export default function Hero() {
         />
       ))}
 
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55 z-[1]" />
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col min-h-screen">
         <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="w-9 h-px bg-white"></span>
-            <span className="text-white text-xs md:text-base font-semibold tracking-widest uppercase">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span
+              className="text-white/80 text-xs tracking-widest uppercase"
+              style={{ fontFamily: "'Jost', sans-serif" }}
+            >
               Where Luxury Meets Uniqueness
             </span>
-            <span className="w-9 h-px bg-white"></span>
           </div>
 
-          <h1 className="text-white font-bold uppercase text-3xl md:text-6xl leading-tight tracking-normal drop-shadow-2xl mb-6">
-            <span className="block">Create & Enjoy</span>
-            <span className="block">Unforgettable Moments</span>
+          <h1
+            className="text-white font-bold uppercase text-4xl md:text-6xl  mb-4"
+            style={{
+              fontFamily: "'Raleway', sans-serif",
+              letterSpacing: "0.07em",
+            }}
+          >
+            <span className="block">Where Every Stay</span>
+            <span className="block">
+              Becomes a <br /> Story
+            </span>
           </h1>
+
+          <div className="w-10 h-0.5 bg-amber-500 mx-auto my-4" />
 
           <button
             onClick={handleBooking}
-            // className="bg-gray-100 hover:bg-gray-300 rounded-full text-black px-8 py-3 text-base transition"
-
-            className="inline-block px-8 py-3 border rounded-sm border-amber-500 text-white text-xs font-bold tracking-widest uppercase hover:bg-amber-500 transition-colors duration-300"
+            className="inline-block px-8 py-3 border border-amber-500 rounded-sm text-white text-xs font-bold tracking-widest uppercase hover:bg-amber-500 transition-colors duration-300 mt-2"
+            style={{ fontFamily: "'Jost', sans-serif" }}
           >
             Rooms &amp; Suites
           </button>
@@ -76,7 +83,6 @@ export default function Hero() {
         />
       </div>
 
-      {/* Dot Indicators */}
       <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 flex gap-2">
         {images.map((_, i) => (
           <button
