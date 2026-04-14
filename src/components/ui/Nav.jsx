@@ -33,13 +33,14 @@ export default function Nav() {
                 to="/rooms-suites"
                 className="hover:text-yellow-400 transition-colors flex items-center gap-1"
               >
-                Rooms <ChevronDown size={16} />
+                Rooms
               </Link>
+
               <Link
-                to="/gallery"
+                to="/facilities-homes"
                 className="hover:text-yellow-400 transition-colors"
               >
-                Gallery
+                Facilities & Homes
               </Link>
             </div>
 
@@ -66,30 +67,33 @@ export default function Nav() {
 
             <div className="hidden lg:flex items-center gap-8 text-white">
               <Link
-                to="/facilities-homes"
+                to="/contact"
                 className="hover:text-yellow-400 transition-colors"
               >
-                Facilities & Homes
+                Contact
               </Link>
 
               <Link
                 to="/conference"
                 className="hover:text-yellow-400 transition-colors flex items-center gap-1"
               >
-                Conference Hall <ChevronDown size={16} />
+                Conference Hall
               </Link>
+
+              <Link
+                to="/gallery"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                Gallery
+              </Link>
+
               <Link
                 to="/blog"
                 className="hover:text-yellow-400 transition-colors"
               >
                 Blog
               </Link>
-              <Link
-                to="/contact"
-                className="hover:text-yellow-400 transition-colors"
-              >
-                Contact
-              </Link>
+
               <BookNowButton />
             </div>
           </div>
