@@ -164,7 +164,6 @@ export default function AboutUs() {
           <FadeIn>
             <Eyebrow>Who we are</Eyebrow>
 
-            {/* heading */}
             <h2
               className="font-serif font-light leading-tight mb-6 sm:mb-8 md:mb-10
       text-[clamp(26px,4.5vw,48px)]"
@@ -174,7 +173,6 @@ export default function AboutUs() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-              {/* quote */}
               <p
                 className="font-serif  font-light leading-relaxed text-stone-900
         text-[clamp(16px,2.5vw,20px)]"
@@ -184,7 +182,6 @@ export default function AboutUs() {
                 the beautiful surroundings."
               </p>
 
-              {/* description */}
               <p
                 className="font-light leading-loose text-stone-500
         text-xs sm:text-sm md:text-[15px]"
