@@ -66,6 +66,13 @@ export default function Nav() {
 
             <div className="hidden lg:flex items-center gap-8 text-white">
               <Link
+                to="/facilities-homes"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                Facilities & Homes
+              </Link>
+
+              <Link
                 to="/conference"
                 className="hover:text-yellow-400 transition-colors flex items-center gap-1"
               >

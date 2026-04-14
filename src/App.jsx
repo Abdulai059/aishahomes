@@ -11,6 +11,7 @@ import Room from "./components/pages/Room";
 import useAOS from "./hook/useAOS";
 import GalleryPage from "./components/pages/GalleryPage";
 import AboutUs from "./components/pages/about-us";
+import Facilities from "./components/pages/Facilities";
 
 function App() {
   useAOS();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/facilities-homes" element={<Facilities />} />
           <Route path="/conference" element={<ConferenceHall />} />
           <Route path="/rooms-suites" element={<Room />} />
           <Route path="/gallery" element={<GalleryPage />} />

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Square, Users, ArrowRight } from "lucide-react";
+import { Link } from "react-router";
 
 const ROOMS = [
   {
@@ -84,10 +85,13 @@ function RoomCard({ name, description, image, size, capacity, price }) {
           <span className="text-xl font-bold text-stone-900">${price}</span>
         </div>
 
-        <button className="group/btn flex items-center gap-2 rounded-full bg-blue-900 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-white transition-colors duration-200 hover:bg-blue-800">
-          Book Now
+        <Link
+          to="/rooms-suites"
+          className="group/btn flex items-center gap-2 rounded-full bg-white text-sm text-blue-800 transition-colors duration-200"
+        >
+          view details
           <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
-        </button>
+        </Link>
       </div>
     </div>
   );

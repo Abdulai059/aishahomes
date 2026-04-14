@@ -41,7 +41,7 @@ const packages = [
 
 export default function ConferenceHall() {
   return (
-    <section className="px-4 py-12 max-w-6xl mx-auto">
+    <section className="px-4 py-12 max-w-7xl mx-auto">
       <div
         className="relative rounded-2xl px-6 py-12 text-center mb-10 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/ah16.jpeg')" }}

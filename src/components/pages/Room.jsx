@@ -259,7 +259,7 @@ export default function Room() {
     <div className="min-h-screen w-full bg-white">
       <section
         className="relative text-white py-16 md:py-24 bg-cover bg-center mb-16"
-        style={{ backgroundImage: "url('/Walkthrough-video.jpg')" }}
+        style={{ backgroundImage: "url('/images/ah6.jpeg')" }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
 

@@ -29,14 +29,14 @@ export default function ContactUs() {
       email: "info@aishahomes.com",
       website: "aishahomes.com",
     },
-    accra: {
-      name: "Greater Accra",
-      subtitle: "Aisha Homes – Accra Office",
-      address: ["Greater Accra Region, Ghana", "Near key city access routes"],
-      tel: "054 933 7820",
-      email: "info@aishahomes.com",
-      website: "aishahomes.com",
-    },
+    // accra: {
+    //   name: "Greater Accra",
+    //   subtitle: "Aisha Homes – Accra Office",
+    //   address: ["Greater Accra Region, Ghana", "Near key city access routes"],
+    //   tel: "054 933 7820",
+    //   email: "info@aishahomes.com",
+    //   website: "aishahomes.com",
+    // },
   };
 
   const currentOffice = offices[activeOffice];
