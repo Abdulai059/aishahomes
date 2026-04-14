@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown, ChevronLeft } from "lucide-react";
 import BookNowButton from "./BookNowButton";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,27 +20,27 @@ export default function Nav() {
             </button>
 
             <div className="hidden lg:flex items-center gap-8 text-white">
-              <a href="/" className="hover:text-yellow-400 transition-colors">
+              <Link to="/" className="hover:text-yellow-400 transition-colors">
                 Home
-              </a>
-              <a
-                href="/about-us"
+              </Link>
+              <Link
+                to="/about-us"
                 className="hover:text-yellow-400 transition-colors"
               >
                 About Us
-              </a>
-              <a
-                href="/rooms-suites"
+              </Link>
+              <Link
+                to="/rooms-suites"
                 className="hover:text-yellow-400 transition-colors flex items-center gap-1"
               >
                 Rooms <ChevronDown size={16} />
-              </a>
-              <a
-                href="/gallery"
+              </Link>
+              <Link
+                to="/gallery"
                 className="hover:text-yellow-400 transition-colors"
               >
                 Gallery
-              </a>
+              </Link>
             </div>
 
             <div className="flex justify-center md:pr-0 pr-30">
@@ -65,24 +65,24 @@ export default function Nav() {
             </div>
 
             <div className="hidden lg:flex items-center gap-8 text-white">
-              <a
-                href="/newsletter"
+              <Link
+                to="/conference"
                 className="hover:text-yellow-400 transition-colors flex items-center gap-1"
               >
-                Event & Meetings <ChevronDown size={16} />
-              </a>
-              <a
-                href="blog"
+                Conference Hall <ChevronDown size={16} />
+              </Link>
+              <Link
+                to="/blog"
                 className="hover:text-yellow-400 transition-colors"
               >
                 Blog
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="hover:text-yellow-400 transition-colors"
               >
                 Contact
-              </a>
+              </Link>
               <BookNowButton />
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function Nav() {
               { to: "/", label: "Home" },
               { to: "/rooms-suites", label: "Rooms" },
               { to: "/gallery", label: "Gallery" },
-              { to: "/newsletter", label: "News & Meetings" },
+              { to: "/conference", label: "Conference Hall" },
               { to: "/blog", label: "Blog" },
               { to: "/contact", label: "Contact" },
             ].map((item, index) => (

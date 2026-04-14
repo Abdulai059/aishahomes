@@ -6,7 +6,7 @@ const ROOMS = [
     name: "Standard Room",
     description:
       "A comfortable and stylish space designed for relaxation. Perfect for travelers looking for a cozy stay with modern amenities.",
-    image: "/room/room7.jpg",
+    image: "/room/room7.png",
     size: 25,
     capacity: 2,
     price: 120,
@@ -15,7 +15,7 @@ const ROOMS = [
     name: "Deluxe Room",
     description:
       "Enjoy extra space and refined comfort. Our Deluxe Rooms feature elegant interiors and thoughtful amenities for a relaxing stay.",
-    image: "/room/room8.jpg",
+    image: "/room/room8.png",
     size: 35,
     capacity: 2,
     price: 180,
@@ -24,7 +24,7 @@ const ROOMS = [
     name: "Executive Room",
     description:
       "Designed for professionals and long-stay guests, this room blends comfort with functionality.",
-    image: "/room/room5.jpg",
+    image: "/room/room5.png",
     size: 40,
     capacity: 2,
     price: 220,
@@ -33,7 +33,7 @@ const ROOMS = [
     name: "Executive Suite",
     description:
       "A spacious suite offering premium comfort and a stylish living area, ideal for families or extended stays.",
-    image: "/room/room4.webp",
+    image: "/room/room6.png",
     size: 60,
     capacity: 3,
     price: 320,
@@ -54,8 +54,8 @@ function RoomCard({ name, description, image, size, capacity, price }) {
 
       <div className="flex flex-1 flex-col p-6">
         <h3
-          className="mb-2 text-2xl font-bold text-stone-900"
-          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+          className="mb-2 text-xl text-stone-900"
+          style={{ fontFamily: "Columbia-Serial" }}
         >
           {name}
         </h3>
@@ -78,7 +78,7 @@ function RoomCard({ name, description, image, size, capacity, price }) {
 
       <div className="flex items-center justify-between border-t border-stone-100 px-6 py-4">
         <div className="flex flex-col">
-          <span className="text-[10px] font-semibold uppercase tracking-widest text-yellow-700">
+          <span className="text-[10px] uppercase tracking-widest text-yellow-700">
             Starts from
           </span>
           <span className="text-xl font-bold text-stone-900">${price}</span>

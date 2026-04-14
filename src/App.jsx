@@ -6,7 +6,7 @@ import BlogPostPage from "./components/pages/BlogPostPage";
 import BlogPost from "./components/pages/BlogPost";
 import CreateReservation from "./components/pages/CreateReservation";
 import ContactUs from "./components/pages/ContactUs";
-import Newsletter from "./components/pages/Newsletter";
+import ConferenceHall from "./components/pages/ConferenceHall";
 import Room from "./components/pages/Room";
 import useAOS from "./hook/useAOS";
 import GalleryPage from "./components/pages/GalleryPage";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/conference" element={<ConferenceHall />} />
           <Route path="/rooms-suites" element={<Room />} />
           <Route path="/gallery" element={<GalleryPage />} />
         </Route>

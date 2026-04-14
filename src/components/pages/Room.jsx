@@ -25,6 +25,7 @@ export default function Room() {
   const rooms = [
     {
       type: "Standard Room",
+      images: ["/room/room4.webp"],
       size: "30 sqm",
       bed: "Double",
       lounge: "–",
@@ -57,6 +58,7 @@ export default function Room() {
     },
     {
       type: "Deluxe Master Room",
+      images: ["/room/room6.png"],
       size: "55 sqm",
       bed: "King",
       lounge: "–",
@@ -90,6 +92,7 @@ export default function Room() {
     },
     {
       type: "Down Floor Apartment",
+      images: ["/room/room5.png"],
       size: "70 sqm",
       bed: "King",
       lounge: "Yes",
@@ -122,6 +125,7 @@ export default function Room() {
     },
     {
       type: "Upper Floor Apartment",
+      images: ["/room/room7.png"],
       size: "120 sqm",
       bed: "King",
       lounge: "Yes",
@@ -155,6 +159,7 @@ export default function Room() {
     },
     {
       type: "Full Home",
+      images: ["/room/room8.png", "/room/room2.jpg", "/room/room3.avif"],
       size: "120 sqm",
       bed: "King",
       lounge: "Yes",
@@ -187,8 +192,6 @@ export default function Room() {
       ],
     },
   ];
-
-  const images = ["/room/room8.jpg", "/room/room6.jpg", "/room/room7.jpg"];
 
   const getCurrentImageIndex = (roomIndex) => {
     return currentImages[roomIndex] || 0;
@@ -292,7 +295,7 @@ export default function Room() {
             <RoomCard
               key={roomIndex}
               room={room}
-              images={images}
+              images={room.images} // ← was just `images`
               currentImageIndex={getCurrentImageIndex(roomIndex)}
               onPrevImage={() => prevImage(roomIndex)}
               onNextImage={() => nextImage(roomIndex)}

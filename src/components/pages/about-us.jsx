@@ -145,16 +145,16 @@ export default function AboutUs() {
           </p>
 
           <h1
-            className="font-cormorant font-light italic text-white leading-none"
-            style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}
+            className="font-cormorant font-normal italic text-white leading-none"
+            style={{ fontSize: "clamp(3rem, 8vw, 5rem)" }}
           >
-            About Us
+            More Than a Stay
           </h1>
 
           <div className="gold-divider" />
 
           <p className="font-light text-gray-200 tracking-widest text-sm">
-            Every corner, a memory
+            We don't just host guests, we welcome people home
           </p>
         </div>
       </div>

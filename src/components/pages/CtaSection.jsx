@@ -17,10 +17,10 @@ function CtaSection() {
       <section
         className="relative md:min-h-90 min-h-50 py-12 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/Walkthrough-video.jpg')",
+          backgroundImage: "url('/homes.webp')",
         }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 pt-12 text-white max-w-7xl mx-auto">
           {/* Text + Button */}

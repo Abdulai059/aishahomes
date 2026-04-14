@@ -15,6 +15,9 @@ function GallerySection() {
     { src: "/images/ah8.jpeg", alt: "Restaurant dining" },
     { src: "/images/ah0.jpeg", alt: "Luxury bathroom" },
     { src: "/images/ah6.jpeg", alt: "Hotel bar" },
+    { src: "/Interior2.webp", alt: "Hotel bar" },
+    { src: "/Interior1.webp", alt: "Hotel bar" },
+    { src: "/Interior5.webp", alt: "Hotel bar" },
   ];
 
   const getVisibleCount = () => {
