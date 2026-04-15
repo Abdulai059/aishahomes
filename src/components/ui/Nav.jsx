@@ -46,14 +46,6 @@ export default function Nav() {
 
             <div className="flex justify-center md:pr-0 pr-30">
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-1 flex items-center justify-center">
-                  <img
-                    src="./Aishahomeslogobg.png"
-                    alt="Aisha Homes Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-
                 <div className="md:flex flex-col hidden">
                   <div className="text-blue-900 font-semibold font-serif text-xl tracking-widest">
                     AISHA
@@ -122,13 +114,13 @@ export default function Nav() {
 
         <div className="pt-15 px-6 pb-0 h-full relative overflow-y-auto">
           <div className="relative text-center mb-8 pb-0 border-b border-gray-300">
-            <div className=" absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full flex items-center justify-center  z-20">
+            {/* <div className=" absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full flex items-center justify-center  z-20">
               <img
                 src="./Aishahomeslogobg.png"
                 alt="Aisha Homes Logo"
                 className="w-14 h-14 object-contain"
               />
-            </div>
+            </div> */}
 
             <div className="pt-12">
               <div className="text-blue-900 font-semibold font-serif text-2xl tracking-widest">
