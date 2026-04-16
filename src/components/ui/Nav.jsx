@@ -8,9 +8,9 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="fixed md:top-8 top-0 left-0 w-full z-50 bg-white bg-opacity-30 backdrop-blur-sm">
+      <nav className="fixed md:top-8 top-0 left-0 w-full z-50 bg-gray-100 shadow-lg bg-opacity-30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center py-4">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white lg:hidden z-50 p-2 hover:bg-white hover:bg-opacity-20 rounded-md transition-all"
@@ -20,25 +20,25 @@ export default function Nav() {
             </button>
 
             <div className="hidden lg:flex items-center gap-8 text-white">
-              <Link to="/" className="hover:text-yellow-400 transition-colors">
+              <Link to="/" className="hover:text-brand-gold transition-colors">
                 Home
               </Link>
               <Link
                 to="/about-us"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-brand-gold transition-colors"
               >
                 About Us
               </Link>
               <Link
                 to="/rooms-suites"
-                className="hover:text-yellow-400 transition-colors flex items-center gap-1"
+                className="hover:text-brand-gold transition-colors flex items-center gap-1"
               >
                 Rooms
               </Link>
 
               <Link
                 to="/facilities-homes"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-brand-gold transition-colors"
               >
                 Facilities & Homes
               </Link>
@@ -47,10 +47,10 @@ export default function Nav() {
             <div className="flex justify-center md:pr-0 pr-30">
               <div className="text-center">
                 <div className="md:flex flex-col hidden">
-                  <div className="text-blue-900 font-semibold font-serif text-xl tracking-widest">
+                  <div className="text-brand-blue font-semibold font-serif text-xl tracking-widest">
                     AISHA
                   </div>
-                  <div className="text-yellow-600 text-xs tracking-widest">
+                  <div className="text-brand-gold text-xs tracking-widest">
                     HOMES
                   </div>
                 </div>
@@ -60,28 +60,28 @@ export default function Nav() {
             <div className="hidden lg:flex items-center gap-8 text-white">
               <Link
                 to="/contact"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-brand-gold transition-colors"
               >
                 Contact
               </Link>
 
               <Link
                 to="/conference"
-                className="hover:text-yellow-400 transition-colors flex items-center gap-1"
+                className="hover:text-brand-gold transition-colors flex items-center gap-1"
               >
                 Conference Hall
               </Link>
 
               <Link
                 to="/gallery"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-brand-gold transition-colors"
               >
                 Gallery
               </Link>
 
               <Link
                 to="/blog"
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-brand-gold transition-colors"
               >
                 Blog
               </Link>
@@ -106,7 +106,7 @@ export default function Nav() {
       >
         <button
           onClick={() => setMenuOpen(false)}
-          className="absolute top-8 right-1 z-60 text-white hover:text-yellow-400 px-2 bg-blue-900 hover:bg-white rounded-full transition-all"
+          className="absolute top-8 right-1 z-60 text-white hover:text-brand-gold px-2 bg-brand-blue hover:bg-white rounded-full transition-all"
           aria-label="Close menu"
         >
           <ChevronLeft className="text-white" size={16} />
@@ -123,10 +123,10 @@ export default function Nav() {
             </div> */}
 
             <div className="pt-12">
-              <div className="text-blue-900 font-semibold font-serif text-2xl tracking-widest">
+              <div className="text-brand-blue font-semibold font-serif text-2xl tracking-widest">
                 AISHA
               </div>
-              <div className="text-yellow-600 text-sm tracking-widest">
+              <div className="text-brand-gold text-sm tracking-widest">
                 HOMES
               </div>
             </div>
@@ -136,16 +136,17 @@ export default function Nav() {
           <div className="space-y-0">
             {[
               { to: "/", label: "Home" },
-              { to: "/rooms-suites", label: "Rooms" },
-              { to: "/gallery", label: "Gallery" },
+              { to: "/rooms-suites", label: "Rooms & Suites" },
+              { to: "/facilities-homes", label: "Facilities" },
               { to: "/conference", label: "Conference Hall" },
+              { to: "/gallery", label: "Gallery" },
               { to: "/blog", label: "Blog" },
               { to: "/contact", label: "Contact" },
             ].map((item, index) => (
               <Link
                 key={item.label}
                 to={item.to}
-                className={`block text-gray-800 hover:text-yellow-500 hover:bg-gray-100 capitalize text-sm transition-all py-2.5 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"}`}
+                className={`block text-brand-stone hover:text-brand-gold hover:bg-gray-100 capitalize text-sm transition-all py-2.5 px-4 rounded-lg font-medium tracking-wide transform ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"}`}
                 style={{
                   transitionDelay: menuOpen ? `${index * 50}ms` : "0ms",
                   transitionDuration: "300ms",

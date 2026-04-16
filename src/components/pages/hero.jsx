@@ -1,15 +1,24 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import BgImage2 from "../../../public/images/ah11.jpeg";
-import BgImage1 from "../../../public/images/ah0.jpeg";
-import BgImage3 from "../../../public/images/ah5.jpeg";
 import BookingAvailability from "./BookingAvailability";
 
-const images = [BgImage1, BgImage2, BgImage3];
+const images = ["/images/ah0.jpeg", "/images/ah11.jpeg", "/images/ah5.jpeg"];
 
 export default function Hero() {
   const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
+  const [loadedImages, setLoadedImages] = useState(new Set());
+
+  // Preload all hero images
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        setLoadedImages((prev) => new Set(prev).add(src));
+      };
+    });
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,13 +38,21 @@ export default function Hero() {
           key={i}
           src={img}
           alt={`Hotel background ${i + 1}`}
+          width={1920}
+          height={1080}
+          loading={i === 0 ? "eager" : "lazy"}
+          fetchPriority={i === 0 ? "high" : "auto"}
           className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${
-            i === current ? "opacity-100" : "opacity-0"
+            i === current && loadedImages.has(img) ? "opacity-100" : "opacity-0"
           }`}
+          style={{
+            transform: "translate3d(0,0,0)",
+            backfaceVisibility: "hidden",
+          }}
         />
       ))}
 
-      <div className="absolute inset-0 bg-black/55 z-[1]" />
+      <div className="absolute inset-0 bg-black/55 z-10" />
 
       <div className="relative z-10 flex flex-col min-h-screen">
         <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
@@ -61,11 +78,11 @@ export default function Hero() {
             </span>
           </h1>
 
-          <div className="w-10 h-0.5 bg-amber-500 mx-auto my-4" />
+          <div className="w-10 h-0.5 bg-brand-gold mx-auto my-4" />
 
           <button
             onClick={handleBooking}
-            className="inline-block px-8 py-3 border border-amber-500 rounded-sm text-white text-xs font-bold tracking-widest uppercase hover:bg-amber-500 transition-colors duration-300 mt-2"
+            className="inline-block px-8 py-3 border border-brand-gold rounded-sm text-white text-xs font-bold tracking-widest uppercase hover:bg-brand-gold transition-colors duration-300 mt-2"
             style={{ fontFamily: "'Jost', sans-serif" }}
           >
             Rooms &amp; Suites

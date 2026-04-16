@@ -89,7 +89,14 @@ function BuildingCard({ building, index }) {
         <img
           src={building.image}
           alt={building.name}
-          className="w-full h-full object-cover"
+          width={600}
+          height={400}
+          loading="lazy"
+          className="w-full h-full object-cover transition-opacity duration-300"
+          style={{
+            transform: "translate3d(0,0,0)",
+            backfaceVisibility: "hidden",
+          }}
           onError={(e) => {
             e.target.style.display = "none";
             e.target.parentNode.style.background = "#EFF6FF";
@@ -136,7 +143,14 @@ function PrincipleCard({ principle, index }) {
         <img
           src={principle.image}
           alt={principle.name}
-          className="w-full h-full object-cover"
+          width={600}
+          height={400}
+          loading="lazy"
+          className="w-full h-full object-cover transition-opacity duration-300"
+          style={{
+            transform: "translate3d(0,0,0)",
+            backfaceVisibility: "hidden",
+          }}
           onError={(e) => {
             e.target.style.display = "none";
             e.target.parentNode.style.background = "#EFF6FF";
@@ -183,7 +197,7 @@ export default function Facilities() {
     <div className="min-h-screen bg-white">
       <div
         className="relative px-6 py-20 text-center overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/ah15.jpeg')" }}
+        style={{ backgroundImage: "url('/images/ah5.jpeg')" }}
       >
         <div className="absolute inset-0 bg-gray-900/70" />
 

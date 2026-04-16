@@ -6,27 +6,61 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --primary: #0c287b;
+  /* Aisha Homes Brand Colors */
+  --brand-blue: #1e3a8a;
+  --brand-blue-light: #3b82f6;
+  --brand-blue-dark: #1e40af;
+
+  --brand-gold: #ca8a04;
+  --brand-gold-light: #fbbf24;
+  --brand-gold-dark: #92400e;
+
+  --brand-yellow: #facc15;
+  --brand-yellow-light: #fde047;
+  --brand-yellow-dark: #eab308;
+
+  --brand-stone: #1f2937;
+  --brand-stone-light: #374151;
+  --brand-stone-dark: #111827;
+
+  --brand-slate: #475569;
+  --brand-slate-light: #64748b;
+  --brand-slate-dark: #334155;
+
+  /* Semantic Colors */
+  --primary: var(--brand-blue);
   --primary-foreground: #ffffff;
 
-  --secondary: #1c6ea4;
+  --secondary: var(--brand-gold);
   --secondary-foreground: #ffffff;
 
-  --accent: #00bfae;
-  --accent-foreground: #ffffff;
+  --accent: var(--brand-yellow);
+  --accent-foreground: var(--brand-stone);
 
-  --background: #f5f7fa;
-  --foreground: #1f2937;
-  --muted: #e5e7eb;
-  --muted-foreground: #6b7280;
-  --border: #d1d5db;
-  --input: #e5e7eb;
-  --ring: #0c287b;
+  --background: #ffffff;
+  --foreground: var(--brand-stone);
+  --muted: #f8fafc;
+  --muted-foreground: var(--brand-slate);
+  --border: #e2e8f0;
+  --input: #f1f5f9;
+  --ring: var(--brand-blue);
 
   --card: #ffffff;
-  --card-foreground: #1f2937;
+  --card-foreground: var(--brand-stone);
   --popover: #ffffff;
-  --popover-foreground: #1f2937;
+  --popover-foreground: var(--brand-stone);
+
+  /* Additional UI Colors */
+  --overlay: rgba(30, 58, 138, 0.55);
+  --overlay-light: rgba(30, 58, 138, 0.1);
+  --text-primary: var(--brand-stone);
+  --text-secondary: var(--brand-slate);
+  --text-accent: var(--brand-gold);
+  --text-white: #ffffff;
+
+  --border-light: #f1f5f9;
+  --border-medium: #e2e8f0;
+  --border-dark: #cbd5e1;
 
   --radius: 0.5rem;
 }
@@ -180,11 +214,133 @@ body {
   break-inside: avoid;
 }
 
+/* Brand Color Utilities */
+.bg-brand-blue {
+  background-color: var(--brand-blue);
+}
+.bg-brand-blue-light {
+  background-color: var(--brand-blue-light);
+}
+.bg-brand-blue-dark {
+  background-color: var(--brand-blue-dark);
+}
+
+.bg-brand-gold {
+  background-color: var(--brand-gold);
+}
+.bg-brand-gold-light {
+  background-color: var(--brand-gold-light);
+}
+.bg-brand-gold-dark {
+  background-color: var(--brand-gold-dark);
+}
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+.bg-brand-yellow-light {
+  background-color: var(--brand-yellow-light);
+}
+.bg-brand-yellow-dark {
+  background-color: var(--brand-yellow-dark);
+}
+
+.bg-brand-stone {
+  background-color: var(--brand-stone);
+}
+.bg-brand-stone-light {
+  background-color: var(--brand-stone-light);
+}
+.bg-brand-stone-dark {
+  background-color: var(--brand-stone-dark);
+}
+
+.bg-brand-slate {
+  background-color: var(--brand-slate);
+}
+.bg-brand-slate-light {
+  background-color: var(--brand-slate-light);
+}
+.bg-brand-slate-dark {
+  background-color: var(--brand-slate-dark);
+}
+
+.text-brand-blue {
+  color: var(--brand-blue);
+}
+.text-brand-blue-light {
+  color: var(--brand-blue-light);
+}
+.text-brand-blue-dark {
+  color: var(--brand-blue-dark);
+}
+
+.text-brand-gold {
+  color: var(--brand-gold);
+}
+.text-brand-gold-light {
+  color: var(--brand-gold-light);
+}
+.text-brand-gold-dark {
+  color: var(--brand-gold-dark);
+}
+
+.text-brand-yellow {
+  color: var(--brand-yellow);
+}
+.text-brand-yellow-light {
+  color: var(--brand-yellow-light);
+}
+.text-brand-yellow-dark {
+  color: var(--brand-yellow-dark);
+}
+
+.text-brand-stone {
+  color: var(--brand-stone);
+}
+.text-brand-stone-light {
+  color: var(--brand-stone-light);
+}
+.text-brand-stone-dark {
+  color: var(--brand-stone-dark);
+}
+
+.text-brand-slate {
+  color: var(--brand-slate);
+}
+.text-brand-slate-light {
+  color: var(--brand-slate-light);
+}
+.text-brand-slate-dark {
+  color: var(--brand-slate-dark);
+}
+
+.border-brand-blue {
+  border-color: var(--brand-blue);
+}
+.border-brand-gold {
+  border-color: var(--brand-gold);
+}
+.border-brand-yellow {
+  border-color: var(--brand-yellow);
+}
+.border-brand-stone {
+  border-color: var(--brand-stone);
+}
+.border-brand-slate {
+  border-color: var(--brand-slate);
+}
+
 /* gold divider */
 .gold-divider {
   width: 80px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #ca8a04, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brand-gold),
+    transparent
+  );
   margin: 1.25rem auto;
 }
 
