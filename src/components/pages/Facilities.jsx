@@ -161,12 +161,12 @@ function PrincipleCard({ principle, index }) {
 
         <div className="absolute bottom-0 left-0 right-0 p-5">
           <div className="flex items-end justify-between">
-            <h3
-              className="text-2xl font-light italic text-white"
+            <h2
+              className="text-4xl font-light italic text-slate-900"
               style={{ fontFamily: "Georgia, serif" }}
             >
               {principle.name}
-            </h3>
+            </h2>
           </div>
         </div>
       </div>
@@ -176,8 +176,14 @@ function PrincipleCard({ principle, index }) {
           <p className="text-[10px] tracking-[0.2em] uppercase text-yellow-500 font-medium mb-2">
             Meaning
           </p>
+          <h2
+            className="text-4xl font-light italic text-slate-900"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            {principle.name}
+          </h2>
 
-          <h2 className="text-lg font-medium text-blue-700">
+          <h2 className="text-base font-medium text-blue-700">
             {principle.meaning}
           </h2>
         </div>
