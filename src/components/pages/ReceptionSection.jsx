@@ -83,13 +83,13 @@ function ReceptionSection() {
             data-aos-delay="100"
           >
             <p className="text-yellow-700 text-xs uppercase tracking-widest mb-4">
-              entertainment
+              Dining Experience
             </p>
             <h3
               className="text-2xl md:text-3xl font-serif mb-4"
               style={{ fontFamily: "Columbia-Serial" }}
             >
-              Lounges
+              Restaurant & Lounge
             </h3>
             <p className="text-gray-600 md:text-base text-sm leading-relaxed">
               Either fine dining or buffet, the Lounge Bar offers the finest

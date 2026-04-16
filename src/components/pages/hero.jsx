@@ -58,10 +58,10 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span
-              className="text-white/80 text-xs tracking-widest uppercase"
+              className="text-yellow-500 text-xs tracking-widest uppercase"
               style={{ fontFamily: "'Jost', sans-serif" }}
             >
-              Where Luxury Meets Uniqueness
+              Far Away From Home
             </span>
           </div>
 
