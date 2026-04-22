@@ -5,39 +5,77 @@ import { Link } from "react-router";
 const ROOMS = [
   {
     name: "Standard Room",
-    description:
-      "A comfortable and stylish space designed for relaxation. Perfect for travelers looking for a cozy stay with modern amenities.",
-    image: "/room/room7.png",
-    size: 25,
+    category: "room",
+    image: "/room/room4.webp",
+    size: 30,
     capacity: 2,
-    price: 120,
+    price: 85,
+    currency: "GHS",
+    highlight: "Best Value",
+    bestFor: ["Business", "Solo Travel", "Short Stay"],
+
+    description:
+      "Step into comfort and simplicity. Designed for both business and leisure, this room features a cozy double bed, a modern rain shower, and essential amenities for a smooth and relaxing stay.",
   },
+
   {
     name: "Deluxe Room",
-    description:
-      "Enjoy extra space and refined comfort. Our Deluxe Rooms feature elegant interiors and thoughtful amenities for a relaxing stay.",
-    image: "/room/room8.png",
-    size: 35,
-    capacity: 2,
-    price: 180,
-  },
-  {
-    name: "Executive Room",
-    description:
-      "Designed for professionals and long-stay guests, this room blends comfort with functionality.",
-    image: "/room/room5.png",
-    size: 40,
-    capacity: 2,
-    price: 220,
-  },
-  {
-    name: "Executive Suite",
-    description:
-      "A spacious suite offering premium comfort and a stylish living area, ideal for families or extended stays.",
+    category: "room",
     image: "/room/room6.png",
-    size: 60,
-    capacity: 3,
-    price: 320,
+    size: 55,
+    capacity: 2,
+    price: 145,
+    currency: "GHS",
+    highlight: "Most Popular",
+    bestFor: ["Couples", "Business Travel"],
+
+    description:
+      "Enjoy refined comfort with extra space to relax and recharge. The deluxe room features a spacious layout, a king-sized bed, and premium finishes designed for a more elevated stay experience.",
+  },
+
+  {
+    name: "Ground Floor Apartment",
+    category: "apartment",
+    image: "/room/room5.png",
+    size: 70,
+    capacity: 4,
+    price: 240,
+    currency: "GHS",
+    highlight: "Family Friendly",
+    bestFor: ["Families", "Group Stay"],
+
+    description:
+      "Experience apartment-style living with easy access and added comfort. This space includes a king bedroom, a separate lounge, and a relaxed layout perfect for families or longer stays.",
+  },
+
+  {
+    name: "Upper Floor Apartment",
+    category: "apartment",
+    image: "/room/room7.png",
+    size: 120,
+    capacity: 6,
+    price: 360,
+    currency: "GHS",
+    highlight: "Luxury Space",
+    bestFor: ["Families", "Extended Stay"],
+
+    description:
+      "Indulge in spacious elegance with elevated views. This expansive apartment features generous living areas, premium finishes, and the perfect balance of privacy and luxury.",
+  },
+
+  {
+    name: "Private Full Residence",
+    category: "villa",
+    image: "/room/room8.png",
+    size: 120,
+    capacity: 8,
+    price: 605,
+    currency: "GHS",
+    highlight: "Ultimate Privacy",
+    bestFor: ["Large Groups", "Family Retreat"],
+
+    description:
+      "Enjoy complete privacy in your own fully equipped home. Featuring multiple bedrooms, a full kitchen, and spacious living areas, this residence is ideal for group stays and extended visits.",
   },
 ];
 
@@ -82,7 +120,9 @@ function RoomCard({ name, description, image, size, capacity, price }) {
           <span className="text-[10px] uppercase tracking-widest text-yellow-700">
             Starts from
           </span>
-          <span className="text-xl font-bold text-stone-900">${price}</span>
+          <span className="text-xl md:text-2xl font-semibold text-stone-900">
+            ${price}
+          </span>
         </div>
 
         <Link
@@ -159,7 +199,7 @@ export default function RoomsPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
             {ROOMS.map((room) => (
               <RoomCard key={room.name} {...room} />
             ))}

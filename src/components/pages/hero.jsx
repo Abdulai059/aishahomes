@@ -58,23 +58,16 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span
-              className="text-yellow-500 text-xs tracking-widest uppercase"
+              className="text-yellow-500 font-semibold  text-xs tracking-widest uppercase"
               style={{ fontFamily: "'Jost', sans-serif" }}
             >
               Far Away From Home
             </span>
           </div>
 
-          <h1
-            className="text-white font-bold uppercase text-4xl md:text-6xl  mb-4"
-            style={{
-              fontFamily: "'Raleway', sans-serif",
-              letterSpacing: "0.07em",
-            }}
-          >
-            <span className="block">Where Every Stay</span>
+          <h1 className="impact-title text-gray-100 uppercase text-4xl md:text-6xl leadin tracking-wide mb-4 ">
             <span className="block">
-              Becomes a <br /> Story
+              Where Every Stay Becomes a <br /> Story
             </span>
           </h1>
 

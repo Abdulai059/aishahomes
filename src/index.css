@@ -118,13 +118,20 @@
 }
 
 /* Font */
+/* Columbia Serial */
 @font-face {
   font-family: "Columbia-Serial";
   src:
     url("/fonts/Columbia-Serial-Regular.woff2") format("woff2"),
     url("/fonts/Columbia-Serial Regular.ttf") format("truetype");
   font-display: swap;
-  font-style: normal;
+}
+
+/* Impact */
+@font-face {
+  font-family: "ImpactCustom";
+  src: url("/fonts/Impact Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 /* Root fonts */
@@ -132,6 +139,7 @@
   --font-sans: "Poppins", sans-serif;
   --font-serif: "Lora", serif;
   --font-custom: "Columbia-Serial";
+  --font-impact: "ImpactCustom", Impact, sans-serif;
 }
 
 html,
@@ -156,6 +164,9 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.impact-title {
+  font-family: var(--font-impact);
 }
 
 /* Apply animation */
