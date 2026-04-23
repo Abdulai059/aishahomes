@@ -60,10 +60,7 @@ export default function ContactUs() {
             </span>
           </div>
 
-          <h1
-            className="font-cormorant font-normal text-white leading-none"
-            style={{ fontSize: "clamp(3rem, 8vw, 5rem)" }}
-          >
+          <h1 className="font-cormorant font-normal text-white text-4xl md:text-6xl leading-none">
             Contact Us
           </h1>
 

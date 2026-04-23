@@ -274,10 +274,7 @@ export default function Room() {
             </span>
           </div>
 
-          <h1
-            className="font-cormorant font-light italic text-white leading-none"
-            style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}
-          >
+          <h1 className="font-cormorant font-light italic text-4xl md:text-6xl text-white leading-none">
             Luxurious Rooms
           </h1>
 

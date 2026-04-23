@@ -143,10 +143,7 @@ export default function GalleryPage() {
             Aisha Homes · Our Story in Images
           </p>
 
-          <h1
-            className="font-cormorant font-light text-white italic leading-none"
-            style={{ fontSize: "clamp(3rem, 8vw, 5rem)" }}
-          >
+          <h1 className="font-cormorant font-light text-white text-4xl md:text-6xl italic leading-none">
             The Gallery
           </h1>
 

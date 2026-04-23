@@ -144,10 +144,7 @@ export default function AboutUs() {
             Aisha Homes · About Us
           </p>
 
-          <h1
-            className="font-cormorant font-normal italic text-white leading-none"
-            style={{ fontSize: "clamp(3rem, 8vw, 5rem)" }}
-          >
+          <h1 className="font-cormorant font-normal italic text-4xl md:text-6xl text-white leading-none">
             More Than a Stay
           </h1>
 

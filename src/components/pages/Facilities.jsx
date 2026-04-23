@@ -158,17 +158,6 @@ function PrincipleCard({ principle, index }) {
         />
 
         <div className="absolute inset-0 bg-gray-900/20" />
-
-        <div className="absolute bottom-0 left-0 right-0 p-5">
-          <div className="flex items-end justify-between">
-            <h2
-              className="text-4xl font-light italic text-slate-900"
-              style={{ fontFamily: "Georgia, serif" }}
-            >
-              {principle.name}
-            </h2>
-          </div>
-        </div>
       </div>
 
       <div className="md:w-3/5 w-full flex flex-col justify-center px-8 py-10 gap-4">
@@ -212,12 +201,7 @@ export default function Facilities() {
             Aisha Homes · Our Heritage
           </p>
 
-          <h1
-            className="font-cormorant font-normal italic text-white leading-tight mb-5"
-            style={{
-              fontSize: "clamp(2.2rem, 6vw, 4rem)",
-            }}
-          >
+          <h1 className="font-cormorant font-normal italic text-4xl md:text-6xl text-white leading-tight mb-5">
             The Naming of the Facilities
             <br /> Homes
           </h1>
