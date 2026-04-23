@@ -144,8 +144,8 @@ export default function GalleryPage() {
           </p>
 
           <h1
-            className="font-cormorant font-light italic text-white leading-none"
-            style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}
+            className="font-cormorant font-light text-white italic leading-none"
+            style={{ fontSize: "clamp(3rem, 8vw, 5rem)" }}
           >
             The Gallery
           </h1>

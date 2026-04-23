@@ -61,8 +61,8 @@ export default function ContactUs() {
           </div>
 
           <h1
-            className="text-2xl md:text-4xl font-medium mb-6"
-            style={{ fontFamily: "Columbia-Serial" }}
+            className="font-cormorant font-normal text-white leading-none"
+            style={{ fontSize: "clamp(3rem, 8vw, 5rem)" }}
           >
             Contact Us
           </h1>

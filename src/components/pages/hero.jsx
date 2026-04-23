@@ -1,39 +1,25 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BookingAvailability from "./BookingAvailability";
-
-const images = ["/images/ah0.jpeg", "/images/ah11.jpeg", "/images/ah5.jpeg"];
+import { HERO_IMAGES, TIMING, ROUTES } from "../../constants";
 
 export default function Hero() {
   const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
-  const [loadedImages, setLoadedImages] = useState(new Set());
-
-  // Preload all hero images
-  useEffect(() => {
-    images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-      img.onload = () => {
-        setLoadedImages((prev) => new Set(prev).add(src));
-      };
-    });
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 8000);
+      setCurrent((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, TIMING.HERO_SLIDE_INTERVAL);
+
     return () => clearInterval(interval);
   }, []);
 
-  const handleBooking = () => {
-    navigate("/bookings");
-  };
+  const handleBooking = () => navigate(ROUTES.BOOKINGS);
 
   return (
     <div className="relative min-h-screen">
-      {images.map((img, i) => (
+      {HERO_IMAGES.map((img, i) => (
         <img
           key={i}
           src={img}
@@ -43,7 +29,7 @@ export default function Hero() {
           loading={i === 0 ? "eager" : "lazy"}
           fetchPriority={i === 0 ? "high" : "auto"}
           className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${
-            i === current && loadedImages.has(img) ? "opacity-100" : "opacity-0"
+            i === current ? "opacity-100" : "opacity-0"
           }`}
           style={{
             transform: "translate3d(0,0,0)",
@@ -56,19 +42,15 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col min-h-screen">
         <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
-          <div className="flex items-center justify-center gap-3 mb-5">
-            <span
-              className="text-yellow-500 font-semibold  text-xs tracking-widest uppercase"
-              style={{ fontFamily: "'Jost', sans-serif" }}
-            >
-              Far Away From Home
-            </span>
-          </div>
+          <span
+            className="text-brand-gold font-semibold text-xs tracking-widest uppercase mb-5"
+            style={{ fontFamily: "'Jost', sans-serif" }}
+          >
+            Where Luxury Meets Uniqueness
+          </span>
 
-          <h1 className="impact-title text-gray-100 uppercase text-4xl md:text-6xl leadin tracking-wide mb-4 ">
-            <span className="block">
-              Where Every Stay Becomes a <br /> Story
-            </span>
+          <h1 className="impact-title text-gray-100 uppercase text-4xl md:text-6xl leading-tight tracking-wide mb-4">
+            Where Every Stay Becomes a <br /> Story
           </h1>
 
           <div className="w-10 h-0.5 bg-brand-gold mx-auto my-4" />
@@ -94,7 +76,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 flex gap-2">
-        {images.map((_, i) => (
+        {HERO_IMAGES.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}

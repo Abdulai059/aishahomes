@@ -30,14 +30,14 @@ export default function Nav() {
                 About Us
               </Link>
               <Link
-                to="/rooms-suites"
+                to="/rooms"
                 className="hover:text-brand-gold transition-colors flex items-center gap-1"
               >
                 Rooms
               </Link>
 
               <Link
-                to="/facilities-homes"
+                to="/facilities"
                 className="hover:text-brand-gold transition-colors"
               >
                 Facilities & Homes

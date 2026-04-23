@@ -17,7 +17,7 @@ function CtaSection() {
       <section
         className="relative md:min-h-90 min-h-50 py-12 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/homes.webp')",
+          backgroundImage: "url('/images/ah9.jpeg')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>

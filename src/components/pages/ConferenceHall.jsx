@@ -53,7 +53,7 @@ export default function ConferenceHall() {
             Aisha Homes · Facilities
           </p>
 
-          <h1 className="font-cormorant font-normal italic text-white text-4xl md:text-6xl leading-none">
+          <h1 className="font-cormorant font-normal text-white text-4xl md:text-6xl leading-none">
             Our Conference Hall
           </h1>
 
