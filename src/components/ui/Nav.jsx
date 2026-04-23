@@ -22,10 +22,23 @@ export default function Nav() {
             <div className="hidden lg:flex items-center gap-8 text-white">
               <Link to="/" className="hover:text-brand-gold transition-colors">
                 Home
+<<<<<<< HEAD
               </Link>
               <Link
                 to="/about-us"
                 className="hover:text-brand-gold transition-colors"
+=======
+              </a>
+              <a
+                href="/about-us"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                About Us
+              </a>
+              <a
+                href="/rooms-suites"
+                className="hover:text-yellow-400 transition-colors flex items-center gap-1"
+>>>>>>> update
               >
                 About Us
               </Link>

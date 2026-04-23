@@ -240,7 +240,10 @@ export default function Facilities() {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Principles Section */}
+=======
+>>>>>>> update
       <div className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-4 mb-4">

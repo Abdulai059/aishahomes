@@ -193,6 +193,11 @@ export default function Room() {
     },
   ];
 
+<<<<<<< HEAD
+=======
+  const images = ["/room/room8.jpg", "/room/room6.jpg", "/room/room7.jpg"];
+
+>>>>>>> update
   const getCurrentImageIndex = (roomIndex) => {
     return currentImages[roomIndex] || 0;
   };

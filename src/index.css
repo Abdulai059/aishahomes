@@ -47,6 +47,7 @@
   --popover: #ffffff;
   --popover-foreground: var(--brand-stone);
 
+<<<<<<< HEAD
   /* Additional UI Colors */
   --overlay: rgba(30, 58, 138, 0.55);
   --overlay-light: rgba(30, 58, 138, 0.1);
@@ -59,6 +60,8 @@
   --border-medium: #e2e8f0;
   --border-dark: #cbd5e1;
 
+=======
+>>>>>>> update
   --radius: 0.5rem;
 }
 

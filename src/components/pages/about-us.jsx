@@ -144,14 +144,26 @@ export default function AboutUs() {
             Aisha Homes · About Us
           </p>
 
+<<<<<<< HEAD
           <h1 className="font-cormorant font-normal italic text-4xl md:text-6xl text-white leading-none">
             More Than a Stay
+=======
+          <h1
+            className="font-cormorant font-light italic text-white leading-none"
+            style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}
+          >
+            About Us
+>>>>>>> update
           </h1>
 
           <div className="gold-divider" />
 
           <p className="font-light text-gray-200 tracking-widest text-sm">
+<<<<<<< HEAD
             We don't just host guests, we welcome people home
+=======
+            Every corner, a memory
+>>>>>>> update
           </p>
         </div>
       </div>
@@ -161,6 +173,10 @@ export default function AboutUs() {
           <FadeIn>
             <Eyebrow>Who we are</Eyebrow>
 
+<<<<<<< HEAD
+=======
+            {/* heading */}
+>>>>>>> update
             <h2
               className="font-serif font-light leading-tight mb-6 sm:mb-8 md:mb-10
       text-[clamp(26px,4.5vw,48px)]"
@@ -170,6 +186,10 @@ export default function AboutUs() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+<<<<<<< HEAD
+=======
+              {/* quote */}
+>>>>>>> update
               <p
                 className="font-serif  font-light leading-relaxed text-stone-900
         text-[clamp(16px,2.5vw,20px)]"
@@ -179,6 +199,10 @@ export default function AboutUs() {
                 the beautiful surroundings."
               </p>
 
+<<<<<<< HEAD
+=======
+              {/* description */}
+>>>>>>> update
               <p
                 className="font-light leading-loose text-stone-500
         text-xs sm:text-sm md:text-[15px]"
