@@ -47,7 +47,6 @@
   --popover: #ffffff;
   --popover-foreground: var(--brand-stone);
 
-<<<<<<< HEAD
   /* Additional UI Colors */
   --overlay: rgba(30, 58, 138, 0.55);
   --overlay-light: rgba(30, 58, 138, 0.1);
@@ -60,8 +59,6 @@
   --border-medium: #e2e8f0;
   --border-dark: #cbd5e1;
 
-=======
->>>>>>> update
   --radius: 0.5rem;
 }
 
@@ -166,6 +163,7 @@ body {
     transform: translateY(0);
   }
 }
+
 .impact-title {
   font-family: var(--font-impact);
 }
@@ -178,6 +176,7 @@ body {
 .font-cinzel {
   font-family: "Cinzel", serif;
 }
+
 .font-cormorant {
   font-family: "Cormorant", serif;
 }
@@ -186,23 +185,28 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes lb-scale {
   from {
     transform: scale(0.92);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 .lb-fade {
   animation: lb-fade 0.3s ease forwards;
 }
+
 .lb-scale {
   animation: lb-scale 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
@@ -212,16 +216,19 @@ body {
   columns: 3;
   column-gap: 1rem;
 }
+
 @media (max-width: 900px) {
   .masonry {
     columns: 2;
   }
 }
+
 @media (max-width: 550px) {
   .masonry {
     columns: 1;
   }
 }
+
 .masonry-item {
   break-inside: avoid;
 }
@@ -230,9 +237,11 @@ body {
 .bg-brand-blue {
   background-color: var(--brand-blue);
 }
+
 .bg-brand-blue-light {
   background-color: var(--brand-blue-light);
 }
+
 .bg-brand-blue-dark {
   background-color: var(--brand-blue-dark);
 }
@@ -240,9 +249,11 @@ body {
 .bg-brand-gold {
   background-color: var(--brand-gold);
 }
+
 .bg-brand-gold-light {
   background-color: var(--brand-gold-light);
 }
+
 .bg-brand-gold-dark {
   background-color: var(--brand-gold-dark);
 }
@@ -250,9 +261,11 @@ body {
 .bg-brand-yellow {
   background-color: var(--brand-yellow);
 }
+
 .bg-brand-yellow-light {
   background-color: var(--brand-yellow-light);
 }
+
 .bg-brand-yellow-dark {
   background-color: var(--brand-yellow-dark);
 }
@@ -260,9 +273,11 @@ body {
 .bg-brand-stone {
   background-color: var(--brand-stone);
 }
+
 .bg-brand-stone-light {
   background-color: var(--brand-stone-light);
 }
+
 .bg-brand-stone-dark {
   background-color: var(--brand-stone-dark);
 }
@@ -270,9 +285,11 @@ body {
 .bg-brand-slate {
   background-color: var(--brand-slate);
 }
+
 .bg-brand-slate-light {
   background-color: var(--brand-slate-light);
 }
+
 .bg-brand-slate-dark {
   background-color: var(--brand-slate-dark);
 }
@@ -280,9 +297,11 @@ body {
 .text-brand-blue {
   color: var(--brand-blue);
 }
+
 .text-brand-blue-light {
   color: var(--brand-blue-light);
 }
+
 .text-brand-blue-dark {
   color: var(--brand-blue-dark);
 }
@@ -290,9 +309,11 @@ body {
 .text-brand-gold {
   color: var(--brand-gold);
 }
+
 .text-brand-gold-light {
   color: var(--brand-gold-light);
 }
+
 .text-brand-gold-dark {
   color: var(--brand-gold-dark);
 }
@@ -300,9 +321,11 @@ body {
 .text-brand-yellow {
   color: var(--brand-yellow);
 }
+
 .text-brand-yellow-light {
   color: var(--brand-yellow-light);
 }
+
 .text-brand-yellow-dark {
   color: var(--brand-yellow-dark);
 }
@@ -310,9 +333,11 @@ body {
 .text-brand-stone {
   color: var(--brand-stone);
 }
+
 .text-brand-stone-light {
   color: var(--brand-stone-light);
 }
+
 .text-brand-stone-dark {
   color: var(--brand-stone-dark);
 }
@@ -320,9 +345,11 @@ body {
 .text-brand-slate {
   color: var(--brand-slate);
 }
+
 .text-brand-slate-light {
   color: var(--brand-slate-light);
 }
+
 .text-brand-slate-dark {
   color: var(--brand-slate-dark);
 }
@@ -330,15 +357,19 @@ body {
 .border-brand-blue {
   border-color: var(--brand-blue);
 }
+
 .border-brand-gold {
   border-color: var(--brand-gold);
 }
+
 .border-brand-yellow {
   border-color: var(--brand-yellow);
 }
+
 .border-brand-stone {
   border-color: var(--brand-stone);
 }
+
 .border-brand-slate {
   border-color: var(--brand-slate);
 }
@@ -347,12 +378,10 @@ body {
 .gold-divider {
   width: 80px;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--brand-gold),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--brand-gold),
+      transparent);
   margin: 1.25rem auto;
 }
 
@@ -360,6 +389,7 @@ body {
 .img-zoom {
   transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .card-wrap:hover .img-zoom {
   transform: scale(1.06);
 }

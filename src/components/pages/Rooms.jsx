@@ -5,54 +5,30 @@ import { Link } from "react-router";
 const ROOMS = [
   {
     name: "Standard Room",
-<<<<<<< HEAD
     category: "room",
     image: "/room/room4.webp",
     size: 30,
-=======
-    description:
-      "A comfortable and stylish space designed for relaxation. Perfect for travelers looking for a cozy stay with modern amenities.",
-    image: "/room/room7.jpg",
-    size: 25,
->>>>>>> update
     capacity: 2,
     price: 85,
     currency: "GHS",
     highlight: "Best Value",
     bestFor: ["Business", "Solo Travel", "Short Stay"],
-
     description:
       "Step into comfort and simplicity. Designed for both business and leisure, this room features a cozy double bed, a modern rain shower, and essential amenities for a smooth and relaxing stay.",
   },
 
   {
     name: "Deluxe Room",
-<<<<<<< HEAD
     category: "room",
     image: "/room/room6.png",
     size: 55,
-=======
-    description:
-      "Enjoy extra space and refined comfort. Our Deluxe Rooms feature elegant interiors and thoughtful amenities for a relaxing stay.",
-    image: "/room/room8.jpg",
-    size: 35,
->>>>>>> update
     capacity: 2,
     price: 145,
     currency: "GHS",
     highlight: "Most Popular",
     bestFor: ["Couples", "Business Travel"],
-
     description:
-<<<<<<< HEAD
       "Enjoy refined comfort with extra space to relax and recharge. The deluxe room features a spacious layout, a king-sized bed, and premium finishes designed for a more elevated stay experience.",
-=======
-      "Designed for professionals and long-stay guests, this room blends comfort with functionality.",
-    image: "/room/room5.jpg",
-    size: 40,
-    capacity: 2,
-    price: 220,
->>>>>>> update
   },
 
   {
@@ -65,9 +41,7 @@ const ROOMS = [
     currency: "GHS",
     highlight: "Family Friendly",
     bestFor: ["Families", "Group Stay"],
-
     description:
-<<<<<<< HEAD
       "Experience apartment-style living with easy access and added comfort. This space includes a king bedroom, a separate lounge, and a relaxed layout perfect for families or longer stays.",
   },
 
@@ -81,7 +55,6 @@ const ROOMS = [
     currency: "GHS",
     highlight: "Luxury Space",
     bestFor: ["Families", "Extended Stay"],
-
     description:
       "Indulge in spacious elegance with elevated views. This expansive apartment features generous living areas, premium finishes, and the perfect balance of privacy and luxury.",
   },
@@ -96,16 +69,8 @@ const ROOMS = [
     currency: "GHS",
     highlight: "Ultimate Privacy",
     bestFor: ["Large Groups", "Family Retreat"],
-
     description:
       "Enjoy complete privacy in your own fully equipped home. Featuring multiple bedrooms, a full kitchen, and spacious living areas, this residence is ideal for group stays and extended visits.",
-=======
-      "A spacious suite offering premium comfort and a stylish living area, ideal for families or extended stays.",
-    image: "/room/room4.webp",
-    size: 60,
-    capacity: 3,
-    price: 320,
->>>>>>> update
   },
 ];
 

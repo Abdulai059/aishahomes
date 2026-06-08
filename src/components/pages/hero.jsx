@@ -19,11 +19,7 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen">
-<<<<<<< HEAD
       {HERO_IMAGES.map((img, i) => (
-=======
-      {images.map((img, i) => (
->>>>>>> update
         <img
           key={i}
           src={img}
@@ -32,9 +28,8 @@ export default function Hero() {
           height={1080}
           loading={i === 0 ? "eager" : "lazy"}
           fetchPriority={i === 0 ? "high" : "auto"}
-          className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${
-            i === current ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${i === current ? "opacity-100" : "opacity-0"
+            }`}
           style={{
             transform: "translate3d(0,0,0)",
             backfaceVisibility: "hidden",
@@ -42,7 +37,6 @@ export default function Hero() {
         />
       ))}
 
-<<<<<<< HEAD
       <div className="absolute inset-0 bg-black/55 z-10" />
 
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -63,39 +57,6 @@ export default function Hero() {
           <button
             onClick={handleBooking}
             className="inline-block px-8 py-3 border border-brand-gold rounded-sm text-white text-xs font-bold tracking-widest uppercase hover:bg-brand-gold transition-colors duration-300 mt-2"
-=======
-      <div className="absolute inset-0 bg-black/55 z-[1]" />
-
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
-          <div className="flex items-center justify-center gap-3 mb-5">
-            <span
-              className="text-white/80 text-xs tracking-widest uppercase"
-              style={{ fontFamily: "'Jost', sans-serif" }}
-            >
-              Where Luxury Meets Uniqueness
-            </span>
-          </div>
-
-          <h1
-            className="text-white font-bold uppercase text-4xl md:text-6xl  mb-4"
-            style={{
-              fontFamily: "'Raleway', sans-serif",
-              letterSpacing: "0.07em",
-            }}
-          >
-            <span className="block">Where Every Stay</span>
-            <span className="block">
-              Becomes a <br /> Story
-            </span>
-          </h1>
-
-          <div className="w-10 h-0.5 bg-amber-500 mx-auto my-4" />
-
-          <button
-            onClick={handleBooking}
-            className="inline-block px-8 py-3 border border-amber-500 rounded-sm text-white text-xs font-bold tracking-widest uppercase hover:bg-amber-500 transition-colors duration-300 mt-2"
->>>>>>> update
             style={{ fontFamily: "'Jost', sans-serif" }}
           >
             Rooms &amp; Suites
@@ -118,12 +79,11 @@ export default function Hero() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              i === current ? "bg-white w-5" : "bg-white/50 w-2"
-            }`}
+            className={`h-2 rounded-full transition-all duration-300 ${i === current ? "bg-white w-5" : "bg-white/50 w-2"
+              }`}
           />
         ))}
       </div>
-    </div>
+    </div >
   );
 }

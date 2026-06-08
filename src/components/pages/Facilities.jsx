@@ -134,9 +134,8 @@ function PrincipleCard({ principle, index }) {
 
   return (
     <div
-      className={`flex flex-col ${
-        isEven ? "md:flex-row" : "md:flex-row-reverse"
-      } gap-0 overflow-hidden rounded-2xl border border-blue-100 bg-white`}
+      className={`flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"
+        } gap-0 overflow-hidden rounded-2xl border border-blue-100 bg-white`}
       style={{ minHeight: 340 }}
     >
       <div className="relative md:w-2/5 w-full h-64 md:h-auto overflow-hidden">
@@ -240,10 +239,7 @@ export default function Facilities() {
         </div>
       </div>
 
-<<<<<<< HEAD
       {/* Principles Section */}
-=======
->>>>>>> update
       <div className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center gap-4 mb-4">

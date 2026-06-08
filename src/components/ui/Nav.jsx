@@ -22,23 +22,10 @@ export default function Nav() {
             <div className="hidden lg:flex items-center gap-8 text-white">
               <Link to="/" className="hover:text-brand-gold transition-colors">
                 Home
-<<<<<<< HEAD
               </Link>
               <Link
                 to="/about-us"
                 className="hover:text-brand-gold transition-colors"
-=======
-              </a>
-              <a
-                href="/about-us"
-                className="hover:text-yellow-400 transition-colors"
-              >
-                About Us
-              </a>
-              <a
-                href="/rooms-suites"
-                className="hover:text-yellow-400 transition-colors flex items-center gap-1"
->>>>>>> update
               >
                 About Us
               </Link>
@@ -106,11 +93,10 @@ export default function Nav() {
       </nav>
 
       <div
-        className={`lg:hidden fixed inset-0 bg-black z-40 transition-opacity duration-300 ${
-          menuOpen
+        className={`lg:hidden fixed inset-0 bg-black z-40 transition-opacity duration-300 ${menuOpen
             ? "opacity-50 pointer-events-auto"
             : "opacity-0 pointer-events-none"
-        }`}
+          }`}
         onClick={() => setMenuOpen(false)}
       />
 
