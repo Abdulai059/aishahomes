@@ -121,7 +121,7 @@ function RoomCard({ name, description, image, size, capacity, price }) {
         </div>
 
         <Link
-          to="/rooms-suites"
+          to="/rooms"
           className="group/btn flex items-center gap-2 rounded-full bg-white text-sm text-blue-800 transition-colors duration-200"
         >
           view details
