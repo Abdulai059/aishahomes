@@ -130,7 +130,7 @@ function TeamCard({ person }) {
 export default function AboutUs() {
   return (
     <div className="font-sans  bg-stone-100 text-stone-900 ">
-      <div className="relative flex items-center justify-center overflow-hidden md:h-[60vh] h-[40vh]">
+      <div className="relative flex items-center justify-center overflow-hidden md:h-[50vh] h-[40vh]">
         <img
           src="/images/ah9.jpeg"
           alt="Serviced home interior"
@@ -152,6 +152,7 @@ export default function AboutUs() {
 
           <p className="font-light text-gray-200 tracking-widest text-sm">
             We don't just host guests, we welcome people home
+          </p>
         </div>
       </div>
 
@@ -311,15 +312,12 @@ export default function AboutUs() {
         </section>
 
         <section className="relative px-[6vw] py-20 mb-20 bg-stone-100 text-center overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(255, 255, 255, 0.2),transparent_70%)]" />
-          <FadeIn className="relative max-w-lg mx-auto">
+          <FadeIn className="relative max-w-xl mx-auto">
             <span className="text-[10px] font-medium tracking-[3px] uppercase text-blue-700 mb-5 block">
               Book your stay
             </span>
-            <h2 className="font-serif text-[clamp(26px,4.5vw,48px)] font-light  text-stone-800 leading-snug mb-4">
-              Ready to feel
-              <br />
-              at home?
+            <h2 className="font-serif text-3xl font-normal  text-stone-800 leading-snug mb-4">
+              Ready to feel at home?
             </h2>
             <p className="text-sm font-light text-stone-900/60 mb-10 leading-loose">
               Our team is always available to help you plan your visit and find
@@ -342,7 +340,7 @@ export default function AboutUs() {
             </div>
           </FadeIn>
         </section>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 }

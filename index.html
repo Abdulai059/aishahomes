@@ -1,113 +1,118 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Performance optimizations -->
-  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload critical resources -->
+    <link rel="preload" as="image" href="/images/ah0.jpeg" />
+    <link rel="preload" as="image" href="/images/ah11.jpeg" />
+    <link rel="preload" as="image" href="/images/ah5.jpeg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuoo.woff2"
+    />
 
-  <!-- Preload critical resources -->
-  <link rel="preload" as="image" href="/images/ah0.jpeg" />
-  <link rel="preload" as="image" href="/images/ah11.jpeg" />
-  <link rel="preload" as="image" href="/images/ah5.jpeg" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuoo.woff2" />
-
-  <!-- Critical CSS inline -->
-  <style>
-    /* Critical loading styles */
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    #root {
-      min-height: 100vh;
-    }
-
-    .loading-spinner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background: #1e3a8a;
-    }
-
-    .loading-spinner .spinner {
-      width: 48px;
-      height: 48px;
-      border: 3px solid #ca8a04;
-      border-top: 3px solid transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
+    <!-- Critical CSS inline -->
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
 
-      100% {
-        transform: rotate(360deg);
+      #root {
+        min-height: 100vh;
       }
-    }
-  </style>
+    </style>
 
-  <title>Aisha Homes - Luxury Accommodation in Tamale</title>
-  <meta name="description"
-    content="Experience luxury and comfort at Aisha Homes in Tamale. Premium accommodations with world-class amenities for your perfect stay." />
+    <title>Aisha Homes - Luxury Accommodation in Tamale</title>
+    <meta
+      name="description"
+      content="Experience luxury and comfort at Aisha Homes in Tamale. Premium accommodations with world-class amenities for your perfect stay."
+    />
 
-  <!-- SEO Meta Tags -->
-  <meta name="keywords" content="luxury accommodation, tamale hotel, aisha homes, premium stay, ghana hospitality" />
-  <meta name="author" content="Aisha Homes" />
-  <meta name="robots" content="index, follow" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="keywords"
+      content="luxury accommodation, tamale hotel, aisha homes, premium stay, ghana hospitality"
+    />
+    <meta name="author" content="Aisha Homes" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Aisha Homes - Luxury Accommodation in Tamale" />
-  <meta property="og:description"
-    content="Experience luxury and comfort at Aisha Homes in Tamale. Premium accommodations with world-class amenities." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://aishahomes.com" />
-  <meta property="og:image" content="/images/ah0.jpeg" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Aisha Homes - Luxury Accommodation in Tamale"
+    />
+    <meta
+      property="og:description"
+      content="Experience luxury and comfort at Aisha Homes in Tamale. Premium accommodations with world-class amenities."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aishahomes.com" />
+    <meta property="og:image" content="/images/ah0.jpeg" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Aisha Homes - Luxury Accommodation in Tamale" />
-  <meta name="twitter:description" content="Experience luxury and comfort at Aisha Homes in Tamale." />
-  <meta name="twitter:image" content="/images/ah0.jpeg" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Aisha Homes - Luxury Accommodation in Tamale"
+    />
+    <meta
+      name="twitter:description"
+      content="Experience luxury and comfort at Aisha Homes in Tamale."
+    />
+    <meta name="twitter:image" content="/images/ah0.jpeg" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo/logo.png" />
 
-  <!-- Font loading strategy -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Cormorant:wght@300;400;500;600;700&display=swap"
-    media="print" onload="this.media = 'all'" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Cormorant:wght@300;400;500;600;700&display=swap" />
-  </noscript>
-</head>
+    <!-- Font loading strategy -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Cormorant:wght@300;400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Cormorant:wght@300;400;500;600;700&display=swap"
+      />
+    </noscript>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

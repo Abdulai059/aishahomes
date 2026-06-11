@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import useAOS from "./hooks/useAOS";
 import { ROUTES } from "./constants";
+import LoadingSpinner from "./components/ui/LoadingSpinner";
 
 const Layout = lazy(() => import("./components/pages/Layout"));
 const HomePage = lazy(() => import("./components/pages/HomePage"));
@@ -16,12 +17,6 @@ const Room = lazy(() => import("./components/pages/Room"));
 const GalleryPage = lazy(() => import("./components/pages/GalleryPage"));
 const AboutUs = lazy(() => import("./components/pages/about-us"));
 const Facilities = lazy(() => import("./components/pages/Facilities"));
-
-const LoadingSpinner = () => (
-  <div className="min-h-screen flex items-center justify-center bg-black/20 backdrop-blur-sm">
-    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-900" />
-  </div>
-);
 
 const routes = [
   { path: ROUTES.HOME, element: <HomePage /> },

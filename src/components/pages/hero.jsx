@@ -15,7 +15,7 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleBooking = () => navigate(ROUTES.BOOKINGS);
+  const handleBooking = () => navigate(ROUTES.ROOMS);
 
   return (
     <div className="relative min-h-screen">
@@ -28,8 +28,9 @@ export default function Hero() {
           height={1080}
           loading={i === 0 ? "eager" : "lazy"}
           fetchPriority={i === 0 ? "high" : "auto"}
-          className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${i === current ? "opacity-100" : "opacity-0"
-            }`}
+          className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${
+            i === current ? "opacity-100" : "opacity-0"
+          }`}
           style={{
             transform: "translate3d(0,0,0)",
             backfaceVisibility: "hidden",
@@ -42,24 +43,24 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
           <span
-            className="text-brand-gold font-semibold text-xs tracking-widest uppercase mb-5"
+            className="text-yellow-500 font-semibold text-[12px] tracking-widest uppercase mb-5"
             style={{ fontFamily: "'Jost', sans-serif" }}
           >
             Where Luxury Meets Uniqueness
           </span>
 
-          <h1 className="impact-title text-gray-100 uppercase text-4xl md:text-6xl leading-tight tracking-wide mb-4">
+          <h1 className="ffont-['Playfair_Display'] font-extrabold md:font-black text-gray-100 uppercase text-4xl md:text-6xl leading-tight tracking-wide mb-4">
             Where Every Stay Becomes a <br /> Story
           </h1>
 
-          <div className="w-10 h-0.5 bg-brand-gold mx-auto my-4" />
+          <div className="w-10 h-0.5 bg-brand-gold mx-auto my-6" />
 
           <button
             onClick={handleBooking}
-            className="inline-block px-8 py-3 border border-brand-gold rounded-sm text-white text-xs font-bold tracking-widest uppercase hover:bg-brand-gold transition-colors duration-300 mt-2"
+            className="inline-block px-8 py-3 border border-brand-gold rounded-full text-white text-xs font-bold tracking-widest uppercase hover:bg-brand-gold transition-colors duration-300 mt-2"
             style={{ fontFamily: "'Jost', sans-serif" }}
           >
-            Rooms &amp; Suites
+            Book Your Stay Now →
           </button>
         </div>
 
@@ -79,11 +80,12 @@ export default function Hero() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`h-2 rounded-full transition-all duration-300 ${i === current ? "bg-white w-5" : "bg-white/50 w-2"
-              }`}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              i === current ? "bg-white w-5" : "bg-white/50 w-2"
+            }`}
           />
         ))}
       </div>
-    </div >
+    </div>
   );
 }

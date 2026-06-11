@@ -26,8 +26,8 @@ export default function ContactUs() {
       subtitle: "Aisha Homes – Tamale Office",
       address: ["Aliu Mahama Stadium Airport Roundabout", "Tamale"],
       tel: "054 933 7820",
-      email: "info@aishahomes.com",
-      website: "aishahomes.com",
+      email: "info@aishahomeghs.com",
+      website: "aishahomesgh.com",
     },
     // accra: {
     //   name: "Greater Accra",

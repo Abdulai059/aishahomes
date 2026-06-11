@@ -136,7 +136,7 @@ export default function RoomsPage() {
   return (
     <>
       <div className="min-h-screen bg-white px-6 py-16">
-        <div className="mx-auto max-w-375">
+        <div className="mx-auto max-w-[1600px]">
           <div className="text-center mb-12">
             <p
               className="text-yellow-700 text-xs uppercase tracking-widest mb-4"
@@ -194,7 +194,7 @@ export default function RoomsPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {ROOMS.map((room) => (
               <RoomCard key={room.name} {...room} />
             ))}
